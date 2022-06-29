@@ -273,6 +273,10 @@ body {
 
 
 
+.navigation{
+	position: relative; 
+}
+
 .navigation span {
 	border-bottom: 1px solid var(--border);
 	width: 132px;
@@ -313,6 +317,9 @@ a:active {
 }
 
 
+.navigation span:hover{
+	color: var(--elipse)
+}
 
 
 .navigation ul{
@@ -387,6 +394,51 @@ a:active {
 	right: -5px;
 	top: 30px;
 }
+
+
+.menuLargeEllipse{
+	position: absolute;
+	top:0;
+	right: 40px;
+}
+
+.menuLargeEllipse img {
+	width: 80px; 
+}
+
+
+.menuMediumEllipse{
+	z-index: 0;
+	position: absolute;
+	bottom:40px;
+	left: 0;
+}
+
+.menuMediumEllipse img {
+	width: 50px; 
+}
+
+.menuSmallEllipse{
+	position: absolute;
+	bottom:70px;
+	left: 80px;
+}
+
+.menuSmallEllipse img {
+	width: 15px;
+}
+
+.smallEllipse{
+	position: absolute;
+	top:50px;
+	right: 20px;
+}
+
+.smallEllipse img {
+	width: 15px;
+}
+
+
 
 
 
