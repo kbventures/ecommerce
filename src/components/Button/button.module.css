@@ -3,4 +3,9 @@
     padding: 15px 70px;
     font-size: 1.25rem;
     font-weight: bold;
+    color: var(--primary-color);
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }

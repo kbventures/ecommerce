@@ -1,22 +1,28 @@
 import React from "react"
-import styles from "./splash.module.css"
+import styles from "./Splash.module.css"
 import Button from "../../components/Button"
 import Container from "../../components/Container"
 import Navigation from "../../components/Navigation"
+import { Link } from "react-router-dom";
+
+const { container, title, img_wrapper } = styles
 
 function Splash(){
     return (
         <Container>
             {/* <Navigation /> */}
-            <div className={styles.container}>
-                <h1 className={styles.title}>Find your Gadget</h1>
-                <div className={styles.img_wrapper}>
+            <div className={container}>
+                <h1 className={title}>Find your Gadget</h1>
+                <div className={img_wrapper}>
                     <img src="../../assets/Saly-19.png" width="305px" height="364px" alt="guy in vr" />
                 </div>
-                <Button>Get started</Button>
+                <Link to="/home">
+                    <Button>Get started</Button>
+                </Link>
             </div>
         </Container>
     )
 }
 
 export default Splash; 
+
