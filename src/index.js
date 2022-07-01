@@ -11,6 +11,9 @@ import Basket from "./routes/Basket"
 import Checkout from "./routes/Checkout"
 import Payment from "./routes/Payment"
 
+// Global style sheet
+import "./index.css"
+
 
 ReactDOM.render(
     <BrowserRouter>

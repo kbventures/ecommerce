@@ -1,5 +1,6 @@
 import React from "react"
-import Navigation from "../components/Navigation"
+import Navigation from "../../components/Navigation"
+import styles from "./basket.module.css"
 
 export default function Basket() {
     return (
