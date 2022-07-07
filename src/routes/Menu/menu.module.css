@@ -1,0 +1,175 @@
+.menu {
+	background-color: var(--background);
+	height: 100vh;
+	color: var(--white);
+	font-size: 12px;
+	font-family: 'Raleway';
+	font-weight: 600;
+}
+
+
+
+.navigation{
+	position: relative; 
+}
+
+.navigation span {
+	border-bottom: 1px solid var(--border);
+	width: 132px;
+}
+
+
+
+.navigation li {
+	width: 110px;
+	margin-bottom: 10px;
+
+}
+
+.navigation li:not(:first-child) {
+	margin-top: 10px;
+}
+
+
+.navigation a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.navigationContainer {
+	padding-top: 85px;
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-between; */
+}
+
+
+.navigationContainer a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.navigation span:hover{
+	color: var(--elipse)
+}
+
+
+.navigation ul{
+	display: flex; 
+	flex-direction: column;
+}
+
+.navigation li{
+	display: flex;
+	align-items: center;
+}
+
+.navigation span {
+	margin-left: 15px; 
+}
+
+
+
+.navigation .profileIcon:before {
+	content: url("../../../public/assets/Profile.svg");
+}
+
+.navigation .buyIcon:before {
+	content: url("../../../public//assets/Buy.svg");
+}
+
+.navigation .heartIcon:before {
+	content: url("../../../public/assets/Heart.svg");
+}
+
+.navigation .settingIcon:before {
+	content: url("../../../public/assets/Setting.svg");
+
+}
+
+.navigation .deliveryIcon:before {
+	content: url("../../../public/assets/Bag.svg");
+}
+
+.navigation .signoutIcon:before {
+	content: url("../../../public/assets/Logout.svg");
+
+}
+
+
+.navigation .logout {
+	padding-top: 76px;
+	display: flex;
+	align-items: center;
+}
+
+.navigation .logout a {
+	margin-left: 15px;
+
+}
+
+.menuLargeImage {
+	position:absolute;
+	top: 80px;
+	right: 0;
+}
+
+.menuLargeImage img {
+	height: 315px;
+	width: 120px;
+}
+
+.menuLargeImage .rectangle74{
+	height: 300px;
+	width: 140px;
+	position: absolute;
+	right: -5px;
+	top: 30px;
+}
+
+
+.menuLargeEllipse{
+	position: absolute;
+	top:0;
+	right: 40px;
+}
+
+.menuLargeEllipse img {
+	width: 80px; 
+}
+
+
+.menuMediumEllipse{
+	z-index: 0;
+	position: absolute;
+	bottom:40px;
+	left: 0;
+}
+
+.menuMediumEllipse img {
+	width: 50px; 
+}
+
+.menuSmallEllipse{
+	position: absolute;
+	bottom:70px;
+	left: 80px;
+}
+
+.menuSmallEllipse img {
+	width: 15px;
+}
+
+.smallEllipse{
+	position: absolute;
+	top:50px;
+	right: 20px;
+}
+
+.smallEllipse img {
+	width: 15px;
+}

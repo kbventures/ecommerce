@@ -55,6 +55,7 @@ html, body {
 }
 
 body {
-  background-color: var(--primary-color);
-  margin: 0;
+	box-sizing: border-box;
+	line-height: 1.4;
+	font-family: 'Roboto Slab', serif;
 }

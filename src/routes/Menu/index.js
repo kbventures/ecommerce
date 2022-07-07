@@ -3,14 +3,13 @@ import styles from "./menu.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
 
-const { container, title, img_wrapper } = styles
+const { menu, container, title, img_wrapper } = styles
 const url = '../../assets/Setting.svg'
 
 function Menu() {
     return (
         <Container>
-            {/* <Navigation /> */}
-            <div className={container}>
+            <div className={menu}>
                 <section className="menu">
                     <div className="container menuflex">
 
