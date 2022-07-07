@@ -1,5 +1,15 @@
-.container {
-	padding: 0 24px;
+.container_primary {
+    height: 100vh;
+    padding: 0 25px;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+
+.container_white {
+    height: calc(100vh - 50px);
+    padding: 25px;
+    overflow-x: hidden;
+    background-color: #f2f2f2;
 }
 
 @media only screen and (min-width: 46em) {
