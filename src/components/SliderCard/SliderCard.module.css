@@ -24,6 +24,7 @@
   font-weight: 600;
   font-size: var(--21p66px);
   line-height: var(--21p66px);
+  padding: 0 10px;
 
   color: #000000;
   opacity: 0.9;

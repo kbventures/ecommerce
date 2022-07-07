@@ -1,3 +1,21 @@
 .container {
-    margin: 0 auto;
+    height: calc(100vh - 50px);
+    padding: 25px;
+    overflow-x: hidden;
+}
+
+/* I wanted to compose from container but it doesn't work I don't know why :( */
+
+.container_primary {
+    height: calc(100vh - 50px);
+    padding: 25px;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+
+.container_white {
+    height: calc(100vh - 50px);
+    padding: 25px;
+    overflow-x: hidden;
+    background-color: #f2f2f2;
 }
