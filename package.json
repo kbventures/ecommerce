@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "css-loader": "^6.7.1",
+    "path": "^0.12.7",
     "react-router-dom": "^6.3.0",
     "style-loader": "^3.3.1"
   }

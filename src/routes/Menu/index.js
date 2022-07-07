@@ -1,14 +1,12 @@
 import React from "react"
 import styles from "./menu.module.css"
-import Button from "../../components/Button"
 import Container from "../../components/Container"
-import Navigation from "../../components/Navigation"
 import { Link } from "react-router-dom";
 
 const { container, title, img_wrapper } = styles
 const url = '../../assets/Setting.svg'
 
-function Splash() {
+function Menu() {
     return (
         <Container>
             {/* <Navigation /> */}
@@ -65,7 +63,7 @@ function Splash() {
     )
 }
 
-export default Splash;
+export default Menu;
 
 
 

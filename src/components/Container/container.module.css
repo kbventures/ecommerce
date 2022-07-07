@@ -1,14 +1,6 @@
-.container {
-    height: calc(100vh - 50px);
-    padding: 25px;
-    overflow-x: hidden;
-}
-
-/* I wanted to compose from container but it doesn't work I don't know why :( */
-
 .container_primary {
-    height: calc(100vh - 50px);
-    padding: 25px;
+    height: 100vh;
+    padding: 0 25px;
     overflow-x: hidden;
     background-color: var(--primary-color);
 }
@@ -18,4 +10,22 @@
     padding: 25px;
     overflow-x: hidden;
     background-color: #f2f2f2;
+}
+
+@media only screen and (min-width: 46em) {
+	.container {
+		padding: 0 53px;
+	}
+}
+
+@media only screen and (min-width: 80em) {
+	.container {
+		padding: 0 73px;
+	}
+}
+
+@media only screen and (min-width: 112em) {
+	.container {
+		padding: 0 104px;
+	}
 }
