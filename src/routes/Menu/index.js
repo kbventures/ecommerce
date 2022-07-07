@@ -9,7 +9,7 @@ const url = '../../assets/Setting.svg'
 function Menu() {
     return (
         <Container>
-            <div className={menu}>
+            <div className={styles.menu}>
                 <section className="menu">
                     <div className="container menuflex">
 
@@ -19,6 +19,7 @@ function Menu() {
                             <section className="navigation">
 
                                 <section>
+                                    <p>Hello</p>
                                     <ul>
                                         <li className="profileIcon"><span><a href="/profile" alt="">Profile</a></span></li>
                                         <li className="buyIcon"><span><a href="/orders">My Orders</a></span></li>
@@ -58,7 +59,7 @@ function Menu() {
                     </section>
 
             </div>
-        </Container>
+            </Container>
     )
 }
 

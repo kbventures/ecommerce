@@ -1,7 +1,6 @@
 .menu {
-	background-color: var(--background);
 	height: 100vh;
-	color: var(--white);
+	color: var(--grey);
 	font-size: 12px;
 	font-family: 'Raleway';
 	font-weight: 600;
