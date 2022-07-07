@@ -1,0 +1,118 @@
+.header {
+  padding: 0 0 50px 0;
+}
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  background-color: transparent;
+  position: relative;
+}
+
+.search_input {
+  border-radius: 30px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #c9c9c9;
+  padding: 0 0 0 40px;
+  color: #868686;
+  font-size: var(--16p66);
+  line-height: var(--20px);
+  font-family: Raleway, sans-serif;
+  max-width: 160px;
+  font-weight: 600;
+  outline: none;
+}
+
+.search::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(50%, 50%);
+  content: "";
+  background-image: url("../../../public/assets/Search.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: var(--36px);
+  line-height: var(--36px);
+  color: #000000;
+  text-align: center;
+}
+
+.tabs {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.list_item {
+  font-family: Raleway, sans-serif;
+  font-size: var(--15px);
+  line-height: var(--20px);
+  color: #9a9a9d;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list_item_active {
+  color: var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.slider {
+}
+
+.slider_cards_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin: 120px 0 20px 0;
+}
+
+.next_slide_button {
+  margin: 0 0 0 auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: var(--15px);
+  line-height: var(--18px);
+  color: var(--primary-color);
+  display: flex;
+  gap: 10px;
+}
+
+.page_footer {
+  margin: 30px 0 0 0;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer_nav_item {
+  cursor: pointer;
+}
+
+.footer_nav_item_active {
+  filter: drop-shadow(0px 4px 22px rgba(89, 86, 233, 0.54));
+}
