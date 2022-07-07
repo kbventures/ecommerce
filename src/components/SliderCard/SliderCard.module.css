@@ -1,0 +1,51 @@
+.slider_card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
+  height: 100%;
+  text-align: center;
+  height: 300px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slider_card_img {
+  position: relative;
+  top: -50px;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.slider_card_title {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: var(--21p66px);
+  line-height: var(--21p66px);
+
+  color: #000000;
+  opacity: 0.9;
+}
+
+.slider_card_desc {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: var(--16p66);
+  line-height: var(--19p5px);
+
+  color: #868686;
+  opacity: 0.9;
+}
+
+.slider_card_price {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: var(--16p66);
+  line-height: var(--19p5px);
+  text-align: center;
+  padding: 20px 0 40px 0;
+
+  color: var(--primary-color);
+}
