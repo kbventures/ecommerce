@@ -5,9 +5,9 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'index_bundle.js',
-      publicPath: '/'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'index_bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -27,19 +27,32 @@ module.exports = {
                 use: [
                     "style-loader",
                     {
-                      loader: "css-loader",
-                      options: {
-                        importLoaders: 1,
-                        modules: true,
-                      },
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                        },
                     },
-                  ],
+                ],
             },
+            {
+                test: /\.(png|jp(e*)g)$/,
+                use: [{
+                    loader: "url-loader",
+                    options: {
+                        limit: 8192,
+                    },
+                }]
+            },
+            {
+                test: /\.svg/,
+                use: ["@svgr/webpack", 'svgo-loader'],
+              },
         ],
     },
     devServer: {
         historyApiFallback: true,
-      },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template:

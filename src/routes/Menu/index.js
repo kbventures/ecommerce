@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./menu.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
+import Testing from "../../../public/assets/Setting.svg"
 
 const { menu, container, title, img_wrapper } = styles
 const url = '../../assets/Setting.svg'
@@ -20,6 +21,7 @@ function Menu() {
 
                                 <section>
                                     <p>Hello</p>
+                                    <Testing />
                                     <ul>
                                         <li className="profileIcon"><span><a href="/profile" alt="">Profile</a></span></li>
                                         <li className="buyIcon"><span><a href="/orders">My Orders</a></span></li>
