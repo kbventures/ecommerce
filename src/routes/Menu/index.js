@@ -3,65 +3,70 @@ import styles from "./menu.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
 import Testing from "../../../public/assets/Setting.svg"
+import MenuMediumEllipseSvg from "../../../public/assets/Ellipse 20.svg"
+import MenuSmallEllipseSvg from "../../../public/assets/Ellipse 22.svg"
 
-const { menu, container, title, img_wrapper } = styles
+
+const { menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_li, navigation_profileIcon, navigation_span, navigation_logout,menuMediumEllipse, menuSmallEllipse, menuMediumEllipse_img } = styles
 const url = '../../assets/Setting.svg'
 
 function Menu() {
     return (
         <Container>
-            <div className={styles.menu}>
-                <section className="menu">
-                    <div className="container menuflex">
-
-                        <section className="navigationContainer">
-
-
-                            <section className="navigation">
-
-                                <section>
-                                    <p>Hello</p>
-                                    <Testing />
-                                    <ul>
-                                        <li className="profileIcon"><span><a href="/profile" alt="">Profile</a></span></li>
-                                        <li className="buyIcon"><span><a href="/orders">My Orders</a></span></li>
-                                        <li className="heartIcon"><span><a href="/favorites">Favorites</a></span></li>
-                                        <li className="deliveryIcon"><span><a href="/delivery">Delivery</a></span></li>
-                                        <li className="settingIcon"><span><a href="/settings">Settings</a></span></li>
-                                    </ul>
-                                </section>
-                                <section className="signoutIcon logout">
-                                    <a href="/signout">Sign Out</a>
-                                </section>
-
-
-                                <section className="menuMediumEllipse">
-                                    <img src={url} alt="" />
-                                </section>
-
-                                <section className="menuSmallEllipse">
-                                    {/* <img src="./img/Ellipse 22.svg" alt="" /> */}
-                                </section>
-                            </section>
-
+            <section className={menu}>
+                <section className={navigationContainer}>
+                    <section className={navigation}>
+                        <section>
+                            {/* <Testing /> */}
+                            <ul className={navigation_ul}>
+                                <Link className={`${navigation_li} ${navigationContainer_a}`} to="/profile">
+                                <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Profile</span></li>
+                                </Link>
+                                <Link className={`${navigation_li} ${navigationContainer_a}`} to="/orders">
+                                <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Orders</span></li>
+                                </Link>
+                                <Link className={`${navigation_li} ${navigationContainer_a}`} to="/favorite">
+                                <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Favorite</span></li>
+                                </Link>
+                                <Link className={`${navigation_li} ${navigationContainer_a}`} to="/delivery">
+                                <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Delivery</span></li>
+                                </Link>
+                                <Link className={`${navigation_li} ${navigationContainer_a}`} to="/settings">
+                                <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Settings</span></li>
+                                </Link> 
+                            </ul>
                         </section>
-                    </div>
+                        <section className={navigation_logout}>
+                            <Link className={navigationContainer_a} to="signout">
+                            Sign Out
+                            </Link>
+                        </section>
 
-                    <section className="menuLargeImage">
-                        {/* <img src={url} alt="" /> */}
-                            {/* <img className="rectangle74" src="./img/Rectangle 74.png" alt="" /> */}
-                            </section>
-                            <section className="menuLargeEllipse">
-                                {/* <img src="./img/Ellipse 19.svg" alt="" /> */}
-                            </section>
 
-                            <section className="smallEllipse">
-                                {/* <img src="./img/Ellipse 22.svg" alt="" /> */}
-                            </section>
+                        <section className={menuMediumEllipse}>
+                        <img src="assets/Ellipse 20.svg" />
+                        </section>
+
+                        <section className={menuSmallEllipse}>
+                            <MenuSmallEllipseSvg/>
+                        </section>
                     </section>
+                </section>
 
-            </div>
-            </Container>
+
+                <section className="menuLargeImage">
+                    {/* <img src={url} alt="" /> */}
+                    {/* <img className="rectangle74" src="./img/Rectangle 74.png" alt="" /> */}
+                </section>
+                <section className="menuLargeEllipse">
+                    {/* <img src="./img/Ellipse 19.svg" alt="" /> */}
+                </section>
+
+                <section className="smallEllipse">
+                    {/* <img src="./img/Ellipse 22.svg" alt="" /> */}
+                </section>
+            </section>
+        </Container>
     )
 }
 

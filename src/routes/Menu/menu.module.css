@@ -1,49 +1,17 @@
 .menu {
-	height: 100vh;
-	color: var(--grey);
 	font-size: 12px;
 	font-family: 'Raleway';
 	font-weight: 600;
+	color:var(--white);
 }
 
-
-
-.navigation{
-	position: relative; 
-}
-
-.navigation span {
-	border-bottom: 1px solid var(--border);
-	width: 132px;
-}
-
-
-
-.navigation li {
-	width: 110px;
-	margin-bottom: 10px;
-
-}
-
-.navigation li:not(:first-child) {
-	margin-top: 10px;
-}
-
-
-.navigation a {
-	color: inherit;
-	text-decoration: inherit;
-}
 
 .navigationContainer {
 	padding-top: 85px;
-	/* display: flex;
-	flex-direction: row;
-	justify-content: space-between; */
 }
 
 
-.navigationContainer a,
+.navigationContainer_a,
 a:hover,
 a:focus,
 a:active {
@@ -52,29 +20,47 @@ a:active {
 }
 
 
-.navigation span:hover{
-	color: var(--elipse)
+
+.navigation{
+	position: relative; 
 }
 
-
-.navigation ul{
+.navigation_ul{
 	display: flex; 
 	flex-direction: column;
 }
 
-.navigation li{
+.navigation_li {
+	width: 110px;
+	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
+
 }
 
-.navigation span {
+.navigation_li:not(:first-child) {
+	margin-top: 10px;
+}
+
+
+.navigation_span {
+	border-bottom: 1px solid var(--border);
+	width: 132px;
+	color: var(--white);
 	margin-left: 15px; 
 }
 
 
+.navigation_span:hover{
+	color: var(--elipse)
+}
 
-.navigation .profileIcon:before {
-	content: url("../../../public/assets/Profile.svg");
+
+
+
+/* Not working ??? */
+.navigation_profileIcon:before {
+	content: url("../../../public/assets/profile-menu-icon.svg");
 }
 
 .navigation .buyIcon:before {
@@ -99,17 +85,29 @@ a:active {
 
 }
 
-
-.navigation .logout {
+.navigation_logout {
 	padding-top: 76px;
 	display: flex;
 	align-items: center;
-}
-
-.navigation .logout a {
 	margin-left: 15px;
-
 }
+
+
+
+.menuMediumEllipse{
+	z-index: 0;
+	position: absolute;
+	bottom:40px;
+	left: 0;
+}
+
+
+
+
+
+
+
+
 
 .menuLargeImage {
 	position:absolute;
@@ -147,11 +145,23 @@ a:active {
 	position: absolute;
 	bottom:40px;
 	left: 0;
+	width:100%; 
+
 }
 
 .menuMediumEllipse img {
 	width: 50px; 
 }
+
+
+
+
+
+
+
+
+
+
 
 .menuSmallEllipse{
 	position: absolute;
