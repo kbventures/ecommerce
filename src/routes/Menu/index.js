@@ -9,6 +9,7 @@ import MenuSmallEllipseSvg from "../../../public/assets/Ellipse 22.svg"
 
 const { menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_li, navigation_profileIcon, navigation_span, navigation_logout,menuMediumEllipse, menuSmallEllipse, menuMediumEllipse_img } = styles
 const url = '../../assets/Setting.svg'
+const ellipseSvg = '../../assets/Ellipse 22.svg'
 
 function Menu() {
     return (
@@ -44,11 +45,11 @@ function Menu() {
 
 
                         <section className={menuMediumEllipse}>
-                        <img src="assets/Ellipse 20.svg" />
+                        <img src={ellipseSvg} width="0" />
                         </section>
 
                         <section className={menuSmallEllipse}>
-                            <MenuSmallEllipseSvg/>
+                            <MenuSmallEllipseSvg width="100"/>
                         </section>
                     </section>
                 </section>

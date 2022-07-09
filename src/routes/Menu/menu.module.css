@@ -145,20 +145,11 @@ a:active {
 	position: absolute;
 	bottom:40px;
 	left: 0;
-	width:100%; 
-
 }
 
 .menuMediumEllipse img {
 	width: 50px; 
 }
-
-
-
-
-
-
-
 
 
 
@@ -172,6 +163,16 @@ a:active {
 .menuSmallEllipse img {
 	width: 15px;
 }
+
+
+
+
+
+
+
+
+
+
 
 .smallEllipse{
 	position: absolute;
