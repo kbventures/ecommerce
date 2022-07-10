@@ -1,2 +1,2 @@
 # ecommerce
-Team Project
+Ecommerce team Project
