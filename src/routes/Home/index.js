@@ -5,13 +5,20 @@ import { Link } from "react-router-dom";
 import Container from "../../components/Container";
 import SliderCard from "../../components/SliderCard";
 
+import HomeIcon from '../../../public/assets/Home.svg';
+import HeartIcon from '../../../public/assets/Heart.svg';
+import ProfileIcon from '../../../public/assets/Profile.svg';
+import BuyIcon from '../../../public/assets/Buy.svg';
+import ArrowIcon from '../../../public/assets/arrow-icon.svg';
+import MenuIcon from '../../../public/assets/menu-icon.svg';
+
 export default function Home() {
   return (
     <Container white={true}>
       <header className={styles.header}>
         <nav className={styles.nav_header}>
           <Link to="/menu">
-            <img src="assets/menu-icon.svg" />
+            <MenuIcon />
           </Link>
           <div className={styles.search}>
             <input
@@ -69,7 +76,7 @@ export default function Home() {
             />
           </div>
           <button className={styles.next_slide_button}>
-            See more <img src="/assets/arrow-icon.svg" />
+            See more <ArrowIcon />
           </button>
         </div>
       </main>
@@ -78,40 +85,22 @@ export default function Home() {
           <ul className={styles.nav_list}>
             <li>
               <Link to="/home">
-                <img
-                  src="/assets/home-menu-icon.svg"
-                  alt="Home"
-                  className={`
-                  ${styles.footer_nav_item} ${styles.footer_nav_item_active}
-                `}
-                />
+                <HomeIcon className={styles.footer_nav_item_active} aria-label="home" />
               </Link>
             </li>
             <li>
               <Link to="/favorite">
-                <img
-                  src="/assets/heart-menu-icon.svg"
-                  alt="Favorite"
-                  className={styles.footer_nav_item}
-                />
+                <HeartIcon className={styles.footer_nav_item} aria-label="favorite" />
               </Link>
             </li>
             <li>
               <Link to="/profile">
-                <img
-                  src="/assets/profile-menu-icon.svg"
-                  alt="Profile"
-                  className={styles.footer_nav_item}
-                />
+                <ProfileIcon className={styles.footer_nav_item} aria-label="profile" />
               </Link>
             </li>
             <li>
               <Link to="/orders">
-                <img
-                  src="/assets/buy-menu-icon.svg"
-                  alt="My orders"
-                  className={styles.footer_nav_item}
-                />
+                <BuyIcon className={styles.footer_nav_item} aria-label="orders" />
               </Link>
             </li>
           </ul>

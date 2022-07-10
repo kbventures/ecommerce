@@ -111,8 +111,13 @@
 
 .footer_nav_item {
   cursor: pointer;
+  fill: transparent;
+  stroke: #200E32;
 }
 
 .footer_nav_item_active {
-  filter: drop-shadow(0px 4px 22px rgba(89, 86, 233, 0.54));
+  composes: footer_nav_item;
+  filter: drop-shadow(0px 0px 15px rgba(89, 86, 233, 1));
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
 }
