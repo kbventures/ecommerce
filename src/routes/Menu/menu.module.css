@@ -1,3 +1,9 @@
+.test{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 .menu {
 	font-size: 12px;
 	font-family: 'Raleway';
@@ -20,6 +26,16 @@ a:active {
 }
 
 
+.navigation_li {
+	composes: navigationContainer_a;
+	width: 110px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+
+}
+
+
 
 .navigation{
 	position: relative; 
@@ -30,13 +46,15 @@ a:active {
 	flex-direction: column;
 }
 
-.navigation_li {
-	width: 110px;
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
 
-}
+
+
+
+
+
+
+
+
 
 .navigation_li:not(:first-child) {
 	margin-top: 10px;
@@ -63,24 +81,24 @@ a:active {
 	content: url("../../../public/assets/profile-menu-icon.svg");
 }
 
-.navigation .buyIcon:before {
+.navigation_buyIcon:before {
 	content: url("../../../public//assets/Buy.svg");
 }
 
-.navigation .heartIcon:before {
+.navigation_heartIcon:before {
 	content: url("../../../public/assets/Heart.svg");
 }
 
-.navigation .settingIcon:before {
+.navigation_settingIcon:before {
 	content: url("../../../public/assets/Setting.svg");
 
 }
 
-.navigation .deliveryIcon:before {
+.navigation_deliveryIcon:before {
 	content: url("../../../public/assets/Bag.svg");
 }
 
-.navigation .signoutIcon:before {
+.navigation_signoutIcon:before {
 	content: url("../../../public/assets/Logout.svg");
 
 }
@@ -156,8 +174,8 @@ a:active {
 
 .menuSmallEllipse{
 	position: absolute;
-	bottom:70px;
-	left: 80px;
+	bottom:200px;
+	left: 200px;
 }
 
 .menuSmallEllipse img {
