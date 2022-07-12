@@ -47,7 +47,10 @@
   --43p33px: 2.7rem;
   --46p66px: 2.91625rem;
   --56px: 3.5rem;
+  --64px: 4rem; 
   --69px: 4.31rem;
+
+  --heading: 3rem;
 }
 
 html, body {

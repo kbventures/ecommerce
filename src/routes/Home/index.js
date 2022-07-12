@@ -85,22 +85,22 @@ export default function Home() {
           <ul className={styles.nav_list}>
             <li>
               <Link to="/home">
-                <HomeIcon className={styles.footer_nav_item_active} aria-label="home" />
+                <HomeIcon className={styles.footer_nav_item_active} title="home" />
               </Link>
             </li>
             <li>
               <Link to="/favorite">
-                <HeartIcon className={styles.footer_nav_item} aria-label="favorite" />
+                <HeartIcon className={styles.footer_nav_item} title="favorite" />
               </Link>
             </li>
             <li>
               <Link to="/profile">
-                <ProfileIcon className={styles.footer_nav_item} aria-label="profile" />
+                <ProfileIcon className={styles.footer_nav_item} title="profile" />
               </Link>
             </li>
             <li>
               <Link to="/orders">
-                <BuyIcon className={styles.footer_nav_item} aria-label="orders" />
+                <BuyIcon className={styles.footer_nav_item} title="orders" />
               </Link>
             </li>
           </ul>

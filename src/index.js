@@ -13,6 +13,7 @@ import Payment from "./routes/Payment"
 
 // Global style sheet
 import "./index.css"
+import "./mediaquery.css"
 import "./reset.css"
 
 ReactDOM.render(
