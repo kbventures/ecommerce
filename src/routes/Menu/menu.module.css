@@ -78,7 +78,7 @@ a:active {
 
 /* Not working ??? */
 .navigation_profileIcon:before {
-	content: url("../../../public/assets/profile-menu-icon.svg");
+	content: url("../../../public/assets/Profile.svg");
 }
 
 .navigation_buyIcon:before {
