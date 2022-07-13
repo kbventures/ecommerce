@@ -1,10 +1,8 @@
-
-
 .menu {
 	font-size: 12px;
 	font-family: 'Raleway';
 	font-weight: 600;
-	color:var(--white);
+	color: var(--white);
 }
 
 
@@ -33,12 +31,12 @@ a:active {
 
 
 
-.navigation{
-	position: relative; 
+.navigation {
+	position: relative;
 }
 
-.navigation_ul{
-	display: flex; 
+.navigation_ul {
+	display: flex;
 	flex-direction: column;
 }
 
@@ -61,11 +59,11 @@ a:active {
 	border-bottom: 1px solid var(--border);
 	width: 132px;
 	color: var(--white);
-	margin-left: 15px; 
+	margin-left: 15px;
 }
 
 
-.navigation_span:hover{
+.navigation_span:hover {
 	color: var(--elipse)
 }
 
@@ -102,91 +100,28 @@ a:active {
 }
 
 
-
-.menuMediumEllipse{
-	z-index: 0;
+.emptySmallEllipse {
 	position: absolute;
-	bottom:40px;
-	left: 0;
-}
-
-
-
-
-
-
-
-
-.menuLargeEllipse{
-	position: absolute;
-	top:0;
-	right: 40px;
-}
-
-.menuLargeEllipse img {
-	width: 80px; 
-}
-
-
-.menuMediumEllipse{
-	z-index: 0;
-	position: absolute;
-	bottom:40px;
-	left: 0;
-}
-
-.menuMediumEllipse img {
-	width: 50px; 
-}
-
-
-
-
-.fullSmallEllipse{
-	position: absolute;
-	bottom:30px;
-	left: -10px;
-	transform:scale(0.60)
-	
-}
-
-.emptySmallEllipse{
-	position: absolute;
-	bottom:65px;
+	bottom: 65px;
 	left: 90px;
-	transform:scale(0.75)
-	
+	transform: scale(0.75)
 }
 
 
-
-
-
-
-
-
-
-.smallEllipse{
+.fullSmallEllipse {
 	position: absolute;
-	top:50px;
-	right: 20px;
+	bottom: 30px;
+	left: -10px;
+	transform: scale(0.60)
 }
 
 
-
-
-.marginLeft15px{
-	margin-left:15px; 
+.marginLeft15px {
+	margin-left: 15px;
 }
-
-
-
-
-
-
 
 .menuLargeImage {
-	position:absolute;
+	position: absolute;
 	top: 80px;
 	right: 0;
 }
@@ -196,7 +131,7 @@ a:active {
 	width: 120px;
 }
 
-.menuLargeImage .rectangle74image{
+.menuLargeImage .rectangle74image {
 	height: 300px;
 	width: 140px;
 	position: absolute;
@@ -205,19 +140,17 @@ a:active {
 }
 
 
-.emptySmallEllipsePosition{
+.emptySmallEllipsePosition {
 	position: absolute;
-	top:-40px;
+	top: -40px;
 	left: 75px;
 	transform: scale(0.65);
 }
 
 
-.semiCircle{
+.semiCircle {
 	position: absolute;
 	top: -10px;
-	right: 35px; 
+	right: 35px;
 	transform: scale(0.7);
 }
-
-
