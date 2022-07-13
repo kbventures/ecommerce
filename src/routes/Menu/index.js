@@ -2,8 +2,6 @@ import React from "react"
 import styles from "./menu.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
-import Testing from "../../../public/assets/Setting.svg"
-import MenuMediumEllipseSvg from "../../../public/assets/Ellipse 20.svg"
 import FullSmallEllipseSvg from "../../../public/assets/Ellipse 20.svg"
 import EmptySmallEllipseSvg from "../../../public/assets/Ellipse 22.svg"
 import SemiCircle from "../../../public/assets/Ellipse 19.svg"
@@ -57,11 +55,6 @@ function Menu() {
                 </section>
                 <section className="menuLargeEllipse">
                     <SemiCircle title="" class={semiCircle} />
-                    {/* <img src="./img/Ellipse 19.svg" alt="" /> */}
-                </section>
-
-                <section className="smallEllipse">
-                    {/* <img src="./img/Ellipse 22.svg" alt="" /> */}
                 </section>
             </section>
         </Container>
