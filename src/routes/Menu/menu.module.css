@@ -1,8 +1,4 @@
-.test{
-	position: absolute;
-	top: 0;
-	right: 0;
-}
+
 
 .menu {
 	font-size: 12px;
@@ -73,10 +69,6 @@ a:active {
 	color: var(--elipse)
 }
 
-
-
-
-/* Not working ??? */
 .navigation_profileIcon:before {
 	content: url("../../../public/assets/Profile.svg");
 }
@@ -107,7 +99,6 @@ a:active {
 	padding-top: 76px;
 	display: flex;
 	align-items: center;
-	margin-left: 15px;
 }
 
 
@@ -124,27 +115,6 @@ a:active {
 
 
 
-
-
-
-.menuLargeImage {
-	position:absolute;
-	top: 80px;
-	right: 0;
-}
-
-.menuLargeImage img {
-	height: 315px;
-	width: 120px;
-}
-
-.menuLargeImage .rectangle74{
-	height: 300px;
-	width: 140px;
-	position: absolute;
-	right: -5px;
-	top: 30px;
-}
 
 
 .menuLargeEllipse{
@@ -172,17 +142,21 @@ a:active {
 
 
 
-.menuSmallEllipse{
+.fullSmallEllipse{
 	position: absolute;
-	bottom:200px;
-	left: 200px;
+	bottom:30px;
+	left: -10px;
+	transform:scale(0.60)
+	
 }
 
-.menuSmallEllipse img {
-	width: 15px;
+.emptySmallEllipse{
+	position: absolute;
+	bottom:65px;
+	left: 90px;
+	transform:scale(0.75)
+	
 }
-
-
 
 
 
@@ -198,6 +172,44 @@ a:active {
 	right: 20px;
 }
 
-.smallEllipse img {
-	width: 15px;
+
+
+
+.marginLeft15px{
+	margin-left:15px; 
 }
+
+
+
+
+
+
+
+.menuLargeImage {
+	position:absolute;
+	top: 80px;
+	right: 0;
+}
+
+.menuLargeImage img {
+	height: 315px;
+	width: 120px;
+}
+
+.menuLargeImage .rectangle74image{
+	height: 300px;
+	width: 140px;
+	position: absolute;
+	right: -5px;
+	top: 30px;
+}
+
+
+.emptySmallEllipsePosition{
+	position: absolute;
+	top:-40px;
+	left: 75px;
+	transform: scale(0.65);
+}
+
+
