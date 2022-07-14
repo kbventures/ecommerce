@@ -67,6 +67,10 @@ a:active {
 	color: var(--elipse)
 }
 
+.signOutHover:hover{
+	color: var(--elipse)
+}
+
 .navigation_profileIcon:before {
 	content: url("../../../public/assets/Profile.svg");
 }
@@ -154,3 +158,46 @@ a:active {
 	right: 35px;
 	transform: scale(0.7);
 }
+
+
+
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+    .navigationContainer {
+		padding-top: 130px;
+
+	}
+
+	.menuLargeImage img {
+		height: 350px;
+		width: 155px;
+	}
+	/* .menuLargeImage{
+		padding-top: 80px;
+	} */
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+   
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+   
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+   
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}

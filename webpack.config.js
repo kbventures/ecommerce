@@ -65,4 +65,5 @@ module.exports = {
                 './public/index.html',
         }),
     ],
+    devtool: 'source-map'
 };
