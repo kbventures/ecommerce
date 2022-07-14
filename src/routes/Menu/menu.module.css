@@ -144,6 +144,9 @@ a:active {
 }
 
 
+
+
+
 .emptySmallEllipsePosition {
 	position: absolute;
 	top: -40px;
@@ -164,8 +167,13 @@ a:active {
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
+
+
+	.menu{
+		font-size: 13px; 
+	}
     .navigationContainer {
-		padding-top: 130px;
+		padding-top: 150px;
 
 	}
 
@@ -173,9 +181,24 @@ a:active {
 		height: 350px;
 		width: 155px;
 	}
-	/* .menuLargeImage{
-		padding-top: 80px;
-	} */
+	.menuLargeImage{
+		top: 150px;
+	}
+
+
+	.menuLargeImage .rectangle74image {
+		height: 340px;
+		width: 170px;
+		right: 0;
+		top: 30px;
+	}
+
+	.navigation_li {
+	
+		margin-bottom: 18px;
+
+	
+	}
 }
 
 /* 480px */
