@@ -15,6 +15,7 @@ import MenuIcon from '../../../public/assets/menu-icon.svg';
 export default function Home() {
   return (
     <Container white={true}>
+      <div className={styles.wrapper}>
       <header className={styles.header}>
         <nav className={styles.nav_header}>
           <Link to="/menu">
@@ -31,10 +32,10 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <main>
+      <main className={styles.page_main}>
         <h2 className={styles.title}>Order online collect in store</h2>
         <ul className={styles.tabs}>
-          <li className={`${styles.list_item} ${styles.list_item_active}`}>
+          <li className={styles.list_item_active}>
             Wearable
           </li>
           <li className={styles.list_item}>Laptops</li>
@@ -43,9 +44,12 @@ export default function Home() {
         </ul>
 
         <div className={styles.slider}>
+          <button className={styles.next_slide_button}>
+            See more <ArrowIcon />
+          </button>
           <div className={styles.slider_cards_list}>
             <SliderCard
-              title={"Apple Watch"}
+              title={"Super Long Watch Name"}
               desc={"Series 6. Red"}
               price={"$ 359"}
               src={"assets/apple-watch-red.png"}
@@ -75,9 +79,6 @@ export default function Home() {
               src={"assets/samsung-galaxy-watch.png"}
             />
           </div>
-          <button className={styles.next_slide_button}>
-            See more <ArrowIcon />
-          </button>
         </div>
       </main>
       <footer className={styles.page_footer}>
@@ -106,6 +107,7 @@ export default function Home() {
           </ul>
         </nav>
       </footer>
+      </div>
     </Container>
   );
 }
