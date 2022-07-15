@@ -1,5 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .header {
-  padding: 25px 0 50px 0;
+  padding: 25px 0 10px 0;
 }
 .nav_header {
   display: flex;
@@ -38,17 +43,22 @@
   height: 24px;
 }
 
+.page_main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
 .title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: var(--36px);
-  line-height: var(--36px);
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   color: #000000;
   text-align: center;
 }
 
 .tabs {
-  margin: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,23 +77,28 @@
 }
 
 .list_item_active {
+  composes: list_item;
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
 }
 
 .slider {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .slider_cards_list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 30px;
-  margin: 120px 0 20px 0;
+  margin: 0 0 5px 0;
+  flex: 1 0 auto;
 }
 
 .next_slide_button {
-  margin: 0 0 0 auto;
+  margin: 0 0 5px auto;
   background-color: transparent;
   border: none;
   outline: none;
@@ -91,15 +106,15 @@
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: var(--15px);
-  line-height: var(--18px);
+  font-size: 1rem;
+  line-height: 1rem;
   color: var(--primary-color);
   display: flex;
   gap: 10px;
 }
 
 .page_footer {
-  margin: 30px 0 0 0;
+  margin: 5px 0 5px 0;
 }
 
 .nav_list {
@@ -121,3 +136,57 @@
   fill: var(--primary-color);
   stroke: var(--primary-color);
 }
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .list_item {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+  .title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .list_item {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .footer_nav_item {
+    transform: scale(1.5);
+  }
+
+  .page_footer {
+    margin: 15px 0 15px 0;
+  }
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}
