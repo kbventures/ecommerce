@@ -270,6 +270,10 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
+  .tabs {
+    gap: 20px
+  }
 }
 
 /* 1280px */
