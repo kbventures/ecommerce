@@ -17,7 +17,7 @@
   position: relative;
   top: -10px;
   width: 40%;
-  height: 30%;
+  min-height: 68px;
   border-radius: 50%;
 }
 
@@ -49,6 +49,7 @@
   font-size: 1rem;
   line-height: 1.2rem;
   text-align: center;
+  margin: 0 0 20px 0;
 
   color: var(--primary-color);
 }
