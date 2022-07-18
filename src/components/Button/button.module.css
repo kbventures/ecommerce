@@ -26,13 +26,29 @@
 }
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+    .button {
+        font-size: 2rem;
+    }
+}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+    .button {
+        font-size: 2.5rem;
+    }
+}
 
 /* 1280px */
-@media only screen and (min-width: 80rem) {}
+@media only screen and (min-width: 80rem) {
+    .button {
+        font-size: 3rem;
+    }
+}
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+    .button {
+        font-size: 3.25rem;
+    }
+}

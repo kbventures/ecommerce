@@ -1,8 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+    height: 100%;
 }
 
   
@@ -47,7 +48,7 @@
     }
 
     .img {
-        width:200px;
+        width:225px;
     }
 
     .img_wrapper{
@@ -62,7 +63,7 @@
     }
 
     .img {
-        width:250px;
+        width:275px;
     }
 }
 
@@ -79,13 +80,18 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
+
     .img {
         width:325px;
     }
 }
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+    .img {
+        width:500px;
+    }
+}
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {}
