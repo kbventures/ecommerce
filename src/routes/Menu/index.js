@@ -9,7 +9,7 @@ import SemiCircle from "../../../public/assets/Ellipse 19.svg"
 const rectangle74 = '../../assets/Rectangle 74.png'
 const rectangle73 = '../../assets/Rectangle 73.png'
 
-const {signOutHover,semiCircle, emptySmallEllipsePosition, menuLargeImage, rectangle74image, menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_li, navigation_profileIcon, navigation_buyIcon, navigation_heartIcon, navigation_settingIcon, navigation_deliveryIcon, navigation_signoutIcon, navigation_span, navigation_logout, emptySmallEllipse, fullSmallEllipse, marginLeft15px } = styles
+const {signOutHover,semiCircle, emptySmallEllipsePosition, menuLargeImage, rectangle74image, menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_a, navigation_profileIcon, navigation_buyIcon, navigation_heartIcon, navigation_settingIcon, navigation_deliveryIcon, navigation_signoutIcon, navigation_span, navigation_logout, emptySmallEllipse, fullSmallEllipse, marginLeft15px } = styles
 
 function Menu() {
     return (
@@ -19,19 +19,19 @@ function Menu() {
                     <section className={navigation}>
                         <section>
                             <ul className={navigation_ul}>
-                                <Link className={navigation_li} to="/profile">
+                                <Link className={navigation_a} to="/profile">
                                     <li className={`${navigation_profileIcon}`}><span className={navigation_span}>Profile</span></li>
                                 </Link>
-                                <Link className={navigation_li} to="/orders">
+                                <Link className={navigation_a} to="/orders">
                                     <li className={`${navigation_buyIcon}`}><span className={navigation_span}>Orders</span></li>
                                 </Link>
-                                <Link className={navigation_li} to="/favorite">
+                                <Link className={navigation_a} to="/favorite">
                                     <li className={`${navigation_heartIcon}`}><span className={navigation_span}>Favorite</span></li>
                                 </Link>
-                                <Link className={navigation_li} to="/delivery">
+                                <Link className={navigation_a} to="/delivery">
                                     <li className={`${navigation_deliveryIcon}`}><span className={navigation_span}>Delivery</span></li>
                                 </Link>
-                                <Link className={navigation_li} to="/settings">
+                                <Link className={navigation_a} to="/settings">
                                     <li className={`${navigation_settingIcon}`}><span className={navigation_span}>Settings</span></li>
                                 </Link>
                             </ul>
@@ -51,10 +51,10 @@ function Menu() {
                 <section className={menuLargeImage}>
                     <img className={rectangle74image} src={rectangle74} alt="" />
                     <img src={rectangle73} alt="" />
-                    <EmptySmallEllipseSvg title="testin" class={emptySmallEllipsePosition} />
+                    <EmptySmallEllipseSvg title="testin" className={emptySmallEllipsePosition} />
                 </section>
                 <section className="menuLargeEllipse">
-                    <SemiCircle title="" class={semiCircle} />
+                    <SemiCircle title="" className={semiCircle} />
                 </section>
             </section>
         </Container>

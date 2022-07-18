@@ -20,16 +20,6 @@ a:active {
 }
 
 
-.navigation_li {
-	composes: navigationContainer_a;
-	width: 110px;
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
-
-}
-
-
 
 .navigation {
 	position: relative;
@@ -41,16 +31,24 @@ a:active {
 }
 
 
+.navigation_a {
+	composes: navigationContainer_a;
+	width: 110px;
+	margin-bottom: 10px;
+}
 
 
 
+.navigation_a li{
+	display: flex; 
+}
+
+.navigation_a li span {
+	align-self: center;
+}
 
 
-
-
-
-
-.navigation_li:not(:first-child) {
+.navigation_a:not(:first-child) {
 	margin-top: 10px;
 }
 
@@ -192,7 +190,7 @@ a:active {
 
 	}
 
-	.navigation_li {
+	.navigation_a {
 	
 		margin-bottom: 18px;
 
@@ -225,8 +223,44 @@ a:active {
 		width: 240px;
 	}
 
-	.navigation_li {
+	.navigation_a {
 		margin-bottom: 38px;
+	}
+
+
+	.navigation_profileIcon:before {
+		content: url("../../../public/assets/480px/Profile.svg");
+	}
+	
+	.navigation_buyIcon:before {
+		content: url("../../../public//assets/480px/Buy.svg");
+	}
+	
+	.navigation_heartIcon:before {
+		content: url("../../../public/assets/480px/Heart.svg");
+	}
+	
+	.navigation_settingIcon:before {
+		content: url("../../../public/assets/480px/Setting.svg");
+	
+	}
+	
+	.navigation_deliveryIcon:before {
+		content: url("../../../public/assets/480px/Bag.svg");
+	}
+	
+	.navigation_signoutIcon:before {
+		content: url("../../../public/assets/480px/Logout.svg");
+	
+	}
+/* 
+	.navigation{
+		display: flex; 
+		flex-direction: column;
+		align-items: c;
+	} */
+	.navigation{
+		margin-left: 100px; 
 	}
 }
 
@@ -235,7 +269,7 @@ a:active {
    
 	
 	.menu{
-		font-size: 15px; 
+		font-size: 16px; 
 	}
     .navigationContainer {
 		padding-top: 190px;
@@ -243,8 +277,8 @@ a:active {
 	}
 	/* 0.46 Aspect ratio: w/l */
 	.menuLargeImage img {
-		height: 470px;
-		width: 220px;
+		height: 575px;
+		width: 270px;
 	}
 	.menuLargeImage{
 		top: 190px;
@@ -252,11 +286,11 @@ a:active {
 
 
 	.menuLargeImage .rectangle74image {
-		height: 460px;
-		width: 240px;
+		height: 570px;
+		width: 295px;
 	}
 
-	.navigation_li {
+	.navigation_a {
 		margin-bottom: 38px;
 	}
 
@@ -266,11 +300,14 @@ a:active {
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-   
+
 }
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+
+
+}
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {}
