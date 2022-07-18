@@ -5,11 +5,10 @@ import Container from "../../components/Container"
 import Navigation from "../../components/Navigation"
 import { Link } from "react-router-dom";
 
-const { flex, container, title, img_wrapper } = styles
+const { container, title, img_wrapper } = styles
 
 function Splash(){
     return (
-        <div className={flex}>
         <Container>
             {/* <Navigation /> */}
             <div className={container}>
@@ -22,7 +21,6 @@ function Splash(){
                 </Link>
             </div>
         </Container>
-        </div>
     )
 }
 
