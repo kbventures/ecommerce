@@ -9,7 +9,7 @@ import SemiCircle from "../../../public/assets/Ellipse 19.svg"
 const rectangle74 = '../../assets/Rectangle 74.png'
 const rectangle73 = '../../assets/Rectangle 73.png'
 
-const {signOutHover,semiCircle, emptySmallEllipsePosition, menuLargeImage, rectangle74image, menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_a, navigation_profileIcon, navigation_buyIcon, navigation_heartIcon, navigation_settingIcon, navigation_deliveryIcon, navigation_signoutIcon, navigation_span, navigation_logout, emptySmallEllipse, fullSmallEllipse, marginLeft15px } = styles
+const { signOutHover, semiCircle, emptySmallEllipsePosition, menuLargeImage, rectangle74image, menu, navigationContainer, navigationContainer_a, navigation, navigation_ul, navigation_a, navigation_profileIcon, navigation_buyIcon, navigation_heartIcon, navigation_settingIcon, navigation_deliveryIcon, navigation_signoutIcon, navigation_span, navigation_logout, emptySmallEllipse, fullSmallEllipse, marginLeft15px } = styles
 
 function Menu() {
     return (
@@ -35,6 +35,12 @@ function Menu() {
                                     <li className={`${navigation_settingIcon}`}><span className={navigation_span}>Settings</span></li>
                                 </Link>
                             </ul>
+                            <section className={menuLargeImage}>
+                                <img className={rectangle74image} src={rectangle74} alt="" />
+                                <img src={rectangle73} alt="" />
+                                <EmptySmallEllipseSvg title="testin" className={emptySmallEllipsePosition} />
+                            </section>
+
                         </section>
                         <section className={`${navigation_logout} ${navigation_signoutIcon}`}>
                             <Link className={`${navigationContainer_a} ${marginLeft15px} ${signOutHover}`} to="signout">
@@ -48,11 +54,6 @@ function Menu() {
                 </section>
 
 
-                <section className={menuLargeImage}>
-                    <img className={rectangle74image} src={rectangle74} alt="" />
-                    <img src={rectangle73} alt="" />
-                    <EmptySmallEllipseSvg title="testin" className={emptySmallEllipsePosition} />
-                </section>
                 <section className="menuLargeEllipse">
                     <SemiCircle title="" className={semiCircle} />
                 </section>

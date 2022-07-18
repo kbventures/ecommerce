@@ -3,11 +3,15 @@
 	font-family: 'Raleway';
 	font-weight: 600;
 	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 }
 
 
 .navigationContainer {
-	padding-top: 85px;
+	position: relative;
 }
 
 
@@ -39,8 +43,8 @@ a:active {
 
 
 
-.navigation_a li{
-	display: flex; 
+.navigation_a li {
+	display: flex;
 }
 
 .navigation_a li span {
@@ -65,7 +69,7 @@ a:active {
 	color: var(--elipse)
 }
 
-.signOutHover:hover{
+.signOutHover:hover {
 	color: var(--elipse)
 }
 
@@ -124,8 +128,8 @@ a:active {
 
 .menuLargeImage {
 	position: absolute;
-	top: 80px;
-	right: 0;
+	top: 0;
+	right: -25px;
 }
 
 .menuLargeImage img {
@@ -165,57 +169,39 @@ a:active {
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-
-
-	.menu{
-		font-size: 13px; 
+	.menu {
+		font-size: 13px;
 	}
-    .navigationContainer {
-		padding-top: 170px;
 
-	}
 
 	.menuLargeImage img {
 		height: 380px;
 		width: 185px;
 	}
-	.menuLargeImage{
-		top: 170px;
-	}
-
 
 	.menuLargeImage .rectangle74image {
 		height: 370px;
 		width: 200px;
-
 	}
-
 	.navigation_a {
-	
-		margin-bottom: 18px;
-
-	
+		margin-bottom: 28px;
 	}
 }
+
+/* 0.46 Aspect ratio: w/l */
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
    
 	.menu{
-		font-size: 14px; 
+		font-size: 18px; 
 	}
-    .navigationContainer {
-		padding-top: 190px;
 
-	}
-	/* 0.46 Aspect ratio: w/l */
 	.menuLargeImage img {
 		height: 470px;
 		width: 220px;
 	}
-	.menuLargeImage{
-		top: 190px;
-	}
+
 
 
 	.menuLargeImage .rectangle74image {
@@ -224,7 +210,7 @@ a:active {
 	}
 
 	.navigation_a {
-		margin-bottom: 38px;
+		margin-bottom: 48px;
 	}
 
 
@@ -253,61 +239,40 @@ a:active {
 		content: url("../../../public/assets/480px/Logout.svg");
 	
 	}
-/* 
+
 	.navigation{
-		display: flex; 
-		flex-direction: column;
-		align-items: c;
-	} */
-	.navigation{
-		margin-left: 100px; 
+		margin-left: 35px; 
 	}
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
    
+		.menu{
+			font-size: 22px; 
+		}
 	
-	.menu{
-		font-size: 16px; 
-	}
-    .navigationContainer {
-		padding-top: 190px;
+		.menuLargeImage img {
+			height: 600px;
+			width: 280px;
+		}
 
-	}
-	/* 0.46 Aspect ratio: w/l */
-	.menuLargeImage img {
-		height: 575px;
-		width: 270px;
-	}
-	.menuLargeImage{
-		top: 190px;
-	}
-
-
-	.menuLargeImage .rectangle74image {
-		height: 570px;
-		width: 295px;
-	}
-
-	.navigation_a {
-		margin-bottom: 38px;
-	}
-
-
-
+		.menuLargeImage .rectangle74image {
+			height: 600px;
+			width: 310px;
+		}
+	
+	
+		.navigation{
+			margin-left: 35px; 
+		}
 }
 
 /* 736px */
-@media only screen and (min-width: 46em) {
-
-}
+@media only screen and (min-width: 46em) {}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {
-
-
-}
+@media only screen and (min-width: 61.25rem) {}
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {}
