@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -111,7 +112,7 @@
   color: var(--primary-color);
   display: flex;
   gap: 10px;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 .page_footer {
@@ -123,13 +124,13 @@
   justify-content: center;
   align-items: center;
   gap: 60px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 .footer_nav_item {
   cursor: pointer;
   fill: transparent;
-  stroke: #200E32;
+  stroke: #200e32;
 }
 
 .footer_nav_item_active {
@@ -141,7 +142,6 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  
   .title {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -149,10 +149,9 @@
     line-height: 2.25rem;
     color: #000000;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
-  
+
   .tabs {
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@
     flex-wrap: wrap;
     margin-bottom: 1rem;
   }
-  
+
   .list_item {
     font-family: Raleway, sans-serif;
     font-size: var(--13px);
@@ -171,19 +170,19 @@
     text-align: center;
     cursor: pointer;
   }
-  
+
   .list_item_active {
     composes: list_item;
     color: var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
   }
-  
+
   .slider {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
   }
-  
+
   .slider_cards_list {
     display: flex;
     justify-content: flex-start;
@@ -192,57 +191,45 @@
     margin: 0 0 5px 0;
     flex: 1 0 auto;
   }
-  
-  .next_slide_button {
 
+  .next_slide_button {
     font-size: 1rem;
     line-height: 1rem;
 
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
   }
-
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
   .title {
- 
     font-size: 3rem;
     line-height: 3rem;
 
-    margin-top: 55px;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
   }
-  
-  .tabs {
 
+  .tabs {
     margin-bottom: 2rem;
   }
-  
-  .list_item {
 
+  .list_item {
     font-size: var(--16px);
     line-height: var(--20px);
-
   }
-  
 
-  
-
-  
   .next_slide_button {
-
     font-size: 1.1rem;
-
   }
 
   .nav_list {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 }
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+}
 
 /* 736px */
 @media only screen and (min-width: 46em) {
@@ -251,12 +238,11 @@
     line-height: 3.5rem;
   }
   .footer_nav_item {
-    transform: scale(1.5)
+    transform: scale(1.5);
   }
   .nav_list {
     margin-top: 20px;
   }
-
 }
 
 /* 980px */
@@ -272,7 +258,7 @@
   }
 
   .tabs {
-    gap: 20px
+    gap: 20px;
   }
 }
 
@@ -293,4 +279,5 @@
 }
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+}
