@@ -28,3 +28,6 @@
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {}
+
+
+/* removing hover state on mobile(media query react)  */
