@@ -7,6 +7,7 @@ import Splash from "./routes/Splash";
 import Home from "./routes/Home"
 import Menu from "./routes/Menu"
 import Login from "./routes/Login"
+import Item from "./routes/Item"
 import Basket from "./routes/Basket"
 import Checkout from "./routes/Checkout"
 import Payment from "./routes/Payment"
@@ -23,6 +24,7 @@ ReactDOM.render(
             <Route path="/home" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/item" element={<Item />} />
             <Route path="/basket" element={<Basket />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/payment" element={<Payment />} />
