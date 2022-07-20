@@ -82,39 +82,6 @@
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
 }
-
-.slider {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-}
-
-.slider_cards_list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  gap: 30px;
-  margin: 0 0 5px 0;
-  flex: 1 0 auto;
-}
-
-.next_slide_button {
-  margin: 0 0 5px auto;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1rem;
-  color: var(--primary-color);
-  display: flex;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-
 .page_footer {
   margin: 5px 0 5px 0;
 }
