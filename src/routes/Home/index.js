@@ -9,10 +9,37 @@ import HomeIcon from "../../../public/assets/Home.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";
 import ProfileIcon from "../../../public/assets/Profile.svg";
 import BuyIcon from "../../../public/assets/Buy.svg";
-import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
+import Slider from "../../components/Slider";
 
 export default function Home() {
+  let cards = [ {
+    title: "Super Long Watch Name",
+    desc: "Series 6. Red",
+    price: "$ 359",
+    src: "assets/apple-watch-red.png"
+  }, {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: "$ 159",
+    src: "assets/samsung-galaxy-watch.png"
+  }, {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: "$ 159",
+    src: "assets/samsung-galaxy-watch.png"
+  }, {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: "$ 159",
+    src: "assets/samsung-galaxy-watch.png"
+  }, {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: "$ 159",
+    src: "assets/samsung-galaxy-watch.png"
+  }, ]
+
   return (
     <Container white={true}>
       <div className={styles.wrapper}>
@@ -41,44 +68,7 @@ export default function Home() {
               <li className={styles.list_item}>Phones</li>
               <li className={styles.list_item}>Drones</li>
             </ul>
-
-            <div className={styles.slider}>
-              <button className={styles.next_slide_button}>
-                See more <ArrowIcon />
-              </button>
-              <div className={styles.slider_cards_list}>
-                <SliderCard
-                  title={"Super Long Watch Name"}
-                  desc={"Series 6. Red"}
-                  price={"$ 359"}
-                  src={"assets/apple-watch-red.png"}
-                />
-                <SliderCard
-                  title={"SAMSUNG Galaxy Watch"}
-                  desc={"Active. Green"}
-                  price={"$ 159"}
-                  src={"assets/samsung-galaxy-watch.png"}
-                />
-                <SliderCard
-                  title={"SAMSUNG Galaxy Watch"}
-                  desc={"Active. Green"}
-                  price={"$ 159"}
-                  src={"assets/samsung-galaxy-watch.png"}
-                />
-                <SliderCard
-                  title={"SAMSUNG Galaxy Watch"}
-                  desc={"Active. Green"}
-                  price={"$ 159"}
-                  src={"assets/samsung-galaxy-watch.png"}
-                />
-                <SliderCard
-                  title={"SAMSUNG Galaxy Watch"}
-                  desc={"Active. Green"}
-                  price={"$ 159"}
-                  src={"assets/samsung-galaxy-watch.png"}
-                />
-              </div>
-            </div>
+            <Slider cards={cards} />
           </div>
         </main>
         <footer className={styles.page_footer}>
