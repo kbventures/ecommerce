@@ -6,6 +6,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-self: flex-end;
+	width: 100%;
 	height: 100%;
 }
 
@@ -183,6 +185,7 @@ a:active {
 		height: 370px;
 		width: 200px;
 	}
+
 	.navigation_a {
 		margin-bottom: 28px;
 	}
@@ -192,9 +195,9 @@ a:active {
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-   
-	.menu{
-		font-size: 18px; 
+
+	.menu {
+		font-size: 18px;
 	}
 
 	.menuLargeImage img {
@@ -217,65 +220,149 @@ a:active {
 	.navigation_profileIcon:before {
 		content: url("../../../public/assets/480px/Profile.svg");
 	}
-	
+
 	.navigation_buyIcon:before {
 		content: url("../../../public//assets/480px/Buy.svg");
 	}
-	
+
 	.navigation_heartIcon:before {
 		content: url("../../../public/assets/480px/Heart.svg");
 	}
-	
+
 	.navigation_settingIcon:before {
 		content: url("../../../public/assets/480px/Setting.svg");
-	
+
 	}
-	
+
 	.navigation_deliveryIcon:before {
 		content: url("../../../public/assets/480px/Bag.svg");
 	}
-	
+
 	.navigation_signoutIcon:before {
 		content: url("../../../public/assets/480px/Logout.svg");
-	
+
 	}
 
-	.navigation{
-		margin-left: 35px; 
+	.navigation {
+		margin-left: 35px;
 	}
 }
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {
-   
-		.menu{
-			font-size: 22px; 
-		}
-	
-		.menuLargeImage img {
-			height: 600px;
-			width: 280px;
-		}
-
-		.menuLargeImage .rectangle74image {
-			height: 600px;
-			width: 310px;
-		}
-	
-	
-		.navigation{
-			margin-left: 35px; 
-		}
-}
+@media only screen and (min-width: 37.5rem) {}
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+	.menu {
+		font-size: 19px;
+	}
+
+	.menuLargeImage img {
+		height: 600px;
+		width: 280px;
+	}
+
+	.menuLargeImage .rectangle74image {
+		height: 600px;
+		width: 310px;
+	}
+
+	.menuLargeImage {
+		right: -55px;
+	}
+
+
+	.emptySmallEllipsePosition {
+		top: -70px;
+		transform: scale(3);
+	}
+
+
+	.semiCircle {
+		top: -10px;
+		right: 100px;
+		transform: scale(2);
+	}
+
+
+	.emptySmallEllipse {
+		left: 180px;
+		transform: scale(2.5)
+	}
+
+
+	.fullSmallEllipse {
+		bottom: 70px;
+		left: -10px;
+		transform: scale(1.5)
+	}
+
+	.navigation_logout {
+		padding-top: 100px;
+
+	}
+}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+	.menu {
+		font-size: 20px;
+	}
+
+	.menu {
+		font-size: 21px;
+	}
+
+	.semiCircle {
+		right: 400px;
+	}
+
+
+	.emptySmallEllipse {
+		left: 480px;
+	}
+
+
+	.fullSmallEllipse {
+		bottom: 70px;
+		left: 200px;
+	}
+	.navigation{
+		margin-left: 100px;
+	}
+
+}
 
 /* 1280px */
-@media only screen and (min-width: 80rem) {}
+@media only screen and (min-width: 80rem) {
+	.menu {
+		font-size: 21px;
+	}
+	.menuLargeImage {
+		right: -75px;
+	}
+}
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+
+
+	.semiCircle {
+		right: 800px;
+		
+	}
+
+
+	.emptySmallEllipse {
+		left: 880px;
+	}
+
+
+	.fullSmallEllipse {
+		bottom: 70px;
+		left: 400px;
+	}
+	.menuLargeImage {
+		right: -105px;
+	}
+}
