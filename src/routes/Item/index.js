@@ -3,10 +3,14 @@ import styles from "./Item.module.css"
 import Button from "../../components/Button"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const { container, title, img_wrapper } = styles
 
+
 function Splash(){
+    let location = useLocation();
+    console.log(location.state);
     return (
         <Container>
             <div className={container}>
@@ -15,7 +19,7 @@ function Splash(){
                     <img src="../../assets/Saly-19.png"  alt="guy in vr" className={styles.img} />
                 </div>
                 <Link to="/home">
-                    <Button>Get started</Button>
+                    <Button>Testing!</Button>
                 </Link>
             </div>
         </Container>
