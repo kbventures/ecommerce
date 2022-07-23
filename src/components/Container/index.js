@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./container.module.css"
 
-export default function Container({ children, white }) {
+export default function Container({ children, white, backgroundColor }) {
   return (
-    <div className={white ? styles.container_white : styles.container_primary}>
+    <div
+      style={{backgroundColor: backgroundColor}}
+      className={white ? styles.container_white : styles.container_primary}>
       {children}
     </div>
     )

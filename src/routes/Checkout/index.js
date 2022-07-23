@@ -23,9 +23,9 @@ const {
 
 export default function Checkout() {
     return (
-        <Container>
+        <Container backgroundColor="#F5F5F8">
             <div className={header}>
-                <div className={header_back_button}>Back button</div>
+                <img src="../../assets/arrow-left.png" />
                 <h1 className={header_title}>Checkout</h1>
             </div>
 
@@ -36,15 +36,16 @@ export default function Checkout() {
                 </div>
                 <div className={shipping_info_main}>
                     <div className={shipping_info_item}>
-                        <div>person icon</div>
+                        <img src="../../assets/profile.png" />
                         <p>Rosina Doe</p>
                     </div>
                     <div className={shipping_info_item}>
+                        <img src="../../assets/location.png" />
                         <div>Location</div>
                         <p>123 Main St.</p>
                     </div>
                     <div className={shipping_info_item}>
-                        <div>Phone</div>
+                        <img src="../../assets/call.png" />
                         <p>123 456 789</p>
                     </div>
                 </div>
@@ -75,14 +76,5 @@ export default function Checkout() {
                 <button>Confirm and Pay</button>
             </div>
         </Container>
-        /*
-            
-            div payment_total
-                span Total
-                span 34.231
-            
-            div payment_button
-                button pay now
-        */
     )
 }
