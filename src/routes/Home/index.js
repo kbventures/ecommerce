@@ -12,33 +12,33 @@ import BuyIcon from "../../../public/assets/Buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
 import Slider from "../../components/Slider";
 
+let cards = [ {
+  title: "Super Long Watch Name",
+  desc: "Series 6. Red",
+  price: "$ 359",
+  src: "assets/apple-watch-red.png"
+}, {
+  title: "SAMSUNG Galaxy Watch",
+  desc: "Active. Green",
+  price: "$ 159",
+  src: "assets/samsung-galaxy-watch.png"
+}, {
+  title: "SAMSUNG Galaxy Watch",
+  desc: "Active. Green",
+  price: "$ 159",
+  src: "assets/samsung-galaxy-watch.png"
+}, {
+  title: "SAMSUNG Galaxy Watch",
+  desc: "Active. Green",
+  price: "$ 159",
+  src: "assets/samsung-galaxy-watch.png"
+}, {
+  title: "SAMSUNG Galaxy Watch",
+  desc: "Active. Green",
+  price: "$ 159",
+  src: "assets/samsung-galaxy-watch.png"
+}, ]
 export default function Home() {
-  let cards = [ {
-    title: "Super Long Watch Name",
-    desc: "Series 6. Red",
-    price: "$ 359",
-    src: "assets/apple-watch-red.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, ]
 
   return (
     <Container white={true}>
