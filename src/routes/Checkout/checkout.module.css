@@ -1,17 +1,69 @@
-.header {}
-.header_back_button {}
-.header_title {}
+/* import Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap');
 
-.shipping_info_container{}
-.shipping_info_header{}
-.shipping_info_main{}
-.shipping_info_item{}
+.header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.header_back_button {
+    grid-column: 1/2;
+}
+.header_title {
+    grid-column: 2/3;
+}
+
+.shipping_info_container{
+    min-height: 200px;
+}
+.shipping_info_header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30px;
+}
+
+.shipping_info_main{
+    background: white;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shipping_info_item{
+    min-height: 20px;
+    margin: 10px;
+    display: flex;
+}
+
+.shipping_info_item * {
+    margin-left: 15px;
+}
 
 .payment_info_container{}
-.payment_info_header{}
-.payment_info_main{}
-.payment_info_option{}
 
-.payment_total{}
+.payment_info_header{
+    min-height: 30px;
+}
+.payment_info_main{
+    background: white;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment_info_option{
+    margin: 15px;
+}
+
+.payment_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+}
 
 .payment_button{}
