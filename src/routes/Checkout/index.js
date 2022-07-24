@@ -5,7 +5,6 @@ import Button from "../../components/Button"
 
 const {
     header,
-    header_back_button,
     header_title,
     
     shipping_info_container,
@@ -17,14 +16,16 @@ const {
     payment_info_header,
     payment_info_main,
     payment_info_option,
+    payment_info_card_wrapper,
     
     payment_total,
+    payment_total_amount,
     payment_button
 } = styles
 
 export default function Checkout() {
     return (
-        <Container backgroundColor="#E5E5E5">
+        <Container backgroundColor="rgb(245, 245, 248)">
             <div className={header}>
                 <img src="../../assets/arrow-left.png" />
                 <h1 className={header_title}>Checkout</h1>
@@ -33,20 +34,20 @@ export default function Checkout() {
             <div className={shipping_info_container}>
                 <div className={shipping_info_header}>
                     <h2>Shiping Information</h2>
-                    <span>Change</span>
+                    <span>change</span>
                 </div>
                 <div className={shipping_info_main}>
                     <div className={shipping_info_item}>
-                        <img src="../../assets/profile.png" width="20px" height="auto" />
+                        <img src="../../assets/profile.png" width="18px" height="auto" />
                         <p>Rosina Doe</p>
                     </div>
                     <div className={shipping_info_item}>
                         <img src="../../assets/location.png" width="20px" height="auto" />
-                        <p>123 Main St.</p>
+                        <p>43 Oxford Road M13 4GR Manchester, UK</p>
                     </div>
                     <div className={shipping_info_item}>
                         <img src="../../assets/call.png" width="20px" height="auto" />
-                        <p>123 456 789</p>
+                        <p>+234 9011039271</p>
                     </div>
                 </div>
             </div>
@@ -57,13 +58,17 @@ export default function Checkout() {
                 </h2>
                 <div className={payment_info_main}>
                     <div className={payment_info_option}>
-                        <input type="radio" />
-                        <span>Visa Image</span>
+                        <input type="radio" name="payment-card" />
+                        <div className={payment_info_card_wrapper}>
+                            <img src="../../assets/visa.png" width="40px" height="auto" />
+                        </div>
                         <span>**** **** **** 1234</span>
                     </div>
                     <div className={payment_info_option}>
-                        <input type="radio" />
-                        <span>Visa Image</span>
+                        <input type="radio" name="payment-card" />
+                        <div className={payment_info_card_wrapper}>
+                            <img src="../../assets/master-card.png" width="40px" height="auto" />
+                        </div>
                         <span>**** **** **** 1234</span>
                     </div>
                 </div>
@@ -71,12 +76,10 @@ export default function Checkout() {
 
             <div className={payment_total}>
                 <span>Total</span>
-                <span>$954</span>
+                <span className={payment_total_amount}>$954</span>
             </div>
 
-            <div className={payment_button}>
-                <Button inverted={true}>Confirm and Pay</Button>
-            </div>
+            <Button inverted={true}>Confirm and Pay</Button>
         </Container>
     )
 }

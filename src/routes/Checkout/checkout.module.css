@@ -1,8 +1,5 @@
-/* import Raleway font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap');
-
 .header {
-    height: 100px;
+    height: 120px;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -18,11 +15,19 @@
 
 .shipping_info_container{
     min-height: 200px;
+    font-family: "Raleway", sans-serif;
 }
+
 .shipping_info_header{
     display: flex;
     justify-content: space-between;
     min-height: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.shipping_info_header span {
+    color: var(--primary-color);
 }
 
 .shipping_info_main{
@@ -31,21 +36,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10px;
+    font-size: 0.85rem;
 }
 .shipping_info_item{
     min-height: 20px;
     margin: 10px;
     display: flex;
+    align-items: center;
 }
 
 .shipping_info_item * {
     margin-left: 15px;
 }
 
-.payment_info_container{}
+.payment_info_container{
+    font-family: "Raleway", sans-serif;
+}
 
 .payment_info_header{
     min-height: 30px;
+    font-weight: 500;
+    font-size: 0.85rem;
 }
 .payment_info_main{
     background: white;
@@ -53,17 +65,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 0.85rem;
 }
 
 .payment_info_option{
     margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.payment_info_option > * {
+    margin-left: 10px;
+}
+
+.payment_info_card_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F6FA;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #D6D9E0;
+    border-radius: 10px;
 }
 
 .payment_total{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 40px;
+    min-height: 60px;
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.payment_total_amount {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .payment_button{}
