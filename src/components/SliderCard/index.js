@@ -7,7 +7,7 @@ const SliderCard = ({ title, desc, price, src }) => {
       <img className={styles.slider_card_img} src={src} alt={title} />
       <h3 className={styles.slider_card_title}>{title}</h3>
       <p className={styles.slider_card_desc}>{desc}</p>
-      <span className={styles.slider_card_price}>{price}</span>
+      <span className={styles.slider_card_price}>$ {price}</span>
     </div>
   );
 };
