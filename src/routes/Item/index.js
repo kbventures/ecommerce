@@ -1,9 +1,11 @@
 import React from "react"
 import styles from "./Item.module.css"
 import Button from "../../components/Button"
+import buttonStyles from "../../components/Button/button.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+
 
 const { container, title, img_wrapper } = styles
 
@@ -19,7 +21,7 @@ function Splash(){
                     <img src="../../assets/Saly-19.png"  alt="guy in vr" className={styles.img} />
                 </div>
                 <Link to="/home">
-                    <Button>Testing!</Button>
+                    <Button className={buttonStyles.dark}>Testing!</Button>
                 </Link>
             </div>
         </Container>

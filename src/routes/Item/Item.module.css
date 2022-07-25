@@ -1,0 +1,251 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .header {
+    padding: 25px 0 10px 0;
+  }
+  .nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search {
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .search_input {
+    border-radius: 30px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #c9c9c9;
+    padding: 0 0 0 40px;
+    color: #868686;
+    font-size: var(--16p66);
+    line-height: var(--20px);
+    font-family: Raleway, sans-serif;
+    max-width: 160px;
+    font-weight: 600;
+    outline: none;
+  }
+  
+  .search::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 50%);
+    content: "";
+    background-image: url("../../../public/assets/Search.svg");
+    width: 24px;
+    height: 24px;
+  }
+  
+  .page_main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+  }
+  
+  .title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .list_item {
+    font-family: Raleway, sans-serif;
+    font-size: var(--13px);
+    line-height: var(--20px);
+    color: #9a9a9d;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .list_item_active {
+    composes: list_item;
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+  }
+  .page_footer {
+    margin: 5px 0 5px 0;
+  }
+  
+  .nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 16px;
+  }
+  
+  .footer_nav_item {
+    cursor: pointer;
+    fill: transparent;
+    stroke: #200e32;
+  }
+  
+  .footer_nav_item_active {
+    composes: footer_nav_item;
+    filter: drop-shadow(0px 0px 15px rgba(89, 86, 233, 1));
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+  }
+  
+  /* 360px */
+  @media only screen and (min-width: 22.5rem) {
+    .title {
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.25rem;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+  
+    .list_item {
+      font-family: Raleway, sans-serif;
+      font-size: var(--13px);
+      line-height: var(--20px);
+      color: #9a9a9d;
+      padding: 10px 0;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    .list_item_active {
+      composes: list_item;
+      color: var(--primary-color);
+      border-bottom: 5px solid var(--primary-color);
+    }
+  
+    .slider {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 auto;
+    }
+  
+    .slider_cards_list {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      gap: 30px;
+      margin: 0 0 5px 0;
+      flex: 1 0 auto;
+    }
+  
+    .next_slide_button {
+      font-size: 1rem;
+      line-height: 1rem;
+  
+      margin-bottom: 35px;
+    }
+  }
+  
+  /* 480px */
+  @media only screen and (min-width: 30rem) {
+    .title {
+      font-size: 3rem;
+      line-height: 3rem;
+  
+      margin-bottom: 1.5rem;
+    }
+  
+    .tabs {
+      margin-bottom: 2rem;
+    }
+  
+    .list_item {
+      font-size: var(--16px);
+      line-height: var(--20px);
+    }
+  
+    .next_slide_button {
+      font-size: 1.1rem;
+    }
+  
+    .nav_list {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* 600px */
+  @media only screen and (min-width: 37.5rem) {
+  }
+  
+  /* 736px */
+  @media only screen and (min-width: 46em) {
+    .title {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+    .footer_nav_item {
+      transform: scale(1.5);
+    }
+    .nav_list {
+      margin-top: 20px;
+    }
+  }
+  
+  /* 980px */
+  @media only screen and (min-width: 61.25rem) {
+    .title {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  
+    .list_item {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  
+    .tabs {
+      gap: 20px;
+    }
+  }
+  
+  /* 1280px */
+  @media only screen and (min-width: 80rem) {
+    .title {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+  
+    .footer_nav_item {
+      transform: scale(1.5);
+    }
+  
+    .page_footer {
+      margin: 15px 0 15px 0;
+    }
+  }
+  
+  /* 1680 px */
+  @media only screen and (min-width: 105rem) {
+  }
+  
