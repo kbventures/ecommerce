@@ -1,0 +1,16 @@
+.wrapper {
+    align-items: center;
+    background: #D3F2FF;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 0.625rem;
+}
+
