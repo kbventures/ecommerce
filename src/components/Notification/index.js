@@ -2,11 +2,11 @@ import React from 'react';
 import styles from './Notification.module.css';
 import NotificationIcon from "../../../public/assets/Notification.svg"
 
-export default function Notification({children}) {
+export default function Notification({title}) {
   return (
-    <div>
+    <div className={styles.wrapper}>
     <NotificationIcon />
-    {children}
+    <span className={styles.text}>{title}</span>
     </div>
   )
 }

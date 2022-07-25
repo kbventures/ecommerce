@@ -2,15 +2,17 @@ import React from "react";
 import Navigation from "../../components/Navigation";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
-import Container from "../../components/Container";
-import SliderCard from "../../components/SliderCard";
 
 import HomeIcon from "../../../public/assets/Home.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";
 import ProfileIcon from "../../../public/assets/Profile.svg";
 import BuyIcon from "../../../public/assets/Buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
+
+import Notification from "../../components/Notification";
 import Slider from "../../components/Slider";
+import Container from "../../components/Container";
+import SliderCard from "../../components/SliderCard";
 
 let cards = [ {
   title: "Super Long Watch Name",
@@ -44,6 +46,7 @@ export default function Home() {
     <Container white={true}>
       <div className={styles.wrapper}>
         <header className={styles.header}>
+          <Notification title={'Home'}/>
           <nav className={styles.nav_header}>
             <Link to="/menu">
               <MenuIcon />
@@ -99,8 +102,8 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link to="/orders">
-                  <BuyIcon className={styles.footer_nav_item} title="orders" />
+                <Link to="/basket">
+                  <BuyIcon className={styles.footer_nav_item} title="basket" />
                 </Link>
               </li>
             </ul>

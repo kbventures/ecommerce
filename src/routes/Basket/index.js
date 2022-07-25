@@ -6,6 +6,7 @@ import Notification from "../../components/Notification";
 import ProductsList from "../../components/ProductsList";
 import TotalPrice from "../../components/TotalPrice";
 import Button from "../../components/Button";
+import Header from "../../components/Header";
 
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import DeleteIcon from "../../../public/assets/Delete.svg";
@@ -43,14 +44,10 @@ let cards = [ {
 export default function Basket() {
     return (
         <Container white={true}>
-            <header>
-                <ArrowIcon />
-                <span>Basket</span>
-                <DeleteIcon />
-            </header>
+                <Header title={'Basket'} icon={'delete'} />
 
             <main>
-                <Notification>Delivery for FREE until the end of the month</Notification>
+                <Notification title={'Delivery for FREE until the end of the month'}/>
                 <ProductsList cards={cards}/>
                 <TotalPrice amount={amount}/>
                 <Button>Checkout</Button>
