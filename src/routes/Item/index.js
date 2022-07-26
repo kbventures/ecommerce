@@ -1,31 +1,70 @@
 import React from "react"
 import styles from "./Item.module.css"
 import Button from "../../components/Button"
-import buttonStyles from "../../components/Button/button.module.css"
 import Container from "../../components/Container"
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import RightPurpleArrowIcon from "../../../public/assets/arrow-icon.svg";
+import LeftArrowIcon from "../../../public/assets/Arrow - Left.svg";
+import HeartIcon from "../../../public/assets/Heart.svg"
+// import Z from "../../../public/assets/Mask Group.png"
+
 
 
 const { container, title, img_wrapper } = styles
 
 
-function Splash(){
-    let location = useLocation();
-    console.log(location.state);
+// How to make radio buttons look like buttons
+
+function Item() {
+
     return (
         <Container>
             <div className={container}>
-                <h1 className={title}>Find your Gadget</h1>
-                <div className={img_wrapper}>
-                    <img src="../../assets/Saly-19.png"  alt="guy in vr" className={styles.img} />
-                </div>
+
                 <Link to="/home">
-                    <Button className={buttonStyles.dark}>Testing!</Button>
+                    <LeftArrowIcon />
                 </Link>
+
+                <Link to="/favorites">
+                    <HeartIcon />
+                </Link>
+
+                {/* <Z /> */}
+
+
+                <section className="productInformation">
+                    <h3>2020 Apple iPad Air 10.9"</h3>
+                    <section className="colorSelector">
+                        <h4>Colors</h4>
+                        <div className="colorSelection">
+                            <input type="radio" value="colorone" name="color" />
+                            <label htmlFor="colorone">Sky Blue</label>
+                            <input type="radio" value="colortwo" name="color" />
+                            <label htmlFor="valuetwo">Rose Gold</label>
+                            <input type="radio" value="colorthree" name="color" />
+                            <label htmlFor="valuethree">Green</label>
+                        </div>
+                    </section>
+
+                    <section className="productInfo">
+                        <h4>Get Apple TV  free for a year</h4>
+                        <p>Available when your purchase any new iPhone, iPad, iPod, Mac or Apple TV 4.99/month after free trial.</p>
+                        <button>
+                        Full Description<RightPurpleArrowIcon />
+                        </button>
+                    </section>
+                    <section>
+                        <p>Total</p>
+                        <p><span>$</span>579</p>
+                    </section>
+                    <Link to="/home">
+                        <Button>Add to basket</Button>
+                    </Link>
+                </section>
+
             </div>
         </Container>
     )
 }
 
-export default Splash; 
+export default Item; 
