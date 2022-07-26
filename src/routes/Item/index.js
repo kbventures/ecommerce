@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import RightPurpleArrowIcon from "../../../public/assets/arrow-icon.svg";
 import LeftArrowIcon from "../../../public/assets/Arrow - Left.svg";
 import HeartIcon from "../../../public/assets/Heart.svg"
-// import Z from "../../../public/assets/Mask Group.png"
 
 
 
@@ -20,17 +19,25 @@ function Item() {
     return (
         <Container>
             <div className={container}>
+                <section class="imageSection">
+                    <Link to="/home">
+                        <LeftArrowIcon />
+                    </Link>
 
-                <Link to="/home">
-                    <LeftArrowIcon />
-                </Link>
+                    <Link to="/favorites">
+                        <HeartIcon />
+                    </Link>
 
-                <Link to="/favorites">
-                    <HeartIcon />
-                </Link>
+                    <img src="../../assets/Mask Group.png" />
+                    <div className="productImageSelector">
+                        <input type="radio" value="imgOne" name="img" />
+                        <input type="radio" value="imgTwo" name="img" />
+                        <input type="radio" value="imgThree" name="img" />
+                        <input type="radio" value="imgFour" name="img" />
+                    </div>
+                    <img src="../../assets/image 16.png" />
 
-                {/* <Z /> */}
-
+                </section>
 
                 <section className="productInformation">
                     <h3>2020 Apple iPad Air 10.9"</h3>
@@ -50,7 +57,7 @@ function Item() {
                         <h4>Get Apple TV  free for a year</h4>
                         <p>Available when your purchase any new iPhone, iPad, iPod, Mac or Apple TV 4.99/month after free trial.</p>
                         <button>
-                        Full Description<RightPurpleArrowIcon />
+                            Full Description<RightPurpleArrowIcon />
                         </button>
                     </section>
                     <section>
