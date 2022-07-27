@@ -15,9 +15,9 @@ export default function Product({title, price, quantity, src}){
                 <div className={styles.quantityWrapper}>
                     <span>Quantity</span>
                     <div className={styles.quantityItems}>
-                        <button>-</button>
-                        <div><span value={quantity}>1</span></div> 
-                        <button>+</button>
+                        <button className={styles.counterButton}>-</button>
+                        <span>{quantity}</span>
+                        <button className={styles.counterButton}>+</button>
                     </div>
                 </div>
             </div>
