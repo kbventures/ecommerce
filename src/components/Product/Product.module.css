@@ -8,6 +8,8 @@
 .informationWrapper {
     display: flex;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    justify-content: space-between;
 }
 
 .img {
@@ -19,15 +21,33 @@
 }
 
 .price {
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 }
 
-.input {
-   width: 40%;
+.quantityWrapper {
+    align-items: center;
+    display: flex;
+    font-family: 'SF Pro rounded', sans-serif;
+    font-size: 0.8125rem;
+    gap: 10px;
 }
 
-.input::-webkit-inner-spin-button,
-.input::-webkit-outer-spin-button { 
-      -webkit-appearance: none; 
-      margin: 0; 
+.quantityItems {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.counterButton {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    background: #7dccec;
+    color: white;
+}
+
+.quantityItems button {
+    background: #7DCCEC;
+    color: white;
 }
