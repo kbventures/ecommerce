@@ -32,15 +32,19 @@
     gap: 10px;
 }
 
-.quantityItems > * {
+.quantityItems {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.counterButton {
+    width: 20px;
+    height: 20px;
     border: none;
     border-radius: 4px;
-    display: inline-block;
-    height: 20px;
-    line-height: 20px;
-    padding: none;
-    text-align: center;
-    width: 20px;
+    background: #7dccec;
+    color: white;
 }
 
 .quantityItems button {
