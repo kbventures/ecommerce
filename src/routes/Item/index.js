@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Item.module.css";
-import Button from "../../components/Button";
+import Button from "../../components/Button/index.jsx";
 import Container from "../../components/Container";
 import RightPurpleArrowIcon from "../../../public/assets/arrow-icon.svg";
 import LeftArrowIcon from "../../../public/assets/Arrow - Left.svg";

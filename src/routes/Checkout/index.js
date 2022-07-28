@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./checkout.module.css";
 import Container from "../../components/Container";
-import Button from "../../components/Button";
+import Button from "../../components/Button/index.jsx";
 
 const {
   header,

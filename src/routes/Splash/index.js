@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Splash.module.css";
-import Button from "../../components/Button";
+import Button from "../../components/Button/index.jsx";
 import Container from "../../components/Container";
 import Navigation from "../../components/Navigation";
 
