@@ -1,58 +1,61 @@
 .container {
-	height: 100vh;
-	padding: 0 25px;
-	overflow-x: hidden;
+  height: 100vh;
+  padding: 0 25px;
+  overflow-x: hidden;
 }
 
 .container_primary {
-	composes: container;
-    background-color: var(--primary-color);
+  composes: container;
+  background-color: var(--primary-color);
 }
 
 .container_white {
-	composes: container;
-	background-color: #f2f2f2;
+  composes: container;
+  background-color: #f2f2f2;
 }
 
-
 @media only screen and (min-width: 46em) {
-	.container {
-		padding: 15px 53px;
-	}
+  .container {
+    padding: 15px 53px;
+  }
 }
 
 @media only screen and (min-width: 80em) {
-	.container {
-		padding: 0 73px;
-	}
+  .container {
+    padding: 0 73px;
+  }
 }
 
 @media only screen and (min-width: 112em) {
-	.container {
-		padding: 0 104px;
-	}
+  .container {
+    padding: 0 104px;
+  }
 }
 
-
-
-
 /* 360px */
-@media only screen and (min-width: 22.5rem) {}
+@media only screen and (min-width: 22.5rem) {
+}
 
 /* 480px */
-@media only screen and (min-width: 30rem) {}
+@media only screen and (min-width: 30rem) {
+}
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+}
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+}
 
 /* 1280px */
-@media only screen and (min-width: 80rem) {}
+@media only screen and (min-width: 80rem) {
+}
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+}

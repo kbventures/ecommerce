@@ -1,69 +1,70 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js',
-        publicPath: '/'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                use: ['source-map-loader'],
-              },
-            {
-                test: /.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-react', '@babel/preset-env'],
-                        plugins: ['@babel/plugin-transform-runtime'],
-                    },
-                },
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "index_bundle.js",
+    publicPath: "/",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
+      {
+        test: /.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react", "@babel/preset-env"],
+            plugins: ["@babel/plugin-transform-runtime"],
+          },
+        },
+      },
+      {
+        test: /.css$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1,
+              modules: true,
             },
-            {
-                test: /.css$/,
-                use: [
-                    "style-loader",
-                    {
-                        loader: "css-loader",
-                        options: {
-                            importLoaders: 1,
-                            modules: true,
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.(png|jp(e*)g)$/,
-                use: [{
-                    loader: "url-loader",
-                    options: {
-                        limit: 8192,
-                    },
-                }]
-            },
-            {
-                test: /\.svg/,
-                issuer: /\.[jt]sx?$/,
-                use: ["@svgr/webpack", 'svgo-loader'],
-              },
+          },
         ],
-    },
-    devServer: {
-        historyApiFallback: true,
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template:
-                './public/index.html',
-        }),
+      },
+      {
+        test: /\.(png|jp(e*)g)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg/,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack", "svgo-loader"],
+      },
     ],
-    devtool: 'source-map'
+  },
+  devServer: {
+    historyApiFallback: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
+  devtool: "source-map",
 };

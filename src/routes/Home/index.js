@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation";
 import styles from "./home.module.css";
-import { Link } from "react-router-dom";
 import Container from "../../components/Container";
 import SliderCard from "../../components/SliderCard";
 
@@ -13,35 +13,41 @@ import MenuIcon from "../../../public/assets/menu-icon.svg";
 import Slider from "../../components/Slider";
 
 export default function Home() {
-  let cards = [ {
-    title: "Super Long Watch Name",
-    desc: "Series 6. Red",
-    price: "$ 359",
-    src: "assets/apple-watch-red.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: "$ 159",
-    src: "assets/samsung-galaxy-watch.png"
-  }, ]
+  const cards = [
+    {
+      title: "Super Long Watch Name",
+      desc: "Series 6. Red",
+      price: "$ 359",
+      src: "assets/apple-watch-red.png",
+    },
+    {
+      title: "SAMSUNG Galaxy Watch",
+      desc: "Active. Green",
+      price: "$ 159",
+      src: "assets/samsung-galaxy-watch.png",
+    },
+    {
+      title: "SAMSUNG Galaxy Watch",
+      desc: "Active. Green",
+      price: "$ 159",
+      src: "assets/samsung-galaxy-watch.png",
+    },
+    {
+      title: "SAMSUNG Galaxy Watch",
+      desc: "Active. Green",
+      price: "$ 159",
+      src: "assets/samsung-galaxy-watch.png",
+    },
+    {
+      title: "SAMSUNG Galaxy Watch",
+      desc: "Active. Green",
+      price: "$ 159",
+      src: "assets/samsung-galaxy-watch.png",
+    },
+  ];
 
   return (
-    <Container white={true}>
+    <Container white>
       <div className={styles.wrapper}>
         <header className={styles.header}>
           <nav className={styles.nav_header}>

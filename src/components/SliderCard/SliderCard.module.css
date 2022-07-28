@@ -54,79 +54,62 @@
   color: var(--primary-color);
 }
 
-
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-
   .slider_card {
     width: 240px;
-    height:240px;
+    height: 240px;
   }
-  
-  
+
   .slider_card_title {
     font-size: 1.35rem;
     line-height: 1.3rem;
   }
-  
-  .slider_card_desc {
 
+  .slider_card_desc {
     font-weight: 600;
     font-size: 1.1rem;
-
-
   }
-  
+
   .slider_card_price {
-
     font-size: 1.1rem;
-
   }
-
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-
   .slider_card {
     width: 280px;
-    height:280px;
+    height: 280px;
   }
-  
-  
+
   .slider_card_title {
     font-size: 1.35rem;
     line-height: 1.3rem;
   }
-  
-  .slider_card_desc {
 
+  .slider_card_desc {
     font-weight: 600;
     font-size: 1.1rem;
-
-
   }
-  
+
   .slider_card_price {
-
     font-size: 1.1rem;
-
   }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-
   .slider_card_title {
     font-size: 1.6rem;
     line-height: 1.6rem;
   }
-  
+
   .slider_card_desc {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  
+
   .slider_card_price {
     font-size: 1.3rem;
     line-height: 1.3rem;
@@ -135,17 +118,16 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-
   .slider_card_title {
     font-size: 1.7rem;
     line-height: 1.7rem;
   }
-  
+
   .slider_card_desc {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
-  
+
   .slider_card_price {
     font-size: 1.4rem;
     line-height: 1.4rem;
@@ -154,17 +136,16 @@
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-
   .slider_card_title {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
-  
+
   .slider_card_desc {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
-  
+
   .slider_card_price {
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -176,4 +157,5 @@
 }
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+}

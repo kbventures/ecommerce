@@ -83,12 +83,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -103,545 +103,472 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 
 /* Box Model Hack */
 *,
 *::after,
 *::before {
-	padding: 0;
-	box-sizing: inherit;
+  padding: 0;
+  box-sizing: inherit;
 }
-
 
 /******************************************
 /* UTILITIES
 /*******************************************/
 
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 :root {
-	--green: green;
-	--green-radioactive: rgb(7, 191, 7);
-	--green-transparent: rgba(0, 128, 0, 0.1);
-	--black: #000000;
-	--white: #ffffff;
-	--metallic-silver-light: #dce3e9;
-	--metallic-silver: #bfc5ca;
-	--cool-grey: #969fa6;
-	--oslo-grey: #7F888F;
-	--grey: grey;
-	--mako: #3D4449;
-	--porcelain: #F5F6F7;
-	--anti-flash: #eff1f2;
+  --green: green;
+  --green-radioactive: rgb(7, 191, 7);
+  --green-transparent: rgba(0, 128, 0, 0.1);
+  --black: #000000;
+  --white: #ffffff;
+  --metallic-silver-light: #dce3e9;
+  --metallic-silver: #bfc5ca;
+  --cool-grey: #969fa6;
+  --oslo-grey: #7f888f;
+  --grey: grey;
+  --mako: #3d4449;
+  --porcelain: #f5f6f7;
+  --anti-flash: #eff1f2;
 
-	--background: #5956E9;
-	--elipse: #817EFF;
-	--border: #F4F4F8;
-
+  --background: #5956e9;
+  --elipse: #817eff;
+  --border: #f4f4f8;
 }
 
 html {
-	--3p75px: 0.2343rem;
-	--9p6px: 0.6rem;
-	--9p72px: 0.6075rem;
-	--10px: 0.625rem;
-	--10p6px: 0.66625rem;
-	--10p8px: 0.675rem;
-	--11p88px: 0.7425rem;
-	--12px: 0.75rem;
-	--12p5px: 0.78125rem;
-	--13px: 0.8125rem;
-	--13p33px: 0.8331rem;
-	--14p66px: 0.9162rem;
-	--15px: 0.9375rem;
-	--16p66: 1.041rem;
-	--17p33px: 1.08rem;
-	--18px: 1.125rem;
-	--19p5px: 1.21875rem;
-	--20px: 1.25rem;
-	--21p66px: 1.353rem;
-	--23p33px: 1.45rem;
-	--24px: 1.5rem;
-	--25px: 1.5625rem;
-	--26p66px: 1.66rem;
-	--30px: 1.875rem;
-	--36px: 2.25rem;
-	--43p33px: 2.7rem;
-	--46p66px: 2.91625rem;
-	--56px: 3.5rem;
-	--69px: 4.31rem;
+  --3p75px: 0.2343rem;
+  --9p6px: 0.6rem;
+  --9p72px: 0.6075rem;
+  --10px: 0.625rem;
+  --10p6px: 0.66625rem;
+  --10p8px: 0.675rem;
+  --11p88px: 0.7425rem;
+  --12px: 0.75rem;
+  --12p5px: 0.78125rem;
+  --13px: 0.8125rem;
+  --13p33px: 0.8331rem;
+  --14p66px: 0.9162rem;
+  --15px: 0.9375rem;
+  --16p66: 1.041rem;
+  --17p33px: 1.08rem;
+  --18px: 1.125rem;
+  --19p5px: 1.21875rem;
+  --20px: 1.25rem;
+  --21p66px: 1.353rem;
+  --23p33px: 1.45rem;
+  --24px: 1.5rem;
+  --25px: 1.5625rem;
+  --26p66px: 1.66rem;
+  --30px: 1.875rem;
+  --36px: 2.25rem;
+  --43p33px: 2.7rem;
+  --46p66px: 2.91625rem;
+  --56px: 3.5rem;
+  --69px: 4.31rem;
 }
-
-
 
 body {
-	box-sizing: border-box;
-	line-height: 1.4;
-	background-color: var(--white);
-	font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+  background-color: var(--white);
+  font-family: "Roboto Slab", serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 .container {
-	padding: 0 24px;
+  padding: 0 24px;
 }
 
 @media only screen and (min-width: 46em) {
-	.container {
-		padding: 0 53px;
-	}
+  .container {
+    padding: 0 53px;
+  }
 }
 
 @media only screen and (min-width: 80em) {
-	.container {
-		padding: 0 73px;
-	}
+  .container {
+    padding: 0 73px;
+  }
 }
 
 @media only screen and (min-width: 112em) {
-	.container {
-		padding: 0 104px;
-	}
+  .container {
+    padding: 0 104px;
+  }
 }
-
-
-
-
-
-
 
 /******************************************
 /* MENU
 /*******************************************/
 
 .menu {
-	background-color: var(--background);
-	height: 100vh;
-	color: var(--white);
-	font-size: 12px;
-	font-family: 'Raleway';
-	font-weight: 600;
+  background-color: var(--background);
+  height: 100vh;
+  color: var(--white);
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: 600;
 }
 
-
-
-.navigation{
-	position: relative; 
+.navigation {
+  position: relative;
 }
 
 .navigation span {
-	border-bottom: 1px solid var(--border);
-	width: 132px;
+  border-bottom: 1px solid var(--border);
+  width: 132px;
 }
 
-
-
 .navigation li {
-	width: 110px;
-	margin-bottom: 10px;
-
+  width: 110px;
+  margin-bottom: 10px;
 }
 
 .navigation li:not(:first-child) {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
-
 .navigation a {
-	color: inherit;
-	text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .navigationContainer {
-	padding-top: 85px;
-	/* display: flex;
+  padding-top: 85px;
+  /* display: flex;
 	flex-direction: row;
 	justify-content: space-between; */
 }
-
 
 .navigationContainer a,
 a:hover,
 a:focus,
 a:active {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-
-.navigation span:hover{
-	color: var(--elipse)
+.navigation span:hover {
+  color: var(--elipse);
 }
 
-
-.navigation ul{
-	display: flex; 
-	flex-direction: column;
+.navigation ul {
+  display: flex;
+  flex-direction: column;
 }
 
-.navigation li{
-	display: flex;
-	align-items: center;
+.navigation li {
+  display: flex;
+  align-items: center;
 }
 
 .navigation span {
-	margin-left: 15px; 
+  margin-left: 15px;
 }
 
-
-
 .navigation .profileIcon:before {
-	content: url("./img/Profile.svg");
+  content: url("./img/Profile.svg");
 }
 
 .navigation .buyIcon:before {
-	content: url("./img/Buy.svg");
+  content: url("./img/Buy.svg");
 }
 
 .navigation .heartIcon:before {
-	content: url("./img/Heart.svg");
+  content: url("./img/Heart.svg");
 }
 
 .navigation .settingIcon:before {
-	content: url("./img/Setting.svg");
-
+  content: url("./img/Setting.svg");
 }
 
 .navigation .deliveryIcon:before {
-	content: url("./img/Bag.svg");
+  content: url("./img/Bag.svg");
 }
 
 .navigation .signoutIcon:before {
-	content: url("./img/Logout.svg");
-
+  content: url("./img/Logout.svg");
 }
 
-
 .navigation .logout {
-	padding-top: 76px;
-	display: flex;
-	align-items: center;
+  padding-top: 76px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation .logout a {
-	margin-left: 15px;
-
+  margin-left: 15px;
 }
 
 .menuLargeImage {
-	position:absolute;
-	top: 80px;
-	right: 0;
+  position: absolute;
+  top: 80px;
+  right: 0;
 }
 
 .menuLargeImage img {
-	height: 315px;
-	width: 120px;
+  height: 315px;
+  width: 120px;
 }
 
-.menuLargeImage .rectangle74{
-	height: 300px;
-	width: 140px;
-	position: absolute;
-	right: -5px;
-	top: 30px;
+.menuLargeImage .rectangle74 {
+  height: 300px;
+  width: 140px;
+  position: absolute;
+  right: -5px;
+  top: 30px;
 }
 
-
-.menuLargeEllipse{
-	position: absolute;
-	top:0;
-	right: 40px;
+.menuLargeEllipse {
+  position: absolute;
+  top: 0;
+  right: 40px;
 }
 
 .menuLargeEllipse img {
-	width: 80px; 
+  width: 80px;
 }
 
-
-.menuMediumEllipse{
-	z-index: 0;
-	position: absolute;
-	bottom:40px;
-	left: 0;
+.menuMediumEllipse {
+  z-index: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
 }
 
 .menuMediumEllipse img {
-	width: 50px; 
+  width: 50px;
 }
 
-.menuSmallEllipse{
-	position: absolute;
-	bottom:70px;
-	left: 80px;
+.menuSmallEllipse {
+  position: absolute;
+  bottom: 70px;
+  left: 80px;
 }
 
 .menuSmallEllipse img {
-	width: 15px;
+  width: 15px;
 }
 
-.smallEllipse{
-	position: absolute;
-	top:50px;
-	right: 20px;
+.smallEllipse {
+  position: absolute;
+  top: 50px;
+  right: 20px;
 }
 
 .smallEllipse img {
-	width: 15px;
+  width: 15px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /******************************************
 /* NAVIGATION & HAMBURGER MENU
 /*******************************************/
 
-
-
-
 /******************************************
 /* MAIN
 /*******************************************/
-
-
 
 /******************************************
 /* Tech Icons
 /*******************************************/
 
-
-
 /******************************************
 /* About Me
 /*******************************************/
-
 
 /******************************************
 /* Projects
 /*******************************************/
 
-
 /******************************************
 /* SERVICES
 /*******************************************/
-
-
-
 
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
 
-
-
-
-
-
 .about p {
-	font-family: "Open", sans-serif;
+  font-family: "Open", sans-serif;
 }
 
 nav li,
 nav i {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
-nav>i {
-	font-size: var(--18px);
+nav > i {
+  font-size: var(--18px);
 }
-
 
 .mediaquery-at-736px a {
-	font-size: var(--16p66);
-	padding-bottom: 14px;
+  font-size: var(--16p66);
+  padding-bottom: 14px;
 }
 
-
 main h1 {
-	font-size: var(--24px);
+  font-size: var(--24px);
 }
 
 main p {
-	font-size: var(--12px);
+  font-size: var(--12px);
 }
 
 main a {
-	font-size: var(--9p6px);
+  font-size: var(--9p6px);
 }
 
-
-
-section>h2 {
-	font-size: var(--20px);
+section > h2 {
+  font-size: var(--20px);
 }
-
-
 
 .sidenav h3 {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
 .sidenav i {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
 .sidenav p {
-	font-size: var(--10p8px);
+  font-size: var(--10p8px);
 }
 
 .sidenav span {
-	font-size: var(--10p8px);
+  font-size: var(--10p8px);
 }
 
 .sidenav p:last-child {
-	font-size: var(--9p72px);
+  font-size: var(--9p72px);
 }
 
 .mediaquery-at-736px a {
-	font-size: var(--15px)
+  font-size: var(--15px);
 }
 
-
-
-
-
 .about p {
-	font-family: "Open", sans-serif;
+  font-family: "Open", sans-serif;
 }
 
 nav li,
 nav i {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
-nav>i {
-	font-size: var(--18px);
+nav > i {
+  font-size: var(--18px);
 }
-
 
 .mediaquery-at-736px a {
-	font-size: var(--15px);
-	padding-bottom: 14px;
+  font-size: var(--15px);
+  padding-bottom: 14px;
 }
 
-
 main h1 {
-	font-size: var(--24px);
+  font-size: var(--24px);
 }
 
 main p {
-	font-size: var(--12px);
+  font-size: var(--12px);
 }
 
 main a {
-	font-size: var(--9p6px);
+  font-size: var(--9p6px);
 }
 
-
-
-section>h2 {
-	font-size: var(--20px);
+section > h2 {
+  font-size: var(--20px);
 }
-
 
 .project h3 {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
 .projects h2 {
-	font-size: var(--18px);
+  font-size: var(--18px);
 }
 
 .project p,
 .project strong {
-	font-size: var(--12px);
+  font-size: var(--12px);
 }
 
 .project a {
-	font-size: var(--9p6px);
+  font-size: var(--9p6px);
 }
 
-
 .about p {
-	font-size: var(--13px);
+  font-size: var(--13px);
 }
 
 .services h2 {
-	font-size: var(--18px);
+  font-size: var(--18px);
 }
 
 .service h3 {
-	font-size: var(--15px);
+  font-size: var(--15px);
 }
 
 .service p {
-	font-family: "Open sans", sans-serif;
-	font-size: var(--12px);
+  font-family: "Open sans", sans-serif;
+  font-size: var(--12px);
 }
 
-
 .service i {
-	font-size: var(--20px);
+  font-size: var(--20px);
 }
 
 .tech-icons h2 {
-	font-size: var(--18px);
+  font-size: var(--18px);
 }
 
 /******************************************
@@ -676,28 +603,30 @@ Ems are the best option for media queries
 1em = 16 px; 
 */
 
-
-
-
-
-
 /* 360px */
-@media only screen and (min-width: 22.5rem) {}
+@media only screen and (min-width: 22.5rem) {
+}
 
 /* 480px */
-@media only screen and (min-width: 30rem) {}
+@media only screen and (min-width: 30rem) {
+}
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+}
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+}
 
 /* 1280px */
-@media only screen and (min-width: 80rem) {}
+@media only screen and (min-width: 80rem) {
+}
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
+@media only screen and (min-width: 105rem) {
+}

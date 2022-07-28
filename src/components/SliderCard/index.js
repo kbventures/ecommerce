@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./SliderCard.module.css";
 import { Link } from "react-router-dom";
+import styles from "./SliderCard.module.css";
 
-const SliderCard = ({ title, desc, price, src, link }) => {
+function SliderCard({ title, desc, price, src, link }) {
   return (
     <Link to="/item" state={{ title, desc, price, src, link }}>
       <div className={styles.slider_card}>
@@ -13,6 +13,6 @@ const SliderCard = ({ title, desc, price, src, link }) => {
       </div>
     </Link>
   );
-};
+}
 
 export default SliderCard;

@@ -1,33 +1,35 @@
-
-
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-    :root {
-        --heading: 4rem;
-      }
+  :root {
+    --heading: 4rem;
+  }
 }
 
 /* 480px */
-@media only screen and (min-width: 30rem) {}
+@media only screen and (min-width: 30rem) {
+}
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+}
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+}
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    :root {
-        --heading: 5rem;
-      }
+  :root {
+    --heading: 5rem;
+  }
 }
 
 /* 1280px */
-@media only screen and (min-width: 80rem) {}
+@media only screen and (min-width: 80rem) {
+}
 
 /* 1680 px */
-@media only screen and (min-width: 105rem) {}
-
+@media only screen and (min-width: 105rem) {
+}
 
 /* removing hover state on mobile(media query react)  */

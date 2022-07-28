@@ -1,4 +1,3 @@
-
 :root {
   --green: green;
   --green-radioactive: rgb(7, 191, 7);
@@ -8,14 +7,14 @@
   --metallic-silver-light: #dce3e9;
   --metallic-silver: #bfc5ca;
   --cool-grey: #969fa6;
-  --oslo-grey: #7F888F;
+  --oslo-grey: #7f888f;
   --grey: grey;
-  --mako: #3D4449;
-  --porcelain: #F5F6F7;
+  --mako: #3d4449;
+  --porcelain: #f5f6f7;
   --anti-flash: #eff1f2;
 
-  --elipse: #817EFF;
-  --border: #F4F4F8;
+  --elipse: #817eff;
+  --border: #f4f4f8;
   --primary-color: #5956e9;
   --white: #ffffff;
 
@@ -47,18 +46,19 @@
   --43p33px: 2.7rem;
   --46p66px: 2.91625rem;
   --56px: 3.5rem;
-  --64px: 4rem; 
+  --64px: 4rem;
   --69px: 4.31rem;
 
   --heading: 3rem;
 }
 
-html, body {
+html,
+body {
   width: 100%;
 }
 
 body {
-	box-sizing: border-box;
-	line-height: 1.4;
-	font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-family: "Roboto Slab", serif;
 }
