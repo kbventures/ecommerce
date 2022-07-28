@@ -5,7 +5,7 @@ import NotificationIcon from "../../../public/assets/Notification.svg"
 export default function Notification({title}) {
   return (
     <div className={styles.wrapper}>
-    <NotificationIcon />
+    <NotificationIcon className={styles.icon} />
     <span className={styles.text}>{title}</span>
     </div>
   )

@@ -22,21 +22,6 @@ let cards = [ {
     price: 159,
     quantity: 1,
     src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    price: 159,
-    quantity: 1,
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    price: 159,
-    quantity: 1,
-    src: "assets/samsung-galaxy-watch.png"
-  }, {
-    title: "SAMSUNG Galaxy Watch",
-    price: 159,
-    quantity: 1,
-    src: "assets/samsung-galaxy-watch.png"
   }, ]
 
   let amount = cards.reduce((acc, curr) => acc += curr.price, 0);
@@ -49,10 +34,14 @@ export default function Basket() {
             <main>
                 <Notification title={'Delivery for FREE until the end of the month'}/>
                 <ProductsList cards={cards}/>
-                <TotalPrice amount={amount}/>
-                <Button>Checkout</Button>
+                <div className={styles.totalPriceWrapper}>
+                  <TotalPrice amount={amount}/>
+                </div>
+                <div className={styles.checkout}>
+                  <Button>Checkout</Button>
+                </div>
+                
             </main>
-
         </Container>
     )
 }

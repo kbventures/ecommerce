@@ -11,8 +11,8 @@ import DeleteIcon from "../../../public/assets/Delete.svg";
 
 export default function Header({title, icon}) {
     let icons = {
-      'delete': <DeleteIcon/>,
-      'heart': <HeartIcon/>
+      'delete': <DeleteIcon className={styles.icon}/>,
+      'heart': <HeartIcon className={styles.icon}/>
     }
     return (
         <header className={styles.header}>
