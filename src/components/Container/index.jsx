@@ -20,6 +20,6 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
-  white: true,
+  white: false,
   backgroundColor: "",
 };
