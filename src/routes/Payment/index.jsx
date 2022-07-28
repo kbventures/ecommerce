@@ -1,12 +1,11 @@
 import React from "react";
 import Navigation from "../../components/Navigation";
-import styles from "./basket.module.css";
 
-export default function Basket() {
+export default function Payment() {
   return (
     <div>
       <Navigation />
-      <div>This is the basket page</div>
+      <div>This is the payment page</div>
     </div>
   );
 }

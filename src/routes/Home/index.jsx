@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../../components/Navigation";
 import styles from "./home.module.css";
 import Container from "../../components/Container";
-import SliderCard from "../../components/SliderCard";
 
 import HomeIcon from "../../../public/assets/Home.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";

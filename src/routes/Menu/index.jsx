@@ -17,18 +17,18 @@ const {
   rectangle74image,
   menu,
   navigationContainer,
-  navigationContainer_a,
+  navigationContainer_a: navigationContainerA,
   navigation,
-  navigation_ul,
-  navigation_a,
-  navigation_profileIcon,
-  navigation_buyIcon,
-  navigation_heartIcon,
-  navigation_settingIcon,
-  navigation_deliveryIcon,
-  navigation_signoutIcon,
-  navigation_span,
-  navigation_logout,
+  navigation_ul: navigationUl,
+  navigation_a: navigationA,
+  navigation_profileIcon: navigationProfileIcon,
+  navigation_buyIcon: navigationBuyIcon,
+  navigation_heartIcon: navigationHeartIcon,
+  navigation_settingIcon: navigationSettingIcon,
+  navigation_deliveryIcon: navigationDeliveryIcon,
+  navigation_signoutIcon: navigationSignoutIcon,
+  navigation_span: navigationSpan,
+  navigation_logout: navigationLogout,
   emptySmallEllipse,
   fullSmallEllipse,
   marginLeft15px,
@@ -41,30 +41,30 @@ function Menu() {
         <section className={navigationContainer}>
           <section className={navigation}>
             <section>
-              <ul className={navigation_ul}>
-                <Link className={navigation_a} to="/profile">
-                  <li className={`${navigation_profileIcon}`}>
-                    <span className={navigation_span}>Profile</span>
+              <ul className={navigationUl}>
+                <Link className={navigationA} to="/profile">
+                  <li className={`${navigationProfileIcon}`}>
+                    <span className={navigationSpan}>Profile</span>
                   </li>
                 </Link>
-                <Link className={navigation_a} to="/orders">
-                  <li className={`${navigation_buyIcon}`}>
-                    <span className={navigation_span}>Orders</span>
+                <Link className={navigationA} to="/orders">
+                  <li className={`${navigationBuyIcon}`}>
+                    <span className={navigationSpan}>Orders</span>
                   </li>
                 </Link>
-                <Link className={navigation_a} to="/favorite">
-                  <li className={`${navigation_heartIcon}`}>
-                    <span className={navigation_span}>Favorite</span>
+                <Link className={navigationA} to="/favorite">
+                  <li className={`${navigationHeartIcon}`}>
+                    <span className={navigationSpan}>Favorite</span>
                   </li>
                 </Link>
-                <Link className={navigation_a} to="/delivery">
-                  <li className={`${navigation_deliveryIcon}`}>
-                    <span className={navigation_span}>Delivery</span>
+                <Link className={navigationA} to="/delivery">
+                  <li className={`${navigationDeliveryIcon}`}>
+                    <span className={navigationSpan}>Delivery</span>
                   </li>
                 </Link>
-                <Link className={navigation_a} to="/settings">
-                  <li className={`${navigation_settingIcon}`}>
-                    <span className={navigation_span}>Settings</span>
+                <Link className={navigationA} to="/settings">
+                  <li className={`${navigationSettingIcon}`}>
+                    <span className={navigationSpan}>Settings</span>
                   </li>
                 </Link>
               </ul>
@@ -77,11 +77,9 @@ function Menu() {
                 />
               </section>
             </section>
-            <section
-              className={`${navigation_logout} ${navigation_signoutIcon}`}
-            >
+            <section className={`${navigationLogout} ${navigationSignoutIcon}`}>
               <Link
-                className={`${navigationContainer_a} ${marginLeft15px} ${signOutHover}`}
+                className={`${navigationContainerA} ${marginLeft15px} ${signOutHover}`}
                 to="signout"
               >
                 Sign Out

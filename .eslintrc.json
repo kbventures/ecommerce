@@ -1,8 +1,10 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
+  "plugins": ["jest"],
   "extends": [
     "plugin:react/recommended",
     "airbnb",
@@ -16,6 +18,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "react/no-array-index-key": 0,
+    "eslintjsx-a11y/label-has-associated-control": 0
   }
 }
