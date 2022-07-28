@@ -2,4 +2,43 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin: 10px auto;
+    min-height: 220px;
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+    .wrapper {
+        width: 75%;
+    }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+    .wrapper {
+        width: 65%;
+    }
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+    .wrapper {
+        width: 50%;
+    }
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
 }

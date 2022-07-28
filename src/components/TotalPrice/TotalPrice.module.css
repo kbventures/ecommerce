@@ -1,0 +1,41 @@
+.wrapper {
+    align-items: center;
+    display: flex;
+    font-size: var(--17px);
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.price {
+    color: var(--primary-color);
+    font-size: var(--22px);
+    font-weight: bold;
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+}

@@ -3,11 +3,21 @@
     padding: 15px 70px;
     font-size: 1.25rem;
     font-weight: bold;
-    color: var(--primary-color);
-    background-color: white;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+}
+
+.button_primary {
+    composes: button;
+    background: var(--primary-color);
+    color: white;
+}
+
+.button_white {
+    composes: button;
+    background: white;
+    color: var(--primary-color);
 }
 
 

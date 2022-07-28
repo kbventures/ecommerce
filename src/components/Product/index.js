@@ -5,7 +5,8 @@ import styles from './Product.module.css';
 export default function Product({title, price, quantity, src}){
     return (
         <div className={styles.mainWrapper}>
-            <img src={src} className={styles.img}/>
+                <img src={src} className={styles.img}/>
+            
             
             <div className={styles.informationWrapper}>
 
@@ -16,7 +17,7 @@ export default function Product({title, price, quantity, src}){
                     <span>Quantity</span>
                     <div className={styles.quantityItems}>
                         <button className={styles.counterButton}>-</button>
-                        <span>{quantity}</span>
+                        <span className={styles.counterNumber}>{quantity}</span>
                         <button className={styles.counterButton}>+</button>
                     </div>
                 </div>

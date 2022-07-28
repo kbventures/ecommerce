@@ -4,9 +4,9 @@ import styles from './TotalPrice.module.css';
 
 export default function TotalPrice({amount}){
     return (
-        <div>
+        <div className={styles.wrapper}>
             <span>Total</span>
-            <span>${amount}</span>
+            <span className={styles.price}>$ {amount}</span>
         </div>
     )
 }

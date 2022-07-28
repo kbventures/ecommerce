@@ -6,11 +6,55 @@
     gap: 5px;
     margin: 10px auto;
     padding: 10px;
-    width: 90%;
+    width: fit-content;
 }
 
 .text {
     font-family: 'Raleway', sans-serif; 
-    font-size: 0.625rem;
+    font-size: var(--10px);
 }
 
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+    .text {
+        font-size: var(--13px);
+    }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+    .text {
+        font-size: var(--16px);
+    }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+    .icon {
+        transform: scale(1.3);
+    }
+
+    .wrapper {
+        gap: 10px
+    }
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+    .text {
+        font-size: var(--18px);
+    }
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+}

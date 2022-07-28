@@ -46,7 +46,6 @@ export default function Home() {
     <Container white={true}>
       <div className={styles.wrapper}>
         <header className={styles.header}>
-          <Notification title={'Home'}/>
           <nav className={styles.nav_header}>
             <Link to="/menu">
               <MenuIcon />

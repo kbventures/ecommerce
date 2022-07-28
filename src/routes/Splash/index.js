@@ -17,7 +17,7 @@ function Splash(){
                     <img src="../../assets/Saly-19.png"  alt="guy in vr" className={styles.img} />
                 </div>
                 <Link to="/home">
-                    <Button>Get started</Button>
+                    <Button white={true}>Get started</Button>
                 </Link>
             </div>
         </Container>
