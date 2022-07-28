@@ -19,6 +19,7 @@
   --white: #ffffff;
 
   --3p75px: 0.2343rem;
+  --5px: 0.3125rem;
   --9p6px: 0.6rem;
   --9p72px: 0.6075rem;
   --10px: 0.625rem;
@@ -29,14 +30,19 @@
   --12p5px: 0.78125rem;
   --13px: 0.8125rem;
   --13p33px: 0.8331rem;
+  --14px: 0.875rem;
   --14p66px: 0.9162rem;
   --15px: 0.9375rem;
+  --16px: 1rem;
   --16p66: 1.041rem;
+  --17px: 1.0625rem;
   --17p33px: 1.08rem;
   --18px: 1.125rem;
+  --19px: 1.1875rem;
   --19p5px: 1.21875rem;
   --20px: 1.25rem;
   --21p66px: 1.353rem;
+  --22px: 1.375rem;
   --23p33px: 1.45rem;
   --24px: 1.5rem;
   --25px: 1.5625rem;

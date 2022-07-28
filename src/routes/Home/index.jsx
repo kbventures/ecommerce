@@ -1,49 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import styles from "./home.module.css";
-import Container from "../../components/Container";
 
 import HomeIcon from "../../../public/assets/Home.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";
 import ProfileIcon from "../../../public/assets/Profile.svg";
 import BuyIcon from "../../../public/assets/Buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
+
 import Slider from "../../components/Slider";
+import Container from "../../components/Container";
 
+const cards = [
+  {
+    title: "Super Long Watch Name",
+    desc: "Series 6. Red",
+    price: 359,
+    src: "assets/apple-watch-red.png",
+  },
+  {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: 159,
+    src: "assets/samsung-galaxy-watch.png",
+  },
+  {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: 159,
+    src: "assets/samsung-galaxy-watch.png",
+  },
+  {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: 159,
+    src: "assets/samsung-galaxy-watch.png",
+  },
+  {
+    title: "SAMSUNG Galaxy Watch",
+    desc: "Active. Green",
+    price: 159,
+    src: "assets/samsung-galaxy-watch.png",
+  },
+];
 export default function Home() {
-  const cards = [
-    {
-      title: "Super Long Watch Name",
-      desc: "Series 6. Red",
-      price: "$ 359",
-      src: "assets/apple-watch-red.png",
-    },
-    {
-      title: "SAMSUNG Galaxy Watch",
-      desc: "Active. Green",
-      price: "$ 159",
-      src: "assets/samsung-galaxy-watch.png",
-    },
-    {
-      title: "SAMSUNG Galaxy Watch",
-      desc: "Active. Green",
-      price: "$ 159",
-      src: "assets/samsung-galaxy-watch.png",
-    },
-    {
-      title: "SAMSUNG Galaxy Watch",
-      desc: "Active. Green",
-      price: "$ 159",
-      src: "assets/samsung-galaxy-watch.png",
-    },
-    {
-      title: "SAMSUNG Galaxy Watch",
-      desc: "Active. Green",
-      price: "$ 159",
-      src: "assets/samsung-galaxy-watch.png",
-    },
-  ];
-
   return (
     <Container white>
       <div className={styles.wrapper}>
@@ -103,8 +104,8 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link to="/orders">
-                  <BuyIcon className={styles.footer_nav_item} title="orders" />
+                <Link to="/basket">
+                  <BuyIcon className={styles.footer_nav_item} title="basket" />
                 </Link>
               </li>
             </ul>
