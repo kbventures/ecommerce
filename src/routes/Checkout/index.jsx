@@ -50,7 +50,7 @@ export default function Checkout() {
               src="../../assets/location.png"
               width="20px"
               height="auto"
-              alt="address"
+              alt="shipping address"
             />
             <p>43 Oxford Road M13 4GR Manchester, UK</p>
           </div>
@@ -59,7 +59,7 @@ export default function Checkout() {
               src="../../assets/call.png"
               width="20px"
               height="auto"
-              alt="phone"
+              alt="telephone"
             />
             <p>+234 9011039271</p>
           </div>

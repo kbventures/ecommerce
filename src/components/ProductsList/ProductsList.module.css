@@ -1,20 +1,9 @@
-.arrowIcon{
-    transform: rotate(180deg)
-}
-
-.header {
+.wrapper {
     display: flex;
-    justify-content: space-between;
-    margin: 40px 0 25px 0;
-}
-
-.totalPriceWrapper {
-    margin: 0 auto;
-}
-
-.checkout {
-    margin: 0 auto;
-    width: fit-content;
+    flex-direction: column;
+    gap: 16px;
+    margin: 10px auto;
+    min-height: 220px;
 }
 
 /* 360px */
@@ -31,21 +20,21 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-    .totalPriceWrapper {
+    .wrapper {
         width: 75%;
     }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .totalPriceWrapper {
+    .wrapper {
         width: 65%;
     }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-    .totalPriceWrapper {
+    .wrapper {
         width: 50%;
     }
 }

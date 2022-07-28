@@ -1,20 +1,15 @@
-.arrowIcon{
-    transform: rotate(180deg)
-}
-
-.header {
+.wrapper {
+    align-items: center;
     display: flex;
+    font-size: var(--17px);
     justify-content: space-between;
-    margin: 40px 0 25px 0;
-}
-
-.totalPriceWrapper {
     margin: 0 auto;
 }
 
-.checkout {
-    margin: 0 auto;
-    width: fit-content;
+.price {
+    color: var(--primary-color);
+    font-size: var(--22px);
+    font-weight: bold;
 }
 
 /* 360px */
@@ -31,23 +26,14 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-    .totalPriceWrapper {
-        width: 75%;
-    }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .totalPriceWrapper {
-        width: 65%;
-    }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-    .totalPriceWrapper {
-        width: 50%;
-    }
 }
 
 /* 1680 px */
