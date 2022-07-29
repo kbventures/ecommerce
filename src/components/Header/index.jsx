@@ -1,19 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
-import HomeIcon from "../../../public/assets/Home.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";
-import ProfileIcon from "../../../public/assets/Profile.svg";
-import BuyIcon from "../../../public/assets/Buy.svg";
-import MenuIcon from "../../../public/assets/menu-icon.svg";
 import DeleteIcon from "../../../public/assets/Delete.svg";
 
+const icons = {
+  delete: <DeleteIcon className={styles.icon} />,
+  heart: <HeartIcon className={styles.icon} />,
+};
+
 export default function Header({ title, icon }) {
-  const icons = {
-    delete: <DeleteIcon className={styles.icon} />,
-    heart: <HeartIcon className={styles.icon} />,
-  };
   return (
     <header className={styles.header}>
       <ArrowIcon className={styles.arrowIcon} />
@@ -22,3 +20,13 @@ export default function Header({ title, icon }) {
     </header>
   );
 }
+
+Header.propTypes = {
+  title: PropTypes.string,
+  icon: PropTypes.oneOf(Object.values(icons)),
+};
+
+Header.defaultProps = {
+  title: "",
+  icon: "",
+};

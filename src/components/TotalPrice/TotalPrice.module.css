@@ -1,15 +1,15 @@
 .wrapper {
-    align-items: center;
-    display: flex;
-    font-size: var(--17px);
-    justify-content: space-between;
-    margin: 0 auto;
+  align-items: center;
+  display: flex;
+  font-size: var(--17px);
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .price {
-    color: var(--primary-color);
-    font-size: var(--22px);
-    font-weight: bold;
+  color: var(--primary-color);
+  font-size: var(--22px);
+  font-weight: bold;
 }
 
 /* 360px */

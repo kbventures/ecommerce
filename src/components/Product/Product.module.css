@@ -1,66 +1,65 @@
 .mainWrapper {
-    align-items: center;
-    background: white;
-    border-radius: 8px;
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
-    min-height: 100px;
-    padding: 10px;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  min-height: 100px;
+  padding: 10px;
 }
 
 .informationWrapper {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  justify-content: space-between;
 }
 
-
 .img {
-    width: 25%;
-    height: fit-content;
+  width: 25%;
+  height: fit-content;
 }
 
 .title {
-    font-size: var(--15px);
-    font-weight: bold;
-    margin-bottom: var(--5px);
+  font-size: var(--15px);
+  font-weight: bold;
+  margin-bottom: var(--5px);
 }
 
 .price {
-    font-size: var(--14px);
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: var(--5px);
+  font-size: var(--14px);
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--5px);
 }
 
 .quantityWrapper {
-    align-items: center;
-    display: flex;
-    font-family: 'SF Pro rounded', sans-serif;
-    font-size: var(--13px);
-    gap: 10px;
+  align-items: center;
+  display: flex;
+  font-family: "SF Pro rounded", sans-serif;
+  font-size: var(--13px);
+  gap: 10px;
 }
 
 .quantityItems {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .counterButton {
-    width: 20px;
-    height: 20px;
-    border: none;
-    border-radius: 4px;
-    background: #7dccec;
-    color: white;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background: #7dccec;
+  color: white;
+  cursor: pointer;
 }
 
 .counterNumber {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* 360px */
@@ -73,19 +72,19 @@
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-    .title {
-        font-size: var(--20px);
-        margin-bottom: var(--10px);
-    }
+  .title {
+    font-size: var(--20px);
+    margin-bottom: var(--10px);
+  }
 
-    .price {
-        font-size: var(--19px);
-        margin-bottom: var(--10px);
-    }
+  .price {
+    font-size: var(--19px);
+    margin-bottom: var(--10px);
+  }
 
-    .quantityWrapper {
-        font-size: var(--17px);
-    }
+  .quantityWrapper {
+    font-size: var(--17px);
+  }
 }
 
 /* 736px */
@@ -94,13 +93,13 @@
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .title {
-        margin-bottom: var(--15px);
-    }
+  .title {
+    margin-bottom: var(--15px);
+  }
 
-    .price {
-        margin-bottom: var(--15px);
-    }
+  .price {
+    margin-bottom: var(--15px);
+  }
 }
 
 /* 1280px */
@@ -109,17 +108,17 @@
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-    .title {
-        font-size: var(--30px);
-        margin-bottom: var(--20px);
-    }
+  .title {
+    font-size: var(--30px);
+    margin-bottom: var(--20px);
+  }
 
-    .price {
-        font-size: var(--25px);
-        margin-bottom: var(--20px);
-    }
+  .price {
+    font-size: var(--25px);
+    margin-bottom: var(--20px);
+  }
 
-    .quantityWrapper {
-        font-size: var(--20px);
-    }
+  .quantityWrapper {
+    font-size: var(--20px);
+  }
 }
