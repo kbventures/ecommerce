@@ -6,19 +6,19 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-.header_back_button {
+.headerBackButton {
   grid-column: 1/2;
 }
-.header_title {
+.headerTitle {
   grid-column: 2/3;
 }
 
-.shipping_info_container {
+.shippingInfoContainer {
   min-height: 200px;
   font-family: "Raleway", sans-serif;
 }
 
-.shipping_info_header {
+.shippingInfoHeader {
   display: flex;
   justify-content: space-between;
   min-height: 30px;
@@ -26,11 +26,11 @@
   font-weight: 500;
 }
 
-.shipping_info_header span {
+.shippingInfoHeader span {
   color: var(--primary-color);
 }
 
-.shipping_info_main {
+.shippingInfoMain {
   background: white;
   min-height: 150px;
   display: flex;
@@ -39,27 +39,27 @@
   border-radius: 10px;
   font-size: 0.85rem;
 }
-.shipping_info_item {
+.shippingInfoItem {
   min-height: 20px;
   margin: 10px;
   display: flex;
   align-items: center;
 }
 
-.shipping_info_item * {
+.shippingInfoItem * {
   margin-left: 15px;
 }
 
-.payment_info_container {
+.paymentInfoContainer {
   font-family: "Raleway", sans-serif;
 }
 
-.payment_info_header {
+.paymentInfoHeader {
   min-height: 30px;
   font-weight: 500;
   font-size: 0.85rem;
 }
-.payment_info_main {
+.paymentInfoMain {
   background: white;
   min-height: 120px;
   display: flex;
@@ -68,17 +68,17 @@
   font-size: 0.85rem;
 }
 
-.payment_info_option {
+.paymentInfoOption {
   margin: 15px;
   display: flex;
   align-items: center;
 }
 
-.payment_info_option > * {
+.paymentInfoOption > * {
   margin-left: 10px;
 }
 
-.payment_info_card_wrapper {
+.paymentInfoCardWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@
   border-radius: 10px;
 }
 
-.payment_total {
+.paymentTotal {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,11 +98,11 @@
   font-family: "Raleway", sans-serif;
 }
 
-.payment_total_amount {
+.paymentTotalAmount {
   color: var(--primary-color);
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.payment_button {
+.paymentButton {
 }

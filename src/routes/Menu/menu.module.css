@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.navigationContainer_a,
+.navigationContainerA,
 a:hover,
 a:focus,
 a:active {
@@ -27,37 +27,37 @@ a:active {
   position: relative;
 }
 
-.navigation_ul {
+.navigationUl {
   display: flex;
   flex-direction: column;
 }
 
-.navigation_a {
-  composes: navigationContainer_a;
+.navigationA {
+  composes: navigationContainerA;
   width: 110px;
   margin-bottom: 10px;
 }
 
-.navigation_a li {
+.navigationA li {
   display: flex;
 }
 
-.navigation_a li span {
+.navigationA li span {
   align-self: center;
 }
 
-.navigation_a:not(:first-child) {
+.navigationA:not(:first-child) {
   margin-top: 10px;
 }
 
-.navigation_span {
+.navigationSpan {
   border-bottom: 1px solid var(--border);
   width: 132px;
   color: var(--white);
   margin-left: 15px;
 }
 
-.navigation_span:hover {
+.navigationSpan:hover {
   color: var(--elipse);
 }
 
@@ -65,31 +65,31 @@ a:active {
   color: var(--elipse);
 }
 
-.navigation_profileIcon:before {
+.navigationProfileIcon:before {
   content: url("../../../public/assets/Profile.svg");
 }
 
-.navigation_buyIcon:before {
+.navigationBuyIcon:before {
   content: url("../../../public//assets/Buy.svg");
 }
 
-.navigation_heartIcon:before {
+.navigationHeartIcon:before {
   content: url("../../../public/assets/Heart.svg");
 }
 
-.navigation_settingIcon:before {
+.navigationSettingIcon:before {
   content: url("../../../public/assets/Setting.svg");
 }
 
-.navigation_deliveryIcon:before {
+.navigationDeliveryIcon:before {
   content: url("../../../public/assets/Bag.svg");
 }
 
-.navigation_signoutIcon:before {
+.navigationSignoutIcon:before {
   content: url("../../../public/assets/Logout.svg");
 }
 
-.navigation_logout {
+.navigationLogout {
   padding-top: 76px;
   display: flex;
   align-items: center;
@@ -162,7 +162,7 @@ a:active {
     width: 200px;
   }
 
-  .navigation_a {
+  .navigationA {
     margin-bottom: 28px;
   }
 }
@@ -185,31 +185,31 @@ a:active {
     width: 240px;
   }
 
-  .navigation_a {
+  .navigationA {
     margin-bottom: 48px;
   }
 
-  .navigation_profileIcon:before {
+  .navigationProfileIcon:before {
     content: url("../../../public/assets/480px/Profile.svg");
   }
 
-  .navigation_buyIcon:before {
+  .navigationBuyIcon:before {
     content: url("../../../public//assets/480px/Buy.svg");
   }
 
-  .navigation_heartIcon:before {
+  .navigationHeartIcon:before {
     content: url("../../../public/assets/480px/Heart.svg");
   }
 
-  .navigation_settingIcon:before {
+  .navigationSettingIcon:before {
     content: url("../../../public/assets/480px/Setting.svg");
   }
 
-  .navigation_deliveryIcon:before {
+  .navigationDeliveryIcon:before {
     content: url("../../../public/assets/480px/Bag.svg");
   }
 
-  .navigation_signoutIcon:before {
+  .navigationSignoutIcon:before {
     content: url("../../../public/assets/480px/Logout.svg");
   }
 
@@ -264,7 +264,7 @@ a:active {
     transform: scale(1.5);
   }
 
-  .navigation_logout {
+  .navigationLogout {
     padding-top: 100px;
   }
 }

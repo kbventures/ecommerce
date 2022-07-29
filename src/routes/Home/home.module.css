@@ -6,7 +6,7 @@
 .header {
   padding: 25px 0 10px 0;
 }
-.nav_header {
+.navHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.search_input {
+.searchInput {
   border-radius: 30px;
   height: 40px;
   background-color: transparent;
@@ -43,7 +43,7 @@
   height: 24px;
 }
 
-.page_main {
+.pageMain {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
@@ -67,7 +67,7 @@
   flex-wrap: wrap;
 }
 
-.list_item {
+.listItem {
   font-family: Raleway, sans-serif;
   font-size: var(--13px);
   line-height: var(--20px);
@@ -77,16 +77,16 @@
   cursor: pointer;
 }
 
-.list_item_active {
-  composes: list_item;
+.listItemActive {
+  composes: listItem;
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
 }
-.page_footer {
+.pageFooter {
   margin: 5px 0 5px 0;
 }
 
-.nav_list {
+.navList {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,14 +94,14 @@
   margin-bottom: 16px;
 }
 
-.footer_nav_item {
+.footerNavItem {
   cursor: pointer;
   fill: transparent;
   stroke: #200e32;
 }
 
-.footer_nav_item_active {
-  composes: footer_nav_item;
+.footerNavItemActive {
+  composes: footerNavItem;
   filter: drop-shadow(0px 0px 15px rgba(89, 86, 233, 1));
   fill: var(--primary-color);
   stroke: var(--primary-color);
@@ -128,7 +128,7 @@
     margin-bottom: 1rem;
   }
 
-  .list_item {
+  .listItem {
     font-family: Raleway, sans-serif;
     font-size: var(--13px);
     line-height: var(--20px);
@@ -138,8 +138,8 @@
     cursor: pointer;
   }
 
-  .list_item_active {
-    composes: list_item;
+  .listItemActive {
+    composes: listItem;
     color: var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
   }
@@ -150,7 +150,7 @@
     flex: 1 0 auto;
   }
 
-  .slider_cards_list {
+  .sliderCardsList {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -159,7 +159,7 @@
     flex: 1 0 auto;
   }
 
-  .next_slide_button {
+  .nextSlideButton {
     font-size: 1rem;
     line-height: 1rem;
 
@@ -180,16 +180,16 @@
     margin-bottom: 2rem;
   }
 
-  .list_item {
+  .listItem {
     font-size: var(--16px);
     line-height: var(--20px);
   }
 
-  .next_slide_button {
+  .nextSlideButton {
     font-size: 1.1rem;
   }
 
-  .nav_list {
+  .navList {
     margin-bottom: 20px;
   }
 }
@@ -204,10 +204,10 @@
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
-  .footer_nav_item {
+  .footerNavItem {
     transform: scale(1.5);
   }
-  .nav_list {
+  .navList {
     margin-top: 20px;
   }
 }
@@ -219,7 +219,7 @@
     line-height: 3rem;
   }
 
-  .list_item {
+  .listItem {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -236,11 +236,11 @@
     line-height: 3.5rem;
   }
 
-  .footer_nav_item {
+  .footerNavItem {
     transform: scale(1.5);
   }
 
-  .page_footer {
+  .pageFooter {
     margin: 15px 0 15px 0;
   }
 }

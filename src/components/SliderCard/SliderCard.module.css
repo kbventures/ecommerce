@@ -1,4 +1,4 @@
-.slider_card {
+.sliderCard {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
@@ -13,7 +13,7 @@
   flex: 1 0 auto;
 }
 
-.slider_card_img {
+.sliderCardImg {
   position: relative;
   top: -10px;
   width: 40%;
@@ -21,7 +21,7 @@
   border-radius: 50%;
 }
 
-.slider_card_title {
+.sliderCardTitle {
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
@@ -33,7 +33,7 @@
   opacity: 0.9;
 }
 
-.slider_card_desc {
+.sliderCardDesc {
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -43,7 +43,7 @@
   opacity: 0.9;
 }
 
-.slider_card_price {
+.sliderCardPrice {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -56,61 +56,61 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  .slider_card {
+  .sliderCard {
     width: 240px;
     height: 240px;
   }
 
-  .slider_card_title {
+  .sliderCardTitle {
     font-size: 1.35rem;
     line-height: 1.3rem;
   }
 
-  .slider_card_desc {
+  .sliderCardDesc {
     font-weight: 600;
     font-size: 1.1rem;
   }
 
-  .slider_card_price {
+  .sliderCardPrice {
     font-size: 1.1rem;
   }
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  .slider_card {
+  .sliderCard {
     width: 280px;
     height: 280px;
   }
 
-  .slider_card_title {
+  .sliderCardTitle {
     font-size: 1.35rem;
     line-height: 1.3rem;
   }
 
-  .slider_card_desc {
+  .sliderCardDesc {
     font-weight: 600;
     font-size: 1.1rem;
   }
 
-  .slider_card_price {
+  .sliderCardPrice {
     font-size: 1.1rem;
   }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-  .slider_card_title {
+  .sliderCardTitle {
     font-size: 1.6rem;
     line-height: 1.6rem;
   }
 
-  .slider_card_desc {
+  .sliderCardDesc {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
 
-  .slider_card_price {
+  .sliderCardPrice {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
@@ -118,17 +118,17 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .slider_card_title {
+  .sliderCardTitle {
     font-size: 1.7rem;
     line-height: 1.7rem;
   }
 
-  .slider_card_desc {
+  .sliderCardDesc {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
 
-  .slider_card_price {
+  .sliderCardPrice {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
@@ -136,17 +136,17 @@
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .slider_card_title {
+  .sliderCardTitle {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
 
-  .slider_card_desc {
+  .sliderCardDesc {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
 
-  .slider_card_price {
+  .sliderCardPrice {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }

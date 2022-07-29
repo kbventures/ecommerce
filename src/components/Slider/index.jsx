@@ -7,10 +7,10 @@ import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 export default function Slider({ cards }) {
   return (
     <div className={styles.slider}>
-      <button type="button" className={styles.next_slide_button}>
+      <button type="button" className={styles.nextSlideButton}>
         See more <ArrowIcon />
       </button>
-      <div className={styles.slider_cards_list}>
+      <div className={styles.sliderCardsList}>
         {cards.map(({ title, desc, price, src, link }, i) => (
           <SliderCard
             key={i}
