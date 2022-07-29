@@ -49,13 +49,13 @@ export default function Home() {
     <Container white>
       <div className={styles.wrapper}>
         <header className={styles.header}>
-          <nav className={styles.nav_header}>
+          <nav className={styles.navHeader}>
             <Link to="/menu">
               <MenuIcon />
             </Link>
             <div className={styles.search}>
               <input
-                className={styles.search_input}
+                className={styles.searchInput}
                 placeholder="Search"
                 type="search"
                 name="search"
@@ -64,25 +64,25 @@ export default function Home() {
             </div>
           </nav>
         </header>
-        <main className={styles.page_main}>
+        <main className={styles.pageMain}>
           <h2 className={styles.title}>Order online collect in store</h2>
-          <div className={styles.slider_wrapper}>
+          <div className={styles.sliderWrapper}>
             <ul className={styles.tabs}>
-              <li className={styles.list_item_active}>Wearable</li>
-              <li className={styles.list_item}>Laptops</li>
-              <li className={styles.list_item}>Phones</li>
-              <li className={styles.list_item}>Drones</li>
+              <li className={styles.listItemActive}>Wearable</li>
+              <li className={styles.listItem}>Laptops</li>
+              <li className={styles.listItem}>Phones</li>
+              <li className={styles.listItem}>Drones</li>
             </ul>
             <Slider cards={cards} />
           </div>
         </main>
-        <footer className={styles.page_footer}>
+        <footer className={styles.pageFooter}>
           <nav>
-            <ul className={styles.nav_list}>
+            <ul className={styles.navList}>
               <li>
                 <Link to="/home">
                   <HomeIcon
-                    className={styles.footer_nav_item_active}
+                    className={styles.footerNavItemActive}
                     title="home"
                   />
                 </Link>
@@ -90,7 +90,7 @@ export default function Home() {
               <li>
                 <Link to="/favorite">
                   <HeartIcon
-                    className={styles.footer_nav_item}
+                    className={styles.footerNavItem}
                     title="favorite"
                   />
                 </Link>
@@ -98,14 +98,14 @@ export default function Home() {
               <li>
                 <Link to="/profile">
                   <ProfileIcon
-                    className={styles.footer_nav_item}
+                    className={styles.footerNavItem}
                     title="profile"
                   />
                 </Link>
               </li>
               <li>
                 <Link to="/basket">
-                  <BuyIcon className={styles.footer_nav_item} title="basket" />
+                  <BuyIcon className={styles.footerNavItem} title="basket" />
                 </Link>
               </li>
             </ul>

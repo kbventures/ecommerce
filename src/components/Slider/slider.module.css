@@ -4,7 +4,7 @@
   flex: 1 0 auto;
 }
 
-.slider_cards_list {
+.sliderCardsList {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -13,7 +13,7 @@
   flex: 1 0 auto;
 }
 
-.next_slide_button {
+.nextSlideButton {
   margin: 0 0 5px auto;
   background-color: transparent;
   border: none;

@@ -4,12 +4,12 @@
   overflow-x: hidden;
 }
 
-.container_primary {
+.containerPrimary {
   composes: container;
   background-color: var(--primary-color);
 }
 
-.container_white {
+.containerWhite {
   composes: container;
   background-color: #f2f2f2;
 }

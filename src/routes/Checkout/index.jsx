@@ -5,21 +5,21 @@ import Button from "../../components/Button";
 
 const {
   header,
-  header_title: headerTitle,
+  headerTitle,
 
-  shipping_info_container: shippingInfoContainer,
-  shipping_info_header: shippingInfoHeader,
-  shipping_info_main: shippingInfoMain,
-  shipping_info_item: shippingInfoItem,
+  shippingInfoContainer,
+  shippingInfoHeader,
+  shippingInfoMain,
+  shippingInfoItem,
 
-  payment_info_container: paymentInfoContainer,
-  payment_info_header: paymentInfoHeader,
-  payment_info_main: paymentInfoMain,
-  payment_info_option: paymentInfoOption,
-  payment_info_card_wrapper: paymentInfoCardWrapper,
+  paymentInfoContainer,
+  paymentInfoHeader,
+  paymentInfoMain,
+  paymentInfoOption,
+  paymentInfoCardWrapper,
 
-  payment_total: paymentTotal,
-  payment_total_amount: paymentTotalAmount,
+  paymentTotal,
+  paymentTotalAmount,
 } = styles;
 
 export default function Checkout() {
