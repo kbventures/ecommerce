@@ -3,7 +3,6 @@
     display: flex;
     font-size: var(--17px);
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .price {
