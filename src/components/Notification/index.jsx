@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Notification.module.css";
 import NotificationIcon from "../../../public/assets/Notification.svg";
 
@@ -10,3 +11,7 @@ export default function Notification({ title }) {
     </div>
   );
 }
+
+Notification.propTypes = {
+  title: PropTypes.string.isRequired,
+};
