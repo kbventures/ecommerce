@@ -1,9 +1,9 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 10px auto;
-    min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 10px auto;
+  min-height: 220px;
 }
 
 /* 360px */
@@ -20,23 +20,23 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-    .wrapper {
-        width: 75%;
-    }
+  .wrapper {
+    width: 75%;
+  }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .wrapper {
-        width: 65%;
-    }
+  .wrapper {
+    width: 65%;
+  }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-    .wrapper {
-        width: 50%;
-    }
+  .wrapper {
+    width: 50%;
+  }
 }
 
 /* 1680 px */

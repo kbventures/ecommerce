@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./TotalPrice.module.css";
 
 export default function TotalPrice({ amount }) {
@@ -9,3 +10,7 @@ export default function TotalPrice({ amount }) {
     </div>
   );
 }
+
+TotalPrice.propTypes = {
+  amount: PropTypes.number.isRequired,
+};

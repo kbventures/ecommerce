@@ -6,9 +6,9 @@
 }
 
 .price {
-    color: var(--primary-color);
-    font-size: var(--22px);
-    font-weight: bold;
+  color: var(--primary-color);
+  font-size: var(--22px);
+  font-weight: bold;
 }
 
 /* 360px */
