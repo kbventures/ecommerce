@@ -1,16 +1,5 @@
-.header {
-  height: 120px;
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-}
 .headerBackButton {
   grid-column: 1/2;
-}
-.headerTitle {
-  grid-column: 2/3;
 }
 
 .shippingInfoContainer {
@@ -89,20 +78,6 @@
   border-radius: 10px;
 }
 
-.paymentTotal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 60px;
-  margin-top: 20px;
-  font-family: "Raleway", sans-serif;
-}
-
-.paymentTotalAmount {
-  color: var(--primary-color);
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.paymentButton {
+.totalPriceWrapper {
+  margin: 20px auto;
 }

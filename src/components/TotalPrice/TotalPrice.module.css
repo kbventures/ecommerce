@@ -1,9 +1,8 @@
 .wrapper {
-  align-items: center;
-  display: flex;
-  font-size: var(--17px);
-  justify-content: space-between;
-  margin: 0 auto;
+    align-items: center;
+    display: flex;
+    font-size: var(--17px);
+    justify-content: space-between;
 }
 
 .price {

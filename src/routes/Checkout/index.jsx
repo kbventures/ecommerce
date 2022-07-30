@@ -2,11 +2,10 @@ import React from "react";
 import styles from "./checkout.module.css";
 import Container from "../../components/Container";
 import Button from "../../components/Button";
+import Header from "../../components/Header";
+import TotalPrice from "../../components/TotalPrice";
 
 const {
-  header,
-  headerTitle,
-
   shippingInfoContainer,
   shippingInfoHeader,
   shippingInfoMain,
@@ -17,18 +16,13 @@ const {
   paymentInfoMain,
   paymentInfoOption,
   paymentInfoCardWrapper,
-
-  paymentTotal,
-  paymentTotalAmount,
+  totalPriceWrapper,
 } = styles;
 
 export default function Checkout() {
   return (
     <Container backgroundColor="rgb(245, 245, 248)">
-      <div className={header}>
-        <img src="../../assets/arrow-left.png" alt="left arrow" />
-        <h1 className={headerTitle}>Checkout</h1>
-      </div>
+      <Header title="Checkout" />
 
       <div className={shippingInfoContainer}>
         <div className={shippingInfoHeader}>
@@ -96,9 +90,8 @@ export default function Checkout() {
         </div>
       </div>
 
-      <div className={paymentTotal}>
-        <span>Total</span>
-        <span className={paymentTotalAmount}>$954</span>
+      <div className={totalPriceWrapper}>
+        <TotalPrice amount={954} />
       </div>
 
       <Button inverted>Confirm and Pay</Button>
