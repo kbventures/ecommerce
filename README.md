@@ -1,6 +1,7 @@
 # E-commerce Site
 
 This is a sample e-commerce store with all of the main functionlities of an E-commerce site. You can browse through items, add items to a basket and even checkout items using Stripe.
+<br />
 
 ## How Do I Contribute Using Git?
 
@@ -43,6 +44,45 @@ This is a sample e-commerce store with all of the main functionlities of an E-co
 8. In the top-right corner click "Reviewers" and add one person on the team as a reviewer for the pull request.
 
 9. Once the Reviewer has looked at your pull request and verified everything is OK, they will merge your pull request into the main branch.
+
+<br/>
+
+## What if I have a Conflict?
+
+1. From within your feature breanch, fetch the latest changes from the main branch
+
+   ```sh
+   git fetch origin main
+   ```
+
+2. Rebase so that your feature branch history is stacked on top of the latest main branch history
+
+   ```sh
+   git rebase origin/main
+   ```
+
+3. Now resolve the conflicts manually in your code editor one at a time. Git will tell you which files have a conflict. Once you've resolved the conflicts run the following commands:
+
+   ```sh
+   git add .
+   git rebase --continue
+   ```
+
+4. Write and save a commit message if all conflicts are resolved.
+
+5. Push your rebased feature branch changes to GitHub's computers.
+
+   ```sh
+   git push -f origin <your feature branch name>
+   ```
+
+6. Go back to your pull request on Github your pull request should have no conflicts and you can merge into the main branch!
+
+Also, don't forget the most important rule of rebasing:
+
+> _NEVER REBASE ON A REMOTE BRANCH_
+
+<br />
 
 ## How Do I Write Good Commit Message?
 
