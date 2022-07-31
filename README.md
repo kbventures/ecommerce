@@ -49,7 +49,7 @@ This is a sample e-commerce store with all of the main functionlities of an E-co
 
 ## What if I have a Conflict?
 
-1. From within your feature breanch, fetch the latest changes from the main branch
+1. From within your feature branch, fetch the latest changes from the main branch
 
    ```sh
    git fetch origin main
