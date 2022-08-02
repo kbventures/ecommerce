@@ -1,0 +1,36 @@
+.shippingInfoContainer {
+  min-height: 200px;
+  font-family: "Raleway", sans-serif;
+}
+
+.shippingInfoHeader {
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.shippingInfoHeader span {
+  color: var(--primary-color);
+}
+
+.shippingInfoMain {
+  background: white;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+.shippingInfoItem {
+  min-height: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.shippingInfoItem * {
+  margin-left: 15px;
+}

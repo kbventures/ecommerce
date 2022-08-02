@@ -1,0 +1,38 @@
+.paymentInfoContainer {
+  font-family: "Raleway", sans-serif;
+}
+
+.paymentInfoHeader {
+  min-height: 30px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.paymentInfoMain {
+  background: white;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.paymentInfoOption {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.paymentInfoOption > * {
+  margin-left: 10px;
+}
+
+.paymentInfoCardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6fa;
+  width: 60px;
+  height: 40px;
+  border: 1px solid #d6d9e0;
+  border-radius: 10px;
+}

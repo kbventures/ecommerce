@@ -15,15 +15,15 @@ export default function Header({ title, icon, iconColor }) {
     <header className={styles.header}>
       <ArrowIcon className={styles.arrowIcon} />
       <span>{title}</span>
-      <div>{icons[icon]}</div>
+      <div>{icons[icon] ?? null}</div>
     </header>
   );
 }
 
 Header.propTypes = {
   title: PropTypes.string,
-  icon: PropTypes.string,
   iconColor: PropTypes.string,
+  icon: PropTypes.oneOf(["delete", "heart", ""]),
 };
 
 Header.defaultProps = {
