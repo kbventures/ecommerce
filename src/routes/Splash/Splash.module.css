@@ -35,6 +35,10 @@
   filter: blur(9px);
 }
 
+.link {
+  width: 100%;
+}
+
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
   .title {

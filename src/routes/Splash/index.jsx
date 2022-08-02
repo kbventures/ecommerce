@@ -4,7 +4,7 @@ import styles from "./Splash.module.css";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 
-const { container, title, imgWrapper, img } = styles;
+const { container, title, imgWrapper, img, link } = styles;
 
 function Splash() {
   return (
@@ -15,7 +15,7 @@ function Splash() {
         <div className={imgWrapper}>
           <img src="../../assets/Saly-19.png" alt="guy in vr" className={img} />
         </div>
-        <Link to="/home">
+        <Link to="/home" className={link}>
           <Button>Get started</Button>
         </Link>
       </div>

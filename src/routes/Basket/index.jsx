@@ -37,7 +37,7 @@ export default function Basket() {
           <TotalPrice amount={amount} />
         </div>
         <div className={styles.checkout}>
-          <Button>Checkout</Button>
+          <Button inverted>Checkout</Button>
         </div>
       </main>
     </Container>
