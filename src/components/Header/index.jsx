@@ -1,19 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import HeartIcon from "../../../public/assets/Heart.svg";
 import DeleteIcon from "../../../public/assets/Delete.svg";
 
-export default function Header({ title, icon, iconColor }) {
+export default function Header({ title, icon, iconColor, link }) {
   const icons = {
     delete: <DeleteIcon className={styles[iconColor]} />,
     heart: <HeartIcon className={styles[iconColor]} />,
   };
-
   return (
     <header className={styles.header}>
-      <ArrowIcon className={styles.arrowIcon} />
+      <Link to={link}>
+        <ArrowIcon className={styles.arrowIcon} />
+      </Link>
       <span>{title}</span>
       <div>{icons[icon] ?? null}</div>
     </header>
@@ -22,8 +24,9 @@ export default function Header({ title, icon, iconColor }) {
 
 Header.propTypes = {
   title: PropTypes.string,
+  icon: PropTypes.oneOf(["heart", "delete", ""]),
   iconColor: PropTypes.string,
-  icon: PropTypes.oneOf(["delete", "heart", ""]),
+  link: PropTypes.string.isRequired,
 };
 
 Header.defaultProps = {
