@@ -11,40 +11,12 @@ import MenuIcon from "../../../public/assets/menu-icon.svg";
 
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
+import { useItems } from "../../contexts/ItemsContext";
 
-const cards = [
-  {
-    title: "Super Long Watch Name",
-    desc: "Series 6. Red",
-    price: 359,
-    src: "assets/apple-watch-red.png",
-  },
-  {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: 159,
-    src: "assets/samsung-galaxy-watch.png",
-  },
-  {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: 159,
-    src: "assets/samsung-galaxy-watch.png",
-  },
-  {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: 159,
-    src: "assets/samsung-galaxy-watch.png",
-  },
-  {
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    price: 159,
-    src: "assets/samsung-galaxy-watch.png",
-  },
-];
+
 export default function Home() {
+  const items = useItems()
+
   return (
     <Container white>
       <div className={styles.wrapper}>
@@ -73,7 +45,7 @@ export default function Home() {
               <li className={styles.listItem}>Phones</li>
               <li className={styles.listItem}>Drones</li>
             </ul>
-            <Slider cards={cards} />
+            <Slider cards={items} />
           </div>
         </main>
         <footer className={styles.pageFooter}>

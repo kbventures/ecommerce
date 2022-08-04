@@ -5,3 +5,9 @@ Added image assets for checkout page
 Completed basic structural styling for checkout page
 
 Added Raleway font, updated CSP, added final touches to /checkout.
+
+
+
+Need to change heart color
+
+How to make links out of reusable component

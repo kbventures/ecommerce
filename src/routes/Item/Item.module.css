@@ -1,98 +1,24 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.header {
-  padding: 25px 0 10px 0;
-}
-.navHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.productImg{
+  width: 90uubupx; 
 }
 
-.search {
-  background-color: transparent;
-  position: relative;
-}
-
-.searchInput {
-  border-radius: 30px;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid #c9c9c9;
-  padding: 0 0 0 40px;
-  color: #868686;
-  font-size: var(--16p66);
-  line-height: var(--20px);
-  font-family: Raleway, sans-serif;
-  max-width: 160px;
-  font-weight: 600;
-  outline: none;
-}
-
-.search::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(50%, 50%);
-  content: "";
-  background-image: url("../../../public/assets/Search.svg");
-  width: 24px;
-  height: 24px;
-}
-
-.pageMain {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  justify-content: space-evenly;
-}
-
-.title {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #000000;
-  text-align: center;
-}
-
-.tabs {
-  display: flex;
+.productImgSection{
+  display: flex; 
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+
+.container{
+  font-family: Raleway, sans-serif;
 }
 
 .listItem {
-  font-family: Raleway, sans-serif;
   font-size: var(--13px);
   line-height: var(--20px);
-  color: #9a9a9d;
-  padding: 10px 0;
-  text-align: center;
-  cursor: pointer;
 }
 
-.listItemActive {
-  composes: listItem;
-  color: var(--primary-color);
-  border-bottom: 5px solid var(--primary-color);
-}
-.pageFooter {
-  margin: 5px 0 5px 0;
-}
 
-.navList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 16px;
-}
 
 .footerNavItem {
   cursor: pointer;
@@ -109,89 +35,13 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  .title {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.25rem;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
 
-  .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-
-  .listItem {
-    font-family: Raleway, sans-serif;
-    font-size: var(--13px);
-    line-height: var(--20px);
-    color: #9a9a9d;
-    padding: 10px 0;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .listItemActive {
-    composes: listItem;
-    color: var(--primary-color);
-    border-bottom: 5px solid var(--primary-color);
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-  }
-
-  .sliderCardsList {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 30px;
-    margin: 0 0 5px 0;
-    flex: 1 0 auto;
-  }
-
-  .nextSlideButton {
-    font-size: 1rem;
-    line-height: 1rem;
-
-    margin-bottom: 35px;
-  }
+ 
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  .title {
-    font-size: 3rem;
-    line-height: 3rem;
-
-    margin-bottom: 1.5rem;
-  }
-
-  .tabs {
-    margin-bottom: 2rem;
-  }
-
-  .listItem {
-    font-size: var(--16px);
-    line-height: var(--20px);
-  }
-
-  .nextSlideButton {
-    font-size: 1.1rem;
-  }
-
-  .navList {
-    margin-bottom: 20px;
-  }
+ 
 }
 
 /* 600px */
@@ -200,49 +50,17 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-  .footerNavItem {
-    transform: scale(1.5);
-  }
-  .navList {
-    margin-top: 20px;
-  }
+ 
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .title {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .listItem {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  .tabs {
-    gap: 20px;
-  }
+ 
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-
-  .footerNavItem {
-    transform: scale(1.5);
-  }
-
-  .pageFooter {
-    margin: 15px 0 15px 0;
-  }
+  
 }
 
 /* 1680 px */

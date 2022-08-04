@@ -1,0 +1,38 @@
+.list{
+    display: flex; 
+    font-weight: 600;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+
+/* label[for="kml-red-check"]{
+    //Your CSS goes that makes the label look like a button goes here
+ } */
+ .displaynone{
+     display:none;
+ }
+
+ .label{
+    border: 0.001px solid black; 
+    padding: 0.15rem 0.15rem;
+    border-radius: 8px;
+    font-size: var(--12px);
+ }
+
+ .title, .colorChoice{
+    font-weight: 600;
+ }
+
+ .title{
+    margin-bottom: 1rem;
+
+ }
+
+ .colorChoice{
+    margin-bottom: 0.5rem;
+ }
+
+
+
