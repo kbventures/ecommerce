@@ -12,6 +12,15 @@
   transform: rotate(180deg);
 }
 
+.icon{
+  transform: scale(1);
+}
+
+.black{
+  composes:icon;
+  stroke: black; 
+}
+
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
 }
