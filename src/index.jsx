@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ItemsProvider } from "./contexts/ItemsContext"
+import { ItemsProvider } from "./contexts/ItemsContext";
 
 // Client Routes
 import Splash from "./routes/Splash";

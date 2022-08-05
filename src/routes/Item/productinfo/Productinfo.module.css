@@ -1,38 +1,246 @@
+.container{
+   /* Empty for now */
+}
+.title{
+   margin-bottom: 1rem;
+   font-size: 23px;
+}
+
+.colorChoice{
+   font-size: 12px;
+}
+.title, .colorChoice{
+   font-weight: 600;
+}
+.colorChoice{
+   margin-bottom: 0.5rem;
+}
+
 .list{
     display: flex; 
     font-weight: 600;
     justify-content: center;
     justify-content: space-around;
-    margin-bottom: 1rem;
+    margin: 0.75rem 0;
 }
 
 
-/* label[for="kml-red-check"]{
-    //Your CSS goes that makes the label look like a button goes here
- } */
+
  .displaynone{
      display:none;
  }
 
  .label{
-    border: 0.001px solid black; 
-    padding: 0.15rem 0.15rem;
-    border-radius: 8px;
+    border: 0.5px solid black; 
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
     font-size: var(--12px);
+    width: 200px; 
  }
 
- .title, .colorChoice{
-    font-weight: 600;
+ .desc{
+   font-weight: 600;
+   font-size: 16px;
+   margin: 0.5rem 0;
  }
 
- .title{
-    margin-bottom: 1rem;
-
+ .longDesc{
+   font-size: 13px;
+   margin: 1rem 0;
+   color: grey; 
  }
 
- .colorChoice{
-    margin-bottom: 0.5rem;
- }
+
+ /* 360px */
+@media only screen and (min-width: 22.5rem) {
+
+   .title{
+      font-size: 25px;
+   }
+   
+   .colorChoice{
+      font-size: 16px;
+      margin-bottom: 1rem;
+   }
+
+   
+   .list{
+       margin: 1.5rem 0;
+   }
+   
+   
+    .label{
+    font-size: 13px;
+    }
+   
+    .desc{
+      font-weight: 600;
+      font-size: 18px;
+      margin: 1rem 0;
+    }
+   
+    .longDesc{
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+   .title{
+      font-size: 26px;
+      margin-bottom: 1.5rem;
+   }
+   
+   .colorChoice{
+      font-size: 17px;
+   }   
+
+   .list{
+      margin: 2rem 0; 
+   }
+   
+    .label{
+    font-size: 14px;
+    }
+   
+    .desc{
+      font-size: 19px;
+      margin: 1.5rem 0; 
+    }
+   
+    .longDesc{
+      font-size: 15px;
+      margin: 2rem 0;
+    }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+   .title{
+      font-size: 27px;
+   }
+   
+   .colorChoice{
+      font-size: 18px;
+   }   
+   
+    .label{
+    font-size: 15px;
+    }
+   
+    .desc{
+      font-size: 20px;
+    }
+   
+    .longDesc{
+      font-size: 16px;
+    }
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+   .title{
+      font-size: 28px;
+      margin-bottom: 2rem;
+   }
+   
+   .colorChoice{
+      font-size: 19px;
+   }   
+   
+    .label{
+    font-size: 16px;
+    }
+   
+    .desc{
+      font-size: 21px;
+    }
+   
+    .longDesc{
+      font-size: 17px;
+    }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+   .title{
+      font-size: 36px;
+      margin-bottom: 3rem;
+   }
+   
+   .colorChoice{
+      font-size: 24px;
+      margin-bottom: 2.5rem;
+   }   
+
+   .list{
+      margin: 3rem 0; 
+   }
+   
+    .label{
+    font-size: 19px;
+    }
+   
+    .desc{
+      font-size: 22px;
+      margin: 2.5rem 0;
+    }
+   
+    .longDesc{
+      font-size: 18px;
+      margin: 3rem 0; 
+    }
+
+
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+   .title{
+      font-size: 44px;
+   }
+   
+   .colorChoice{
+      font-size: 25px;
+   }   
+   
+    .label{
+    font-size: 20px;
+    }
+   
+    .desc{
+      font-size: 23px;
+    }
+   
+    .longDesc{
+      font-size: 19px;
+    }
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+   .title{
+      font-size: 46px;
+   }
+   
+   .colorChoice{
+      font-size: 26px;
+   }   
+   
+    .label{
+    font-size: 21px;
+    }
+   
+    .desc{
+      font-size: 24px;
+    }
+   
+    .longDesc{
+      font-size: 20px;
+    }
+}
+
 
 
 

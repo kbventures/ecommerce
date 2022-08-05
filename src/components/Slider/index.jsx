@@ -11,14 +11,13 @@ export default function Slider({ cards }) {
         See more <ArrowIcon />
       </button>
       <div className={styles.sliderCardsList}>
-        {cards.map(({ title, desc, price, src, link }, i) => (
+        {cards.map(({ title, desc, price, src }, i) => (
           <SliderCard
             key={i}
             title={title}
             desc={desc}
             price={price}
             src={src}
-            link={link}
           />
         ))}
       </div>
@@ -31,7 +30,7 @@ Slider.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       desc: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
       src: PropTypes.string.isRequired,
     })
   ).isRequired,
