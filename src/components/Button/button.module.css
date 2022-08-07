@@ -1,5 +1,5 @@
 .button {
-  margin: 30px 0;
+  margin: 20px 0;
   width: 100%;
   padding: 15px 40px;
   font-size: 1rem;
@@ -12,6 +12,9 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
+  .button{
+    margin: 30px 0; 
+  }
 }
 
 /* 480px */
@@ -21,34 +24,34 @@
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
   .button {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
   .button {
-    font-size: 2rem;
+    font-size:1.25rem;
   }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
   .button {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
   .button {
-    font-size: 3rem;
+    font-size: 1.75rem;
   }
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
   .button {
-    font-size: 3.25rem;
+    font-size: 2rem;
   }
 }

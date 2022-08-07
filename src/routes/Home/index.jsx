@@ -13,9 +13,8 @@ import Slider from "../../components/Slider";
 import Container from "../../components/Container";
 import { useItems } from "../../contexts/ItemsContext";
 
-
 export default function Home() {
-  const items = useItems()
+  const items = useItems();
 
   return (
     <Container white>
