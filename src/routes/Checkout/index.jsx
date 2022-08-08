@@ -12,7 +12,7 @@ const { totalPriceWrapper } = styles;
 export default function Checkout() {
   return (
     <Container backgroundColor="rgb(245, 245, 248)">
-      <Header title="Checkout" />
+      <Header title="Checkout" link="" />
       <ShippingInfo
         name="Rosina Doe"
         address="43 Oxford Road M13 4GR Manchester, UK"
@@ -25,6 +25,7 @@ export default function Checkout() {
       <div className={totalPriceWrapper}>
         <TotalPrice amount={954} />
       </div>
+
       <Button inverted>Confirm and Pay</Button>
     </Container>
   );

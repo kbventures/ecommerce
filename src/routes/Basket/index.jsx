@@ -14,12 +14,14 @@ const cards = [
     price: 359,
     quantity: 1,
     src: "assets/apple-watch-red.png",
+    link: "/home",
   },
   {
     title: "SAMSUNG Galaxy Watch",
     price: 159,
     quantity: 1,
     src: "assets/samsung-galaxy-watch.png",
+    link: "/home",
   },
 ];
 
@@ -28,7 +30,7 @@ const amount = cards.reduce((acc, curr) => acc + curr.price, 0);
 export default function Basket() {
   return (
     <Container white>
-      <Header title="Basket" icon="delete" />
+      <Header title="Basket" icon="delete" link="/home" />
 
       <main>
         <Notification title="Delivery for FREE until the end of the month" />
