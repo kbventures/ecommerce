@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Checkout.module.css";
+import styles from "./checkout.module.css";
 import Container from "../../components/Container";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import TotalPrice from "../../components/TotalPrice";
-import PaymentMethod from "./PaymentMethod";
-import ShippingInfo from "./ShippingInfo";
+import PaymentMethod from "./PaymentMethod/PaymentMethod";
+import ShippingInfo from "./ShippingInfo/ShippingInfo";
 
 const { totalPriceWrapper } = styles;
 
