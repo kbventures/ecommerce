@@ -9,7 +9,7 @@ export default function ProductInfo({ product }) {
       <h3 className={styles.title}>{product.title}</h3>
       <p className={styles.colorChoice}>Colors</p>
       <form action="">
-        <ColorChoices color={product.color} />
+        <ColorChoices colors={product.colors} />
       </form>
 
       <div>
@@ -25,6 +25,6 @@ ProductInfo.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     longDesc: PropTypes.string.isRequired,
-    color: PropTypes.arrayOf.isRequired,
+    colors: PropTypes.array.isRequired,
   }).isRequired,
 };

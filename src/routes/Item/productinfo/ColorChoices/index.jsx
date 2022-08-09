@@ -7,8 +7,8 @@ export default function ColorChoices({ colors }) {
   return (
     <div>
       <ul>
-        {colors.map(({ color }, i) => (
-          <Color colorName={color[i][0]} hex={color[i][1]} key={i} />
+        {colors.map(([name, color], i) => (
+          <Color colorName={name} hex={color} key={i} />
         ))}
       </ul>
     </div>
