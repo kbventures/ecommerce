@@ -1,0 +1,22 @@
+.labelSvg {
+    transform: scale(0.8);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--10px);
+    color: #868686;
+}
+
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #C9C9C9;
+}
