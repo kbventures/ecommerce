@@ -2,11 +2,12 @@
     transform: scale(0.8);
 }
 
-.formContainer {
+.formInputContainer {
     display: flex;
     flex-direction: column;
     font-size: var(--10px);
     color: #868686;
+    margin-bottom: 15px;
 }
 
 

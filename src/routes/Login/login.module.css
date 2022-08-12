@@ -53,17 +53,13 @@
     background-color: #ffffff;
     padding: 0 25px;
     height: calc(100vh - 140px);
-    border-radius: 5% 5% 0 0 ;
+    border-radius: 15px 15px 0 0 ;
 }
 
 .loginHeader {
     font-size: var(--13px);
     font-weight: 600;
-    padding: 15px 0;
-}
-
-.formMargin {
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 .passcodeLink {
