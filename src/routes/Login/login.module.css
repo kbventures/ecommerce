@@ -1,0 +1,132 @@
+.container {
+    background-color: var(--primary-color);
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+}
+
+.top {
+    align-items: center;
+    display: flex;
+    height: 140px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.EmptySmallEllipsePositionOne {
+    position: absolute;
+    top: 3px;
+    left: 53px;
+    transform: scale(0.7);
+}
+
+.EmptySmallEllipsePositionTwo {
+    position: absolute;
+    top: 98px;
+    right: 39px;
+    transform: scale(1.1);
+}
+
+.transparentSvg {
+    background: linear-gradient(rgba(0,0,0,0), rgba(89,86,233,.8), rgba(89,86,233,1));
+    /* 89,86,233 */
+    position: absolute;
+    top: 5px;
+    right: 23px;
+    height: 31px;
+    width: 93px;
+}
+
+.SolidPinkEllipsePosition{
+    position: absolute;
+    bottom: 86px;
+    right: 7px;
+    transform: scale(0.7);
+}
+
+.header {
+    color: white;
+    font-size: var(--36px);
+    font-weight: 600;
+}
+
+.overlay {
+    background-color: #ffffff;
+    padding: 0 25px;
+    height: calc(100vh - 140px);
+    border-radius: 15px 15px 0 0 ;
+}
+
+.loginHeader {
+    font-size: var(--13px);
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.passcodeLink {
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: var(--10px);
+    font-weight: 600;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+.createAccountLink {
+    color: var(--primary-color);
+    display: block;
+    font-size: var(--12px);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 46em) {
+    .top {
+        padding: 15px 53px;
+    }
+
+    .overlay {
+        padding: 15px 53px;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    .top {
+        padding: 0 73px;
+    }
+
+    .overlay {
+        padding: 0 73px;
+    }
+}
+
+@media only screen and (min-width: 112em) {
+    .top {
+        padding: 0 104px;
+    }
+
+    .overlay {
+        padding: 0 104px;
+    }
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {}
+
+/* 736px */
+@media only screen and (min-width: 46em) {}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}
