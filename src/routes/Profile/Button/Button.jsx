@@ -6,12 +6,10 @@ import RightArrowHead from "../../../../public/assets/chevron-left.svg";
 
 export default function Button({ title }) {
   return (
-    <div>
-      <section className={styles.button}>
-        {title}
-        <RightArrowHead className={styles.svg} />
-      </section>
-    </div>
+    <section className={styles.button}>
+      {title}
+      <RightArrowHead className={styles.svg} />
+    </section>
   );
 }
 
