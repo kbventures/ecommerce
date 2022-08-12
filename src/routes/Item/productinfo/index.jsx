@@ -25,6 +25,6 @@ ProductInfo.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     longDesc: PropTypes.string.isRequired,
-    colors: PropTypes.array.isRequired,
+    colors: PropTypes.arrayOf.isRequired,
   }).isRequired,
 };
