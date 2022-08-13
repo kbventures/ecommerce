@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ItemsProvider } from "./contexts/ItemsContext";
+import { UserProvider } from "./contexts/UserContext";
 
 // Client Routes
 import Splash from "./routes/Splash";
@@ -20,18 +21,20 @@ import "./reset.css";
 
 ReactDOM.render(
   <ItemsProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Splash />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/item" element={<Item />} />
-        <Route path="/basket" element={<Basket />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/payment" element={<Payment />} />
-      </Routes>
-    </BrowserRouter>
+    <UserProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Splash />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/item" element={<Item />} />
+          <Route path="/basket" element={<Basket />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment" element={<Payment />} />
+        </Routes>
+      </BrowserRouter>
+    </UserProvider>
   </ItemsProvider>,
   document.querySelector("#fromjs")
 );
