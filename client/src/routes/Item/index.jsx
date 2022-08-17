@@ -32,7 +32,7 @@ function Item() {
 
   return (
     <Container white>
-      <Header icon="heart" iconColor="black" />
+      <Header icon="heart" iconColor="black" link="/" />
       <div className={container}>
         <section className={productImgSection}>
           <img className={productImg} src={product.src} alt={product.title} />
