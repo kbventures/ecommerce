@@ -1,59 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Productinfo.module.css";
+import ColorChoices from "./ColorChoices/index";
 
-export default function ProductInfo({ product }) {
+export default function ProductInfo({ singleProduct }) {
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>{product.title}</h3>
+      <h3 className={styles.title}>{singleProduct.title}</h3>
       <p className={styles.colorChoice}>Colors</p>
       <form action="">
-        <ul className={styles.list}>
-          <li>
-            <label className={styles.label} htmlFor="color1">
-              Sky Blue
-              <input
-                type="checkbox"
-                className={styles.displaynone}
-                name="color1"
-              />
-            </label>
-          </li>
-          <li>
-            <label className={styles.label} htmlFor="color2">
-              Rose Gold
-              <input
-                type="checkbox"
-                className={styles.displaynone}
-                name="color2"
-              />
-            </label>
-          </li>
-          <li>
-            <label className={styles.label} htmlFor="color3">
-              Green
-              <input
-                type="checkbox"
-                className={styles.displaynone}
-                name="color3"
-              />
-            </label>
-          </li>
-        </ul>
+        <ColorChoices colors={singleProduct.colors} />
       </form>
 
       <div>
-        <h4 className={styles.desc}>{product.desc}</h4>
-        <p className={styles.longDesc}>{product.longDesc}</p>
+        <h4 className={styles.desc}>{singleProduct.desc}</h4>
+        <p className={styles.longDesc}>{singleProduct.longDesc}</p>
       </div>
     </div>
   );
 }
 
 ProductInfo.propTypes = {
-  product: PropTypes.shape({
+  singleProduct: PropTypes.shape({
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     longDesc: PropTypes.string.isRequired,
+    colors: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
   }).isRequired,
 };

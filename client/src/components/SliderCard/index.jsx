@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./SliderCard.module.css";
 
-function SliderCard({ title, desc, price, src }) {
+function SliderCard({ title, desc, price, src, id }) {
   return (
-    <Link to="/item" state={{ title, desc, price, src }}>
+    <Link to={`/item/${id}`} state={{ title, desc, price, src }}>
       <div className={styles.sliderCard}>
         <img className={styles.sliderCardImg} src={src} alt={title} />
         <h3 className={styles.sliderCardTitle}>{title}</h3>
@@ -21,6 +21,7 @@ SliderCard.propTypes = {
   desc: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default SliderCard;
