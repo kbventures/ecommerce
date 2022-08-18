@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import Container from "../../components/Container";
 import Header from "../../components/Header";
 import TotalPrice from "../../components/TotalPrice";
-import ProductInfo from "./productinfo";
+import ProductInfo from "./Productinfo";
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import { useItems } from "../../contexts/ItemsContext";
 // import { useBasket } from "../../contexts/BasketContext";

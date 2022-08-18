@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import styles from "./ColorChoices.module.css";
-import Color from "./Color/index";
+import Color from "../Color";
 
 export default function ColorChoices({ colors }) {
   return (

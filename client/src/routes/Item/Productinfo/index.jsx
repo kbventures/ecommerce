@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Productinfo.module.css";
-import ColorChoices from "./ColorChoices/index";
+import ColorChoices from "../ColorChoices";
 
 export default function ProductInfo({ singleProduct }) {
   return (
