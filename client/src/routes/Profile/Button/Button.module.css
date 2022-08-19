@@ -1,0 +1,50 @@
+.button {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    font-family: "SF Pro Text", sans-serif;
+    font-size: var(--13px);
+    font-weight: 600;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 12px 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.svg {
+    transform: scale(0.7);
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+    .button {
+        margin: 10px 0;
+    }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+    .button {
+        font-size: var(--15px);
+        margin: 15px 0;
+    }
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}

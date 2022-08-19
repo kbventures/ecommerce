@@ -1,0 +1,92 @@
+.fixedWidth {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: "Raleway", sans-serif;
+    font-size: var(--20px);
+    font-weight: 600;
+}
+
+.profileContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    height: fit-content;
+    margin: 5px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.backdrop {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    bottom: 0;
+    height: 85%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    font-size: var(--15px);
+    font-weight: 600;
+    margin: 10px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--12px);
+    gap: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    width: fit-content;
+}
+
+.pin {
+    position: absolute;
+    left: -40px;
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: var(--20px);
+    }
+
+    .address {
+        font-size: var(--13p33px);
+        margin-bottom: 15px;
+    }
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}
