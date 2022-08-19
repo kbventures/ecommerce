@@ -6,13 +6,17 @@ import express, { Express, Request, Response } from "express"
 import cors from "cors"
 
 const app: Express = express()
-const port: string | undefined = process.env.PORT
+const port: number | string | undefined = process.env.PORT || 4001
 
 app.use(cors({
-  origin: "http://localhost:8080" // server can only listen for requests coming from localhost:8080
+  origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
 }))
 
 app.use(express.json()) // lets us parse the request body coming from the client
+
+app.get("/", (req, res) => {
+  return res.status(200).send("hello from server")
+})
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`)
