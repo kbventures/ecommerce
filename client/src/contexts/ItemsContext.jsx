@@ -4,125 +4,91 @@ import PropTypes from "prop-types";
 // data in our store
 const items = [
   {
-    id: "",
+    id: "1",
     inventory: 100,
     title: "Super Long Watch Name",
     desc: "Series 6. Red",
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
     ],
     price: 359,
-    src: "assets/apple-watch-red.png",
+    src: "/assets/apple-watch-red.png",
     promo: "",
   },
   {
-    id: "",
+    id: "2",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "/assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
-    id: "",
+    id: "3",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "/assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
-    id: "",
+    id: "4",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "/assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
-    id: "",
+    id: "5",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "/assets/samsung-galaxy-watch.png",
     promo: "",
   },
 ];
-
-// Old Data Version
-// const items = [
-//   {
-//     title: "Super Long Watch Name",
-//     desc: "Series 6. Red",
-//     price: 359,
-//     src: "assets/apple-watch-red.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-// ];
 
 // Store (in isolation)
 // React.createContext(defaultState)

@@ -28,7 +28,7 @@ ReactDOM.render(
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/item" element={<Item />} />
+          <Route path="/items/:id" element={<Item />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payment" element={<Payment />} />
