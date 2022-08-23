@@ -140,7 +140,7 @@ export function useItems() {
 
 // Provides the store to your application
 export function ItemsProvider({ children }) {
-  const [items, setItems] = useState('')
+  const [items, setItems] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:4001/items')
@@ -154,12 +154,10 @@ export function ItemsProvider({ children }) {
 
   return (
     // wrap our React components with our store provider (store has "knowledge of your app")
-    <div>
-      {items && <ItemsContext.Provider value={items}>
-        {/* eventually "children" will be our react app */}
-        {children}
-      </ItemsContext.Provider>}
-    </div>
+    <ItemsContext.Provider value={items}>
+      {/* eventually "children" will be our react app */}
+      {children}
+    </ItemsContext.Provider>
 
   );
 }
