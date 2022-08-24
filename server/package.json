@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start:dev": "ts-node-dev --respawn src/index.ts",
+    "start:dev": "ts-node-dev --files --respawn src/index.ts",
     "heroku-prebuild": "npm install --only=dev",
     "start": "npm install && npx tsc --project ./ && node build/index.js"
   },
@@ -22,5 +22,6 @@
     "ts-node-dev": "^1.1.8"
   },
   "devDependencies": {
+    "stripe": "^10.4.0"
   }
 }
