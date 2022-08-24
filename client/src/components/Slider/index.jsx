@@ -11,13 +11,14 @@ export default function Slider({ cards }) {
         See more <ArrowIcon />
       </button>
       <div className={styles.sliderCardsList}>
-        {cards.map(({ title, desc, price, src }, i) => (
+        {cards.map(({ title, desc, price, src, id }, i) => (
           <SliderCard
             key={i}
             title={title}
             desc={desc}
             price={price}
             src={src}
+            id={id}
           />
         ))}
       </div>

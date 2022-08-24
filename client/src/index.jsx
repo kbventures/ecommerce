@@ -13,6 +13,7 @@ import Item from "./routes/Item";
 import Basket from "./routes/Basket";
 import Checkout from "./routes/Checkout";
 import Payment from "./routes/Payment";
+import Profile from "./routes/Profile";
 
 // Global style sheet
 import "./index.css";
@@ -28,10 +29,11 @@ ReactDOM.render(
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/item" element={<Item />} />
+          <Route path="/items/:id" element={<Item />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </UserProvider>

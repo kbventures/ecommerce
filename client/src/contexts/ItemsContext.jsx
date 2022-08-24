@@ -5,7 +5,6 @@ import BACKEND_URL from "../config.js"
 
 // data in our store
 
-
 // const items = [
 //   {
 //     id: "",
@@ -91,40 +90,6 @@ import BACKEND_URL from "../config.js"
 //     price: 159,
 //     src: "assets/samsung-galaxy-watch.png",
 //     promo: "",
-//   },
-// ];
-
-// Old Data Version
-// const items = [
-//   {
-//     title: "Super Long Watch Name",
-//     desc: "Series 6. Red",
-//     price: 359,
-//     src: "assets/apple-watch-red.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
-//   },
-//   {
-//     title: "SAMSUNG Galaxy Watch",
-//     desc: "Active. Green",
-//     price: 159,
-//     src: "assets/samsung-galaxy-watch.png",
 //   },
 // ];
 
