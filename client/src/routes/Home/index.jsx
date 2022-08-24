@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 import styles from "./home.module.css";
 
-import HomeIcon from "../../../public/assets/Home.svg";
-import HeartIcon from "../../../public/assets/Heart.svg";
-import ProfileIcon from "../../../public/assets/Profile.svg";
-import BuyIcon from "../../../public/assets/Buy.svg";
+import HomeIcon from "../../../public/assets/home.svg";
+import HeartIcon from "../../../public/assets/heart.svg";
+import ProfileIcon from "../../../public/assets/profile.svg";
+import BuyIcon from "../../../public/assets/buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
 
 import Slider from "../../components/Slider";
