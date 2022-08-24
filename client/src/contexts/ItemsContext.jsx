@@ -17,7 +17,7 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 359,
-    src: "/assets/apple-watch-red.png",
+    src: "./assets/apple-watch-red.png",
     promo: "",
   },
   {
@@ -34,7 +34,11 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
+<<<<<<< HEAD
     src: "/assets/samsung-galaxy-watch.png",
+=======
+    src: "./assets/samsung-galaxy-watch.png",
+>>>>>>> e524bc2 (Create CI/CD for our front end)
     promo: "",
   },
   {
@@ -51,7 +55,11 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
+<<<<<<< HEAD
     src: "/assets/samsung-galaxy-watch.png",
+=======
+    src: "./assets/samsung-galaxy-watch.png",
+>>>>>>> e524bc2 (Create CI/CD for our front end)
     promo: "",
   },
   {
@@ -68,7 +76,11 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
+<<<<<<< HEAD
     src: "/assets/samsung-galaxy-watch.png",
+=======
+    src: "./assets/samsung-galaxy-watch.png",
+>>>>>>> e524bc2 (Create CI/CD for our front end)
     promo: "",
   },
   {
@@ -85,7 +97,11 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
+<<<<<<< HEAD
     src: "/assets/samsung-galaxy-watch.png",
+=======
+    src: "./assets/samsung-galaxy-watch.png",
+>>>>>>> e524bc2 (Create CI/CD for our front end)
     promo: "",
   },
 ];

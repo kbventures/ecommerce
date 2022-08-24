@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./menu.module.css";
 import Container from "../../components/Container";
-import FullSmallEllipseSvg from "../../../public/assets/Ellipse 20.svg";
-import EmptySmallEllipseSvg from "../../../public/assets/Ellipse 22.svg";
-import SemiCircle from "../../../public/assets/Ellipse 19.svg";
+import FullSmallEllipseSvg from "../../../public/assets/ellipse-20.svg";
+import EmptySmallEllipseSvg from "../../../public/assets/ellipse-22.svg";
+import SemiCircle from "../../../public/assets/ellipse-19.svg";
 
-const rectangle74 = "../../assets/Rectangle 74.png";
-const rectangle73 = "../../assets/Rectangle 73.png";
+const rectangle74 = "../../assets/rectangle-74.png";
+const rectangle73 = "../../assets/rectangle-73.png";
 
 const {
   signOutHover,

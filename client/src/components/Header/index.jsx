@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
-import HeartIcon from "../../../public/assets/Heart.svg";
+import HeartIcon from "../../../public/assets/heart.svg";
 import DeleteIcon from "../../../public/assets/Delete.svg";
 
 export default function Header({ title, icon, iconColor, link }) {

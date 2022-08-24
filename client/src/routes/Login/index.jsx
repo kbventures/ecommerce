@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./login.module.css";
 
-import EmptySmallEllipseSvg from "../../../public/assets/Ellipse 22.svg";
-import SolidPinkEllipseSvg from "../../../public/assets/Ellipse 19 pink.svg";
+import EmptySmallEllipseSvg from "../../../public/assets/ellipse-22.svg";
+import SolidPinkEllipseSvg from "../../../public/assets/ellipse-19-pink.svg";
 
 import Button from "../../components/Button";
 import LoginForm from "./LoginForm/LoginForm";
