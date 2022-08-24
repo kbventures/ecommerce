@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+import BACKEND_URL from "../config.js"
+
 // data in our store
 
 
@@ -143,7 +145,7 @@ export function ItemsProvider({ children }) {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4001/items')
+    fetch(`${BACKEND_URL}items`)
       .then(res => {
         return res.json()
       })
