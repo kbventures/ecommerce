@@ -7,7 +7,7 @@
     "node":"14.16.0"
   },
   "scripts": {
-    "start": "npm install && npx webpack && node index.js"
+    "start": "npm install -force && npx webpack && node index.js"
   },
   "repository": {
     "type": "git",
