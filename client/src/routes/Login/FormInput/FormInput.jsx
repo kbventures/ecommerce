@@ -2,8 +2,8 @@ import React from "react";
 import { string } from "prop-types";
 import styles from "./FormInput.module.css";
 
-import EmailSvg from "../../../../public/assets/Message.svg";
-import PasswordSvg from "../../../../public/assets/Lock.svg";
+import EmailSvg from "../../../../public/assets/message.svg";
+import PasswordSvg from "../../../../public/assets/lock.svg";
 
 export default function FormInput({ children, type }) {
   const { labelSvg, formInputContainer, label } = styles;
