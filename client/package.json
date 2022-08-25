@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Team Project",
   "main": "index.js",
+  "engines":{
+    "nodes":"14.16.0"
+  },
   "scripts": {
     "start": "npm install --omit=dev && npx webpack && node index.js"
   },
