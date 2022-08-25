@@ -4,12 +4,8 @@
   "description": "Team Project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack serve",
-    "test": "jest --watch",
-    "lint": "eslint --fix ./src",
-    "format": "prettier -w .",
-    "start": "npm install --omit=dev && npx webpack && node index.js"
+    "heroku-prebuild": "npm install && webpack",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
