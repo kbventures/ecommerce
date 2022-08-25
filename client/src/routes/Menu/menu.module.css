@@ -66,11 +66,11 @@ a:active {
 }
 
 .navigationProfileIcon:before {
-  content: url("../../../public/assets/Profile.svg");
+  content: url("../../../public/assets/profile.svg");
 }
 
 .navigationBuyIcon:before {
-  content: url("../../../public//assets/Buy.svg");
+  content: url("../../../public//assets/buy.svg");
 }
 
 .navigationHeartIcon:before {
@@ -78,15 +78,15 @@ a:active {
 }
 
 .navigationSettingIcon:before {
-  content: url("../../../public/assets/Setting.svg");
+  content: url("../../../public/assets/setting.svg");
 }
 
 .navigationDeliveryIcon:before {
-  content: url("../../../public/assets/Bag.svg");
+  content: url("../../../public/assets/bag.svg");
 }
 
 .navigationSignoutIcon:before {
-  content: url("../../../public/assets/Logout.svg");
+  content: url("../../../public/assets/logout.svg");
 }
 
 .navigationLogout {
@@ -190,11 +190,11 @@ a:active {
   }
 
   .navigationProfileIcon:before {
-    content: url("../../../public/assets/Profile.svg");
+    content: url("../../../public/assets/profile.svg");
   }
 
   .navigationBuyIcon:before {
-    content: url("../../../public/assets/Buy.svg");
+    content: url("../../../public/assets/buy.svg");
   }
 
   .navigationHeartIcon:before {
@@ -202,15 +202,15 @@ a:active {
   }
 
   .navigationSettingIcon:before {
-    content: url("../../../public/assets/Setting.svg");
+    content: url("../../../public/assets/setting.svg");
   }
 
   .navigationDeliveryIcon:before {
-    content: url("../../../public/assets/Bag.svg");
+    content: url("../../../public/assets/bag.svg");
   }
 
   .navigationSignoutIcon:before {
-    content: url("../../../public/assets/Logout.svg");
+    content: url("../../../public/assets/logout.svg");
   }
 
   .navigation {
