@@ -9,7 +9,6 @@
     "test": "jest --watch",
     "lint": "eslint --fix ./src",
     "format": "prettier -w .",
-    "heroku-prebuild": "npm install --only=dev",
     "start": "npm install && webpack && node index.js"
   },
   "repository": {
