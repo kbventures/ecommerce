@@ -16,4 +16,4 @@ jobs:
       - name: Add front end remote origin
         run: git remote add heroku-frontend https://heroku:${{ secrets.HEROKU_API_TOKEN }}@git.heroku.com/${{ secrets.HEROKU_FRONTEND_APP_NAME }}.git
       - name: Deploy front end to Heroku
-        run: git push heroku-frontend `git subtree split --prefix server main`:refs/heads/main --force
+        run: git push heroku-frontend `git subtree split --prefix client main`:refs/heads/main --force
