@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "start:dev": "ts-node-dev --respawn src/index.ts",
+    "heroku-prebuild": "npm install --only=dev",
     "start": "npm install && npx tsc --project ./ && node build/index.js"
   },
   "author": "",
