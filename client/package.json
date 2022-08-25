@@ -9,7 +9,7 @@
     "test": "jest --watch",
     "lint": "eslint --fix ./src",
     "format": "prettier -w .",
-    "start": "npm install && webpack && node index.js"
+    "start": "npm install --omit=dev && webpack && node index.js"
   },
   "repository": {
     "type": "git",
