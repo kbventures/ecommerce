@@ -4,8 +4,7 @@
   "description": "Team Project",
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild": "npm install && webpack",
-    "start": "npm install & webpack && node index.js"
+    "start": "npm install --omit=dev && webpack && node index.js"
   },
   "repository": {
     "type": "git",
