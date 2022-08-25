@@ -7,7 +7,7 @@
     "node":"14.16.0"
   },
   "scripts": {
-    "build":"npm install webpack",
+    "build":"npm install && webpack",
     "start": "index.js"
   },
   "repository": {
