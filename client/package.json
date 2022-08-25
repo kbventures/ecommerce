@@ -8,8 +8,8 @@
     "npm": "6.14.11"
   },
   "scripts": {
-    "build":"npm install && webpack",
-    "start": "index.js"
+    "build":"webpack",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
