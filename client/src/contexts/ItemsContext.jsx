@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-import { BACKEND_URL } from "../config.js";
+import { BACKEND_URL } from "../config";
 
 // data in our store
 
@@ -110,13 +110,12 @@ export function ItemsProvider({ children }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch(`${BACKEND_URL}/items`)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setItems(data);
-      });
+    const fetchItems = async () => {
+      const response = await fetch(`${BACKEND_URL}/items`);
+      const json = await response.json();
+      setItems(json);
+    };
+    fetchItems();
   }, []);
 
   return (
