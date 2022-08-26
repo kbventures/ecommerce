@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 
 const items = [
   {
-    id: "",
+    id: "1",
     inventory: 100,
     title: "Super Long Watch Name",
     desc: "Series 6. Red",
@@ -50,7 +50,7 @@ const items = [
     promo: "",
   },
   {
-    id: "",
+    id: "2",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
@@ -67,7 +67,7 @@ const items = [
     promo: "",
   },
   {
-    id: "",
+    id: "3",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
@@ -84,7 +84,7 @@ const items = [
     promo: "",
   },
   {
-    id: "",
+    id: "4",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
@@ -101,7 +101,7 @@ const items = [
     promo: "",
   },
   {
-    id: "",
+    id: "5",
     inventory: 100,
     title: "SAMSUNG Galaxy Watch",
     desc: "Active. Green",
