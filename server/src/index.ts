@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 //   desc: string;
 //   longDesc: string;
 //   fullDesc: string;
-//   color: string[][];
+//   colors: string[][];
 //   price: number;
 //   src: string;
 //   promo: string;
@@ -40,7 +40,7 @@ const items = [
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
@@ -57,7 +57,7 @@ const items = [
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
@@ -74,7 +74,7 @@ const items = [
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
@@ -91,7 +91,7 @@ const items = [
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
@@ -108,7 +108,7 @@ const items = [
     longDesc:
       "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
     fullDesc: "",
-    color: [
+    colors: [
       ["Sky Blue", "#80BDE3"],
       ["Rose Gold", "#B76E79"],
       ["green", "#9FE2BF"],
