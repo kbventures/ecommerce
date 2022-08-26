@@ -110,7 +110,7 @@ export function ItemsProvider({ children }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch(`${BACKEND_URL}`)
+    fetch(`${BACKEND_URL}/items`)
       .then((res) => {
         return res.json();
       })
