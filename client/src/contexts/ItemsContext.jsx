@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-import BACKEND_URL from "../config.js"
+import BACKEND_URL from "../config.js";
 
 // data in our store
 
@@ -107,17 +107,17 @@ export function useItems() {
 
 // Provides the store to your application
 export function ItemsProvider({ children }) {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     fetch(`${BACKEND_URL}items`)
-      .then(res => {
-        return res.json()
+      .then((res) => {
+        return res.json();
       })
       .then((data) => {
-        setItems(data)
-      })
-  }, [])
+        setItems(data);
+      });
+  }, []);
 
   return (
     // wrap our React components with our store provider (store has "knowledge of your app")
@@ -125,7 +125,6 @@ export function ItemsProvider({ children }) {
       {/* eventually "children" will be our react app */}
       {children}
     </ItemsContext.Provider>
-
   );
 }
 
