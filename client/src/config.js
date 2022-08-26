@@ -1,3 +1,5 @@
-const BACKEND_URL = 'http://localhost:4001/'
+export const BACKEND_URL =
+process.env.NODE_ENV === 'development'
+  ? 'http://localhost:4001'
+  : `${process.env.BACKEND_URL}`;
 
-export default BACKEND_URL
