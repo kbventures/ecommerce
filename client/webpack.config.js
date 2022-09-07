@@ -74,12 +74,6 @@ module.exports = {
       patterns: [{ from: "public/assets", to: "assets" }],
     }),
     new Dotenv(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': '"production"',
-        'BACKEND_URL': '"https://kdaa-ecommerce-back-end.herokuapp.com/"'
-      }
-    })
   ],
   devtool: "source-map",
 };
