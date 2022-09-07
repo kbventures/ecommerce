@@ -30,7 +30,6 @@ app.get("/", (req, res) => {
 //   src: string;
 //   promo: string;
 // }
-
 const items = [
   {
     id: "1",
@@ -46,7 +45,7 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 359,
-    src: "assets/apple-watch-red.png",
+    src: "../assets/apple-watch-red.png",
     promo: "",
   },
   {
@@ -63,7 +62,7 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "../assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
@@ -80,7 +79,7 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "../assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
@@ -97,7 +96,7 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "../assets/samsung-galaxy-watch.png",
     promo: "",
   },
   {
@@ -114,11 +113,10 @@ const items = [
       ["green", "#9FE2BF"],
     ],
     price: 159,
-    src: "assets/samsung-galaxy-watch.png",
+    src: "../assets/samsung-galaxy-watch.png",
     promo: "",
   },
 ];
-
 
 app.get("/items", (req, res) => {
   res.status(200).send(items)

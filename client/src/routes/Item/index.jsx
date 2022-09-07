@@ -18,9 +18,11 @@ function Item() {
   const { id } = useParams();
   const singleProduct = items.find((item) => item.id === id);
 
+  if (!singleProduct) return null;
+
   return (
     <Container white>
-      <Header icon="heart" iconColor="black" link="" />
+      <Header icon="heart" iconColor="black" link="/home" />
       <div className={container}>
         <section className={productImgSection}>
           <img
