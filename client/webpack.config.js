@@ -74,6 +74,11 @@ module.exports = {
       patterns: [{ from: "public/assets", to: "assets" }],
     }),
     new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': '"production"'
+      }
+    })
   ],
   devtool: "source-map",
 };
