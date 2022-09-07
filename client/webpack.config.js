@@ -76,7 +76,8 @@ module.exports = {
     new Dotenv(),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': '"production"'
+        'NODE_ENV': '"production"',
+        'BACKEND_URL': '"https://kdaa-ecommerce-back-end.herokuapp.com/"'
       }
     })
   ],
