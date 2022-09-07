@@ -4,4 +4,4 @@ export const BACKEND_URL =
     : `${process.env.BACKEND_URL}`;
 
 console.log(process.env.NODE_ENV);
-console.log(process.env.BACK_URL);
+console.log(process.env.BACKEND_URL);
