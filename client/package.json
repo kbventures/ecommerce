@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "node index.js",
+    "start": "npx cross-env NODE_ENV=production && node index.js",
     "dev": "webpack serve"
   },
   "repository": {
