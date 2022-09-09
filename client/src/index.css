@@ -114,7 +114,7 @@
 --spacer-11: 112px;
 --spacer-12: 128px;
 
-/* Vertical margin scale */
+/* Vertical margin scale for text only */
 --vspacer-1:0.25rem;
 --vspacer-2:0.5rem;
 --vspacer-3:1rem;
@@ -127,10 +127,6 @@
 --spacer-10: 6rem;
 --spacer-11: 7rem;
 --spacer-12: 8rem;
-
-
-
-/*Vertical spacing scale */
 }
 
 html,
