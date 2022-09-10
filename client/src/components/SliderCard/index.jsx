@@ -5,12 +5,16 @@ import styles from "./SliderCard.module.css";
 
 function SliderCard({ title, desc, price, src, id }) {
   return (
-    <Link to={`/items/${id}`} state={{ title, desc, price, src }}>
+    <Link
+      to={`/items/${id}`}
+      state={{ title, desc, price, src }}
+      className={styles.sliderCardLink}
+    >
       <div className={styles.sliderCard}>
         <img className={styles.sliderCardImg} src={src} alt={title} />
         <h3 className={styles.sliderCardTitle}>{title}</h3>
         <p className={styles.sliderCardDesc}>{desc}</p>
-        <span className={styles.sliderCardPrice}>{price}</span>
+        <span className={styles.sliderCardPrice}>${price}</span>
       </div>
     </Link>
   );
