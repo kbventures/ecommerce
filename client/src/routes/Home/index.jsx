@@ -8,6 +8,7 @@ import HeartIcon from "../../../public/assets/heart.svg";
 import ProfileIcon from "../../../public/assets/profile.svg";
 import BuyIcon from "../../../public/assets/buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
+import SearchIcon from "../../../public/assets/search.svg";
 
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
@@ -44,6 +45,9 @@ export default function Home() {
               <MenuIcon />
             </Link>
             <div className={styles.search}>
+              <button type="button" className={styles.searchButton}>
+                <SearchIcon />
+              </button>
               <input
                 className={styles.searchInput}
                 placeholder="Search"
