@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./home.module.css";
@@ -15,6 +15,25 @@ import { useItems } from "../../contexts/ItemsContext";
 
 export default function Home() {
   const items = useItems();
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  useEffect(() => {
+    // setFilteredItems(
+    //   items.filter((item) =>
+    //     item.title.toLowerCase().includes(searchInput.toLowerCase())
+    //   )
+    // );
+
+    const input = searchInput.toLowerCase();
+
+    const newFilteredItems = items.filter((item) => {
+      const title = item.title.toLowerCase();
+      return title.includes(input);
+    });
+
+    setFilteredItems(newFilteredItems);
+  }, [searchInput, items]);
 
   return (
     <Container white>
@@ -31,6 +50,8 @@ export default function Home() {
                 type="search"
                 name="search"
                 id="search"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.currentTarget.value)}
               />
             </div>
           </nav>
@@ -44,7 +65,7 @@ export default function Home() {
               <li className={styles.listItem}>Phones</li>
               <li className={styles.listItem}>Drones</li>
             </ul>
-            <Slider cards={items} />
+            <Slider cards={filteredItems} />
           </div>
         </main>
         <footer className={styles.pageFooter}>
