@@ -56,6 +56,77 @@
   --69px: 4.31rem;
 
   --heading: 3rem;
+
+
+
+  /* Typography scale */
+
+  /* Modile */
+--h00mobile: 2.5rem;
+--h0mobile: 2rem;
+--h1mobile: 1.63rem;
+--h2mobile: 1.38rem;
+--h3mobile: 1.13rem;
+--h4mobile: 1rem;
+--h5mobile: 0.88rem;
+--h6mobile: 0.75rem;
+
+  /* Desktop */
+--h00desktop: 3rem;
+--h0desktop: 2.5rem;
+--h1desktop: 2rem;
+--h2desktop: 1.5rem;
+--h3desktop: 1.25rem;
+--h4desktop: 1rem;
+--h5desktop: 0.88rem;
+--h6desktop: 0.75rem;
+
+
+/* Font weights */ 
+--font-weight-bold: 600;
+--font-weight-semibold: 500;
+--font-weight-normal: 400;
+--font-weight-light: 300;
+
+/*  Line heights */ 
+--lh-condensed-ultra: 1;
+--lh-condensed: 1.25;
+--lh-default: 1.5;
+
+/* Border radius */
+--border-radius-1:  4px;
+--border-radius-2:  6px;
+--border-radius-3:  8px;
+
+/* Spacing scale, margin & padding */
+--spacer-1:4px;
+--spacer-2:8px;
+--spacer-3:16px;
+--spacer-4:24px;
+--spacer-5:32px;
+--spacer-6:40px;
+
+/*Extended spacing, margin & paddding sale*/
+--spacer-7:48px;
+--spacer-8:64px;
+--spacer-9:80px;
+--spacer-10: 96px;
+--spacer-11: 112px;
+--spacer-12: 128px;
+
+/* Vertical margin scale for text only */
+--vspacer-1:0.25rem;
+--vspacer-2:0.5rem;
+--vspacer-3:1rem;
+--vspacer-4:1.5rem;
+--vspacer-5:2rem;
+--vspacer-6:2.5rem;
+--spacer-7:3rem;
+--spacer-8:4rem;
+--spacer-9:5rem;
+--spacer-10: 6rem;
+--spacer-11: 7rem;
+--spacer-12: 8rem;
 }
 
 html,
@@ -65,6 +136,6 @@ body {
 
 body {
   box-sizing: border-box;
-  line-height: 1.4;
+  line-height: 1.25;
   font-family: "Roboto Slab", serif;
 }

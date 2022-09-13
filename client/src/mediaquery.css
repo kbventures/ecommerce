@@ -32,4 +32,13 @@
 @media only screen and (min-width: 105rem) {
 }
 
-/* removing hover state on mobile(media query react)  */
+
+/* Potentially replaced by:  */
+
+/* 
+Breakpoint	Syntax	Breaks at
+Small	sm	544px
+Medium	md	768px
+Large	lg	1012px
+Extra-large	xl	1280px
+*/
