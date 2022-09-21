@@ -10,7 +10,7 @@ import { router as userRoutes } from "./routes/user.routes";
 import cors from "cors"
 
 const app: Application = express();
-const port: number | string | undefined = process.env.PORT || 4001
+
 
 
 app.use("/users", userRoutes);
