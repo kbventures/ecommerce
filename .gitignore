@@ -2,5 +2,4 @@
 .env
 node_modules
 build
-jest.config.js 
 coverage
