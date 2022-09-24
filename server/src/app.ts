@@ -2,11 +2,22 @@
 import dotenv from "dotenv"
 dotenv.config()
 
-import express, { Express, Request, Response } from "express"
+import express, { Application, Request, Response, NextFunction } from "express";
+
+import { router as userRoutes } from "./routes/user.routes";
+
+
 import cors from "cors"
 
-const app: Express = express()
-const port: number | string | undefined = process.env.PORT || 4001
+const app: Application = express();
+
+
+
+app.use("/users", userRoutes);
+
+app.use("/", (req: Request, res: Response, next: NextFunction): void => {
+  res.json({ message: "Allo! Catch-all route." });
+});
 
 app.use(cors({
   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
@@ -122,6 +133,5 @@ app.get("/items", (req, res) => {
   res.status(200).send(items)
 })
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`)
-})
+
+export default app;
