@@ -34,7 +34,7 @@ export default function Home() {
     });
 
     setFilteredItems(newFilteredItems);
-  }, [searchInput, items]);
+  }, [searchInput]);
 
   return (
     <Container white>
