@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 .header {
   padding: 25px 0 10px 0;
