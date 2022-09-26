@@ -13,7 +13,7 @@ function Splash() {
       <div className={container}>
         <h1 className={title}>eRennaissance</h1>
         <div className={imgWrapper}>
-          <img src="./assets/logo.png" alt="guy in vr" className={img} />
+          <img src="./assets/logo.svg" alt="guy in vr" className={img} />
         </div>
         <Link to="/home" className={link}>
           <Button>Get started</Button>
