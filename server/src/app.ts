@@ -13,17 +13,15 @@ const app: Application = express();
 
 
 
-app.use("/users", userRoutes);
-
-app.use("/", (req: Request, res: Response, next: NextFunction): void => {
-  res.json({ message: "Allo! Catch-all route." });
-});
-
 app.use(cors({
   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
 }))
 
 app.use(express.json()) // lets us parse the request body coming from the client
+
+app.use("/users", userRoutes);
+
+
 
 app.get("/", (req, res) => {
   return res.status(200).send("hello from server")
@@ -129,9 +127,18 @@ const items = [
   },
 ];
 
-app.get("/items", (req, res) => {
+
+
+
+
+app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
   res.status(200).send(items)
-})
+});
+
+
+// app.get("/items", (req, res) => {
+//   res.status(200).send(items)
+// })
 
 
 export default app;
