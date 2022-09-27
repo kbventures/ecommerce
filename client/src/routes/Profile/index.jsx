@@ -31,7 +31,7 @@ export default function Profile() {
           <div className={styles.backdrop} />
         </section>
 
-        <section>
+        <section className={styles.buttonContainer}>
           <Button title="Edit Profile" />
           <Button title="Shopping address" />
           <Button title="Order History" />

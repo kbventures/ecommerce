@@ -1,14 +1,13 @@
 .button {
     align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 15px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-3);
     display: flex;
     font-family: "SF Pro Text", sans-serif;
-    font-size: var(--13px);
-    font-weight: 600;
+    font-size: var(--h5mobile);
+    font-weight: var(--font-weight-bold);
     justify-content: space-between;
-    margin: 5px 0;
-    padding: 12px 20px;
+    padding: var(--spacer-2) var(--spacer-3);
 }
 
 .button:hover {
@@ -16,26 +15,44 @@
 }
 
 .svg {
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 
 /* 360px */
-@media only screen and (min-width: 22.5rem) {}
+@media only screen and (min-width: 22.5rem) {
+    .button {
+        font-size: var(--h4mobile);
+        padding: var(--spacer-3) var(--spacer-4);
+    }
+
+    .svg {
+        transform: scale(0.9);
+    }
+}
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-    .button {
+    /* .button {
         margin: 13px 0;
     }
 
     .svg {
         transform: scale(0.8);
+    } */
+
+    .button {
+        font-size: var(--h3mobile);
+        padding: var(--spacer-4) var(--spacer-5);
+    }
+
+    .svg {
+        transform: scale(1.1);
     }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-    .button {
+    /* .button {
         font-size: var(--16px);
         margin: 15px 0;
         padding: 15px 20px;
@@ -43,12 +60,16 @@
 
     .svg {
         transform: scale(1);
+    } */
+
+    .svg {
+        transform: scale(1.3);
     }
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-    .button {
+    /* .button {
         font-size: var(--20px);
         margin: 18px 0;
         padding: 17px 20px;
@@ -56,28 +77,34 @@
 
     .svg {
         transform: scale(1.2);
-    }
+    } */
+
 }
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+    .button {
+        font-size: var(--h2mobile);
+        padding: var(--spacer-5) var(--spacer-6);
+    }
+}
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-    .button {
+    /* .button {
         font-size: var(--22px);
         padding: 19px 20px;
     }
 
     .svg {
         transform: scale(1.3);
-    }
+    } */
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-    .button {
+    /* .button {
         font-size: var(--24px);
         padding: 22px 20px;
-    }
+    } */
 }
