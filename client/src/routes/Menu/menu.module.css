@@ -1,7 +1,35 @@
+.imgWrapper {
+  position: absolute;
+  top:10%;  
+  left: 50%; 
+  transform: translate(-50%, -50%)
+}
+
+.img {
+  width: 75px;
+}
+
+.companyName{
+  font-family: Raleway, sans-serif;
+  color:rgba(255, 255, 255, 0.90);
+  font-style: italic;
+  font-size: var(--h0mobile);
+  font-weight: var(--font-weight-extrabold);
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.companyWrapper{
+  position: absolute;
+  bottom:0;  
+  left: 50%; 
+  transform: translate(-50%, -50%)
+}
+
 .menu {
-  font-size: 12px;
+  font-size: var(--h4mobile);
   font-family: "Raleway";
-  font-weight: 600;
+  font-weight: var(--font-weight-normal);
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -90,7 +118,7 @@ a:active {
 }
 
 .navigationLogout {
-  padding-top: 76px;
+  padding-top: var(--spacer-8);
   display: flex;
   align-items: center;
 }
@@ -148,8 +176,8 @@ a:active {
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  .menu {
-    font-size: 13px;
+  .img {
+    width: 100px;
   }
 
   .menuLargeImage img {
@@ -165,14 +193,21 @@ a:active {
   .navigationA {
     margin-bottom: 28px;
   }
+  .companyWrapper{
+    bottom:5%;
+  }
+    
 }
 
 /* 0.46 Aspect ratio: w/l */
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  .menu {
-    font-size: 18px;
+
+
+
+  .img {
+    width: 125px;
   }
 
   .menuLargeImage img {
@@ -220,13 +255,28 @@ a:active {
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
+  .img {
+    width: 150px;
+  }
+
+  .companyWrapper{
+    bottom:7%;
+  }
+
+  .imgWrapper{
+    top:15%;
+  }
+
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .menu {
-    font-size: 19px;
+
+  .img {
+    width: 200px;
   }
+
+
 
   .menuLargeImage img {
     height: 600px;
@@ -271,12 +321,22 @@ a:active {
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .menu {
-    font-size: 20px;
+
+  .img {
+    width:350px;
   }
 
-  .menu {
-    font-size: 21px;
+  .companyWrapper{
+    bottom:9%;
+  }
+
+  .imgWrapper{
+    top: 20%;
+  }
+
+  .companyWrapper{
+
+    bottom:55%;
   }
 
   .semiCircle {
@@ -298,9 +358,7 @@ a:active {
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .menu {
-    font-size: 21px;
-  }
+
   .menuLargeImage {
     right: -75px;
   }

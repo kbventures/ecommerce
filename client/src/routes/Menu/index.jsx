@@ -32,11 +32,18 @@ const {
   emptySmallEllipse,
   fullSmallEllipse,
   marginLeft15px,
+  img,
+  imgWrapper,
+  companyName,
+  companyWrapper,
 } = styles;
 
 function Menu() {
   return (
     <Container>
+      <div className={imgWrapper}>
+        <img src="./assets/logo.svg" alt="guy in vr" className={img} />
+      </div>
       <section className={menu}>
         <section className={navigationContainer}>
           <section className={navigation}>
@@ -98,6 +105,9 @@ function Menu() {
           <SemiCircle title="" className={semiCircle} />
         </section>
       </section>
+      <div className={companyWrapper}>
+        <h1 className={companyName}>eRenaissance</h1>
+      </div>
     </Container>
   );
 }
