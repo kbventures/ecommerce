@@ -8,6 +8,8 @@ import TotalPrice from "../../components/TotalPrice";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 
+// import { useBasket } from "../../contexts/BasketContext";
+
 const cards = [
   {
     title: "Super Long Watch Name",
@@ -28,6 +30,9 @@ const cards = [
 const amount = cards.reduce((acc, curr) => acc + curr.price, 0);
 
 export default function Basket() {
+  // const testBasketState = useBasket();
+  // console.log(testBasketState);
+
   return (
     <Container white>
       <Header title="Basket" icon="delete" link="/home" />

@@ -1,7 +1,51 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useMemo, useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { BACKEND_URL } from "../config";
+
+// Store (in isolation)
+// React.createContext(defaultState)
+// useState(defaultState)
+// const [counter, setCounter] = useState(0)
+// on the first render, counter has a value of 0
+const ItemsContext = React.createContext();
+
+// Access to the store (for convienience not required)
+export function useItems() {
+  return useContext(ItemsContext);
+}
+
+// Provides the store to your application
+export function ItemsProvider({ children }) {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      const response = await fetch(
+        `https://kdaa-ecommerce-back-end.herokuapp.com/items`
+      );
+      const json = await response.json();
+      setItems(json);
+    };
+    fetchItems();
+  }, []);
+
+  const value = useMemo(() => ({ items, setItems }));
+  // const value = useMemo(() => ({ items, setItems }), [items,setItems]);
+  // const value = useMemo(() => ({ items, setItems }), []);
+
+  return (
+    // wrap our React components with our store provider (store has "knowledge of your app")
+    <ItemsContext.Provider value={value}>
+      {/* eventually "children" will be our react app */}
+      {children}
+    </ItemsContext.Provider>
+  );
+}
+
+ItemsProvider.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 // data in our store
 
@@ -92,43 +136,3 @@ import { BACKEND_URL } from "../config";
 //     promo: "",
 //   },
 // ];
-
-// Store (in isolation)
-// React.createContext(defaultState)
-// useState(defaultState)
-// const [counter, setCounter] = useState(0)
-// on the first render, counter has a value of 0
-const ItemsContext = React.createContext();
-
-// Access to the store (for convienience not required)
-export function useItems() {
-  return useContext(ItemsContext);
-}
-
-// Provides the store to your application
-export function ItemsProvider({ children }) {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      const response = await fetch(
-        `https://kdaa-ecommerce-back-end.herokuapp.com/items`
-      );
-      const json = await response.json();
-      setItems(json);
-    };
-    fetchItems();
-  }, []);
-
-  return (
-    // wrap our React components with our store provider (store has "knowledge of your app")
-    <ItemsContext.Provider value={items}>
-      {/* eventually "children" will be our react app */}
-      {children}
-    </ItemsContext.Provider>
-  );
-}
-
-ItemsProvider.propTypes = {
-  children: PropTypes.element.isRequired,
-};

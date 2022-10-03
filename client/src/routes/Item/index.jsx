@@ -13,8 +13,28 @@ import { useItems } from "../../contexts/ItemsContext";
 const { container, productImg, productImgSection } = styles;
 
 function Item() {
-  const items = useItems();
+  const { items, setItems } = useItems();
+
   // const [basket, setBasket] = useBasket();
+
+  // const basketTest = [
+  //   {
+  //     title: "Super Long Watch Name",
+  //     price: 359,
+  //     quantity: 1,
+  //     src: "assets/apple-watch-red.png",
+  //     link: "/home",
+  //   },
+  //   {
+  //     title: "SAMSUNG Galaxy Watch",
+  //     price: 159,
+  //     quantity: 1,
+  //     src: "assets/samsung-galaxy-watch.png",
+  //     link: "/home",
+  //   },
+  // ];
+
+  // setBasket(basketTest);
   const { id } = useParams();
   const singleProduct = items.find((item) => item.id === id);
 
