@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useMemo, useContext, useState } from "react";
 import PropTypes from "prop-types";
 
 const BasketContext = React.createContext();
@@ -10,9 +10,12 @@ export function useBasket() {
 // [{quantity: 2, id: 1}, {..}, {..}]
 export function BasketProvider({ children }) {
   const [basket, setBasket] = useState([]);
+
+  const value = useMemo(() => ({ basket, setBasket }), [basket, setBasket]);
+
   return (
     /* eslint-disable */ /* This only disables eslint for the line below (this is temporary) */
-    <BasketContext.Provider value={[basket, setBasket]}>
+    <BasketContext.Provider value={value}>
       {children}
     </BasketContext.Provider>
   );

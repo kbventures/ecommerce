@@ -8,7 +8,7 @@ import TotalPrice from "../../components/TotalPrice";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 
-// import { useBasket } from "../../contexts/BasketContext";
+import { useBasket } from "../../contexts/BasketContext";
 
 const cards = [
   {
@@ -30,9 +30,8 @@ const cards = [
 const amount = cards.reduce((acc, curr) => acc + curr.price, 0);
 
 export default function Basket() {
-  // const testBasketState = useBasket();
-  // console.log(testBasketState);
-
+  const { basket, setBasket } = useBasket();
+  console.log(basket);
   return (
     <Container white>
       <Header title="Basket" icon="delete" link="/home" />

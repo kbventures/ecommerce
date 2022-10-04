@@ -1,7 +1,7 @@
 import React, { useMemo, useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-import { BACKEND_URL } from "../config";
+// import { BACKEND_URL } from "../config";
 
 // Store (in isolation)
 // React.createContext(defaultState)
@@ -30,7 +30,7 @@ export function ItemsProvider({ children }) {
     fetchItems();
   }, []);
 
-  const value = useMemo(() => ({ items, setItems }));
+  const value = useMemo(() => ({ items, setItems }), [items, setItems]);
   // const value = useMemo(() => ({ items, setItems }), [items,setItems]);
   // const value = useMemo(() => ({ items, setItems }), []);
 
