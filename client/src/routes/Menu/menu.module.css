@@ -2,11 +2,13 @@
   position: absolute;
   top:10%;  
   left: 50%; 
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .img {
   width: 75px;
+
 }
 
 .companyName{
@@ -28,7 +30,7 @@
 
 .menu {
   font-size: var(--h4mobile);
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
   font-weight: var(--font-weight-normal);
   color: var(--white);
   display: flex;
@@ -39,17 +41,6 @@
   min-height: 100vh;
 }
 
-.navigationContainer {
-  position: relative;
-}
-
-.navigationContainerA,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
-}
 
 .navigation {
   position: relative;
@@ -61,7 +52,6 @@ a:active {
 }
 
 .navigationA {
-  composes: navigationContainerA;
   width: 110px;
   margin-bottom: 10px;
 }
@@ -170,7 +160,7 @@ a:active {
 .semiCircle {
   position: absolute;
   top: -10px;
-  right: 35px;
+  right: 20px;
   transform: scale(0.7);
 }
 
@@ -331,12 +321,12 @@ a:active {
   }
 
   .imgWrapper{
-    top: 20%;
+    top:25%;
   }
 
   .companyWrapper{
 
-    bottom:55%;
+    bottom:35%;
   }
 
   .semiCircle {
