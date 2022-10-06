@@ -68,6 +68,11 @@
   margin-top: 10px;
 }
 
+.navigationContainerA,
+a:active {
+  color: inherit;
+}
+
 .navigationSpan {
   border-bottom: 1px solid var(--border);
   width: 132px;
