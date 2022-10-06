@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    height: 75px;
+}
+
+.companyName{
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--h4mobile);
+    font-weight: var(--font-weight-extrabold);
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+    .img {
+        height: 100px;
+    }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+    .img {
+        height: 125px;
+    }
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+    .img {
+        height: 150px;
+    }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+    .img {
+        height: 300px;
+    }
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+}
