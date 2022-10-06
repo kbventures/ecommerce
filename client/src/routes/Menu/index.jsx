@@ -32,49 +32,57 @@ const {
   emptySmallEllipse,
   fullSmallEllipse,
   marginLeft15px,
+  img,
+  imgWrapper,
+  companyName,
+  companyWrapper,
 } = styles;
 
 function Menu() {
   return (
     <Container>
+      <div className={imgWrapper}>
+        <img src="./assets/logo.svg" alt="eRenaissance Logo" className={img} />
+      </div>
       <section className={menu}>
         <section className={navigationContainer}>
           <section className={navigation}>
             <section>
               <ul className={navigationUl}>
                 <Link className={navigationA} to="/profile">
-                  <li className={`${navigationProfileIcon}`}>
+                  <li className={navigationProfileIcon}>
                     <span className={navigationSpan}>Profile</span>
                   </li>
                 </Link>
                 <Link className={navigationA} to="/orders">
-                  <li className={`${navigationBuyIcon}`}>
+                  <li className={navigationBuyIcon}>
                     <span className={navigationSpan}>Orders</span>
                   </li>
                 </Link>
                 <Link className={navigationA} to="/favorite">
-                  <li className={`${navigationHeartIcon}`}>
+                  <li className={navigationHeartIcon}>
                     <span className={navigationSpan}>Favorite</span>
                   </li>
                 </Link>
                 <Link className={navigationA} to="/delivery">
-                  <li className={`${navigationDeliveryIcon}`}>
+                  <li className={navigationDeliveryIcon}>
                     <span className={navigationSpan}>Delivery</span>
                   </li>
                 </Link>
                 <Link className={navigationA} to="/settings">
-                  <li className={`${navigationSettingIcon}`}>
+                  <li className={navigationSettingIcon}>
                     <span className={navigationSpan}>Settings</span>
                   </li>
                 </Link>
               </ul>
               <section className={menuLargeImage}>
-                <img className={rectangle74image} src={rectangle74} alt="" />
-                <img src={rectangle73} alt="" />
-                <EmptySmallEllipseSvg
-                  title="testin"
-                  className={emptySmallEllipsePosition}
+                <img
+                  className={rectangle74image}
+                  src={rectangle74}
+                  alt="Decorative"
                 />
+                <img src={rectangle73} alt="Decorative" />
+                <EmptySmallEllipseSvg className={emptySmallEllipsePosition} />
               </section>
             </section>
             <section className={`${navigationLogout} ${navigationSignoutIcon}`}>
@@ -90,14 +98,17 @@ function Menu() {
               title="testin"
               className={emptySmallEllipse}
             />
-            <FullSmallEllipseSvg title="testin" className={fullSmallEllipse} />
+            <FullSmallEllipseSvg className={fullSmallEllipse} />
           </section>
         </section>
 
         <section className="menuLargeEllipse">
-          <SemiCircle title="" className={semiCircle} />
+          <SemiCircle className={semiCircle} />
         </section>
       </section>
+      <div className={companyWrapper}>
+        <h1 className={companyName}>eRenaissance</h1>
+      </div>
     </Container>
   );
 }
