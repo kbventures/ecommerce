@@ -1,12 +1,9 @@
 // dotenv will let us read secret values from our .env file
 import dotenv from "dotenv"
 dotenv.config()
-
 import express, { Application, Request, Response, NextFunction } from "express";
-
 import { router as userRoutes } from "./routes/user.routes";
-
-
+import productsRoutes from "./routes/productsRoutes";
 import cors from "cors"
 
 const app: Application = express();
@@ -129,7 +126,9 @@ const items = [
 
 
 
-
+app.use("/products", (req: Request, res: Response, next: NextFunction): void => {
+  res.status(200).send(items)
+});
 
 app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
   res.status(200).send(items)
