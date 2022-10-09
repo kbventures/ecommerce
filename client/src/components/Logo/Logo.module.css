@@ -11,6 +11,7 @@
 .companyName{
     font-family: 'Raleway', sans-serif;
     font-size: var(--h4mobile);
+    font-style: italic;
     font-weight: var(--font-weight-extrabold);
 }
 
