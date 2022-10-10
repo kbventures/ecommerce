@@ -66,7 +66,7 @@ import Product from '../models/Product';
 // @Route /api/rooms
 // @Method POST
 export const addProduct = asyncHandler(async (req: Request, res: Response) => {
-
+    
     const product = await Product.create(req.body);
 
     res.status(201).json(Product);

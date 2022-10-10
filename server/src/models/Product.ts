@@ -41,7 +41,6 @@ const ProductSchema = new mongoose.Schema({
     },
     fullDesc: {
         type: String,
-        required: true
     },
 
     price: {
