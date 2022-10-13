@@ -8,12 +8,9 @@ import productsRoutes from "./routes/productsRoutes";
 import cors from "cors"
 const logger = require("morgan");
 
-
 const app: Application = express();
 
-
 connectDB();
-
 
 //Logging
 app.use(logger("dev"));
@@ -24,33 +21,10 @@ app.use(cors({
 
 app.use(express.json()) // lets us parse the request body coming from the client
 
-app.use("/users", userRoutes);
-
-
-
 app.get("/", (req, res) => {
   return res.status(200).send("hello from server")
 })
 
-
-// app.post("/products", (req, res) => {
-
-//   console.log(req.body)
-//   return res.status(200).send("post request sucessful")
-// })
-
-// interface Item {
-//   id: string;
-//   inventory: number;
-//   title: string;
-//   desc: string;
-//   longDesc: string;
-//   fullDesc: string;
-//   colors: string[][];
-//   price: number;
-//   src: string;
-//   promo: string;
-// }
 const items = [
   {
     id: "1",
@@ -141,8 +115,6 @@ const items = [
 
 /*
 
-/*
-
 !!! IMPORTANT PLEASE READ !!!
 
 
@@ -177,22 +149,13 @@ http://localhost:4001/products
 to test locally
 */
 
-
 // products route
-// app.use("/products", productsRoutes)
-
-
 app.use("/products", productsRoutes)
-
 
 app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
   res.status(200).send(items)
 });
 
-
-// app.get("/items", (req, res) => {
-//   res.status(200).send(items)
-// })
-
+app.use("/users", userRoutes);
 
 export default app;
