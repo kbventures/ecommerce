@@ -38,7 +38,7 @@ export default function Basket() {
 
       <main>
         <Notification title="Delivery for FREE until the end of the month" />
-        <ProductsList cards={cards} />
+        <ProductsList cards={basket} />
         <div className={styles.totalPriceWrapper}>
           <TotalPrice amount={amount} />
         </div>
