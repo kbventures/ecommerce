@@ -5,6 +5,7 @@ import app from "../src/app";
 describe("Test app.ts", () => {
   test("Catch-all route", async () => {
     const res = await request(app).get("/");
-    expect(res.body).toEqual({ message: "Allo! Catch-all route." });
+    console.log(res.text)
+    expect(res.text).toEqual("hello from server");
   });
 });
