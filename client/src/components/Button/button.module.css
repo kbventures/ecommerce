@@ -1,8 +1,11 @@
 .button {
-  margin: 20px 0;
-  width: 100%;
+  position: absolute;
+  bottom: 0;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 75%;
   padding: 15px 40px;
-  font-size: 1rem;
+  font-size: var(--h4mobile);
   color: var(--primary-color);
   background-color: white;
   border-radius: 10px;
@@ -12,46 +15,50 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  .button{
+  /* .button{
     margin: 30px 0; 
-  }
+  } */
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
+  .button{
+    width: 75%;
+  }
+
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-  .button {
+  /* .button {
     font-size: 1rem;
-  }
+  } */
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .button {
+  /* .button {
     font-size:1.25rem;
-  }
+  } */
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .button {
+  /* .button {
     font-size: 1.5rem;
-  }
+  } */
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .button {
+  /* .button {
     font-size: 1.75rem;
-  }
+  } */
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-  .button {
+  /* .button {
     font-size: 2rem;
-  }
+  } */
 }
