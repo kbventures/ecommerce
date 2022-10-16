@@ -26,36 +26,33 @@ const breakpoints = {
 };
 export default function Slider({ cards }) {
   return (
-    <div>
-      <Swiper
-        breakpoints={breakpoints}
-        simulateTouch
-        grabCursor
-        modules={[Autoplay]}
-        className={styles.swiper}
-        slideClass={styles.swiperSlide}
-        freeMode
-        loop
-        autoplay={{
-          delay: 1,
-          disableOnInteraction: false,
-        }}
-        speed={4000}
-        centeredSlidesBounds
-      >
-        {cards.map(({ title, desc, price, src, id }) => (
-          <SwiperSlide key={id} className={styles.swiperSlide}>
-            <SliderCard
-              desc={desc}
-              price={price}
-              src={src}
-              id={id}
-              title={title}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Swiper
+      breakpoints={breakpoints}
+      simulateTouch
+      grabCursor
+      modules={[Autoplay]}
+      className={styles.swiper}
+      slideClass={styles.swiperSlide}
+      loop={cards.length !== 1}
+      autoplay={{
+        delay: 1,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
+      speed={4000}
+    >
+      {cards.map(({ title, desc, price, src, id }) => (
+        <SwiperSlide key={id} className={styles.swiperSlide}>
+          <SliderCard
+            desc={desc}
+            price={price}
+            src={src}
+            id={id}
+            title={title}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
 
