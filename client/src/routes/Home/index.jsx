@@ -20,9 +20,10 @@ export default function Home() {
   const [filteredItems, setFilteredItems] = useState(items);
 
   useEffect(() => {
+    // shorter (better?)
     // setFilteredItems(
-    //   items.filter((item) =>
-    //     item.title.toLowerCase().includes(searchInput.toLowerCase())
+    //   items.filter(({title}) =>
+    //     title.toLowerCase().includes(searchInput.toLowerCase())
     //   )
     // );
 
@@ -34,7 +35,7 @@ export default function Home() {
     });
 
     setFilteredItems(newFilteredItems);
-  }, [searchInput]);
+  }, [searchInput, items]);
 
   return (
     <Container white>
