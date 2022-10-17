@@ -12,9 +12,10 @@ import MenuIcon from "../../../public/assets/menu-icon.svg";
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
 import { useItems } from "../../contexts/ItemsContext";
+// import { useBasket } from "../../contexts/BasketContext";
 
 export default function Home() {
-  const items = useItems();
+  const { items } = useItems();
 
   return (
     <Container white>
