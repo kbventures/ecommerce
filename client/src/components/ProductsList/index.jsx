@@ -24,7 +24,7 @@ ProductsList.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      quantity: PropTypes.number.isRequired,
+      quantity: PropTypes.number,
       price: PropTypes.number.isRequired,
       src: PropTypes.string.isRequired,
     })

@@ -8,17 +8,24 @@ import TotalPrice from "../../components/TotalPrice";
 import ProductInfo from "./Productinfo";
 import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import { useItems } from "../../contexts/ItemsContext";
-// import { useBasket } from "../../contexts/BasketContext";
+import { useBasket } from "../../contexts/BasketContext";
 
 const { container, productImg, productImgSection } = styles;
 
 function Item() {
-  const items = useItems();
-  // const [basket, setBasket] = useBasket();
+  const { items } = useItems();
+  const { basket, setBasket } = useBasket();
   const { id } = useParams();
   const singleProduct = items.find((item) => item.id === id);
 
   if (!singleProduct) return null;
+
+  const updateBasket = () => {
+    basket.push(singleProduct);
+    setBasket(basket);
+  };
+
+  console.log(basket);
 
   return (
     <Container white>
@@ -42,8 +49,13 @@ function Item() {
           </button>
         </section>
         <Link to="/basket">
-          <Button inverted>Add to basket</Button>
+          <Button onClick={updateBasket} inverted>
+            Add to basket
+          </Button>
         </Link>
+        {/* <button onClick={updateBasket} type="button">
+          Update Basket
+        </button> */}
       </div>
     </Container>
   );

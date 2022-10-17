@@ -31,6 +31,10 @@ export default function Product({ title, price, quantity, src }) {
 Product.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  quantity: PropTypes.number.isRequired,
+  quantity: PropTypes.number,
   src: PropTypes.string.isRequired,
+};
+
+Product.defaultProps = {
+  quantity: 1,
 };
