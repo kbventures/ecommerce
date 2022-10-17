@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./home.module.css";
@@ -8,6 +8,7 @@ import HeartIcon from "../../../public/assets/heart.svg";
 import ProfileIcon from "../../../public/assets/profile.svg";
 import BuyIcon from "../../../public/assets/buy.svg";
 import MenuIcon from "../../../public/assets/menu-icon.svg";
+import SearchIcon from "../../../public/assets/search.svg";
 
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
@@ -16,6 +17,26 @@ import { useItems } from "../../contexts/ItemsContext";
 
 export default function Home() {
   const { items } = useItems();
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  useEffect(() => {
+    // shorter (better?)
+    // setFilteredItems(
+    //   items.filter(({title}) =>
+    //     title.toLowerCase().includes(searchInput.toLowerCase())
+    //   )
+    // );
+
+    const input = searchInput.toLowerCase();
+
+    const newFilteredItems = items.filter((item) => {
+      const title = item.title.toLowerCase();
+      return title.includes(input);
+    });
+
+    setFilteredItems(newFilteredItems);
+  }, [searchInput, items]);
 
   return (
     <Container white>
@@ -26,12 +47,17 @@ export default function Home() {
               <MenuIcon />
             </Link>
             <div className={styles.search}>
+              <button type="button" className={styles.searchButton}>
+                <SearchIcon />
+              </button>
               <input
                 className={styles.searchInput}
                 placeholder="Search"
                 type="search"
                 name="search"
                 id="search"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.currentTarget.value)}
               />
             </div>
           </nav>
@@ -45,7 +71,7 @@ export default function Home() {
               <li className={styles.listItem}>Phones</li>
               <li className={styles.listItem}>Drones</li>
             </ul>
-            <Slider cards={items} />
+            <Slider cards={filteredItems} />
           </div>
         </main>
         <footer className={styles.pageFooter}>

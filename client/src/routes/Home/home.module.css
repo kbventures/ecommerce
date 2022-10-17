@@ -15,32 +15,32 @@
 .search {
   background-color: transparent;
   position: relative;
-}
-
-.searchInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  gap: 10px;
   border-radius: 30px;
   height: 40px;
   background-color: transparent;
   border: 2px solid #c9c9c9;
-  padding: 0 0 0 40px;
-  color: #868686;
-  font-size: var(--16p66);
-  line-height: var(--20px);
   font-family: Raleway, sans-serif;
-  max-width: 160px;
-  font-weight: 600;
-  outline: none;
 }
 
-.search::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(50%, 50%);
-  content: "";
-  background-image: url("../../../public/assets/search.svg");
-  width: 24px;
-  height: 24px;
+.searchButton {
+  background-color: transparent;
+  border: none;
+}
+
+.searchInput {
+  color: #868686;
+  background-color: transparent;
+  font-size: var(--16p66);
+  line-height: var(--20px);
+  font-weight: 600;
+  outline: none;
+  border: none;
+  max-width: 160px;
 }
 
 .pageMain {
