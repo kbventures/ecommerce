@@ -3,17 +3,22 @@ import { Link } from "react-router-dom";
 import styles from "./Splash.module.css";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
+import Logo from "../../components/Logo";
+import Header from "../../components/Header";
 
-const { container, title, imgWrapper, img, link } = styles;
+const { logoPosition, container, title, imgWrapper, img, link } = styles;
 
 function Splash() {
   return (
     <Container>
-      {/* <Navigation /> */}
+      <Header title="" link="/home" />
       <div className={container}>
-        <h1 className={title}>eRennaissance</h1>
-        <div className={imgWrapper}>
+        <h1 className={title}>Find You Gadget</h1>
+        {/* <div className={imgWrapper}>
           <img src="./assets/logo.svg" alt="guy in vr" className={img} />
+        </div> */}
+        <div className={logoPosition}>
+          <Logo />
         </div>
         <Link to="/home" className={link}>
           <Button>Get started</Button>

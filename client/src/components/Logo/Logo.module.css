@@ -5,52 +5,65 @@
 }
 
 .img {
-    height: 75px;
+    height: 200px;
 }
 
 .companyName{
     font-family: 'Raleway', sans-serif;
-    font-size: var(--h4mobile);
+    font-size: var(--h1mobile);
     font-style: italic;
     font-weight: var(--font-weight-extrabold);
+    color: var(--white);
+    text-shadow: 2px 2px 10px black; 
+
 }
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
+
+    .img {
+        height: 300px;
+    }
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
     .img {
-        height: 100px;
+        height: 350px;
     }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
     .img {
-        height: 125px;
+        height: 400px;
     }
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
     .img {
-        height: 150px;
+        height: 450px;
     }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
     .img {
-        height: 300px;
+        height: 500px;
     }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
+    .img {
+        height: 550px;
+    }
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
+    .img {
+        height: 600px;
+    }
 }
