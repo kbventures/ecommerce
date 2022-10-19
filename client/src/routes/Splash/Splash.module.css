@@ -1,22 +1,22 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+}
+
+.logoPosition{
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 .title {
-  margin: var(--spacer-8) 0 0 0;
   font-size: var(--h00mobile);
-  color: var(--company-name);
+  color: var(--white);
   text-align: center;
-  font-weight: bold;
   font-family: Raleway, sans-serif;
   line-height: var(--lh-condensed-ultra);
-  font-style: italic;
-  text-shadow: 2px 2px 3px black;
-
+  font-weight:var(--font-weight-bold);
 }
 
 .imgWrapper {
@@ -48,10 +48,6 @@
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
 
-  .img {
-    width: 300px;
-  }
-
 }
 
 /* 480px */
@@ -61,27 +57,17 @@
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-  /* .imgWrapper {
-    margin-bottom: 50px;
-  }
 
-  .img {
-    width: 300px;
-  } */
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .img {
-    width: 350px;
-  }
+  
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .img {
-    width: 450px;
-  }
+  
 }
 
 /* 1280px */
