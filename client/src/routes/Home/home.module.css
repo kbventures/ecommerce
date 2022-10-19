@@ -35,9 +35,9 @@
 .searchInput {
   color: #868686;
   background-color: transparent;
-  font-size: var(--16p66);
-  line-height: var(--20px);
-  font-weight: 600;
+  font-size: var(--h4mobile);
+  line-height: var(--lh-condensed-ultra);
+  font-weight: var(--font-weight-semibold);
   outline: none;
   border: none;
   max-width: 160px;
@@ -52,9 +52,9 @@
 
 .title {
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.25rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h1mobile);
+  line-height: var(--lh-condensed-ultra);
   color: #000000;
   text-align: center;
 }
@@ -65,12 +65,13 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .listItem {
   font-family: Raleway, sans-serif;
-  font-size: var(--13px);
-  line-height: var(--20px);
+  font-size: var(--h6mobile);
+  line-height: var(--lh-condensed-ultra);
   color: #9a9a9d;
   padding: 10px 0;
   text-align: center;
@@ -109,7 +110,7 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  .title {
+  /* .title {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 2rem;
@@ -164,12 +165,15 @@
     line-height: 1rem;
 
     margin-bottom: 35px;
-  }
+  } */
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  .title {
+  .tabs {
+    margin-bottom: 100px;
+  }
+  /* .title {
     font-size: 3rem;
     line-height: 3rem;
 
@@ -191,7 +195,7 @@
 
   .navList {
     margin-bottom: 20px;
-  }
+  } */
 }
 
 /* 600px */
@@ -200,7 +204,7 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  .title {
+  /* .title {
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
@@ -209,12 +213,12 @@
   }
   .navList {
     margin-top: 20px;
-  }
+  } */
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  .title {
+  /* .title {
     font-size: 3rem;
     line-height: 3rem;
   }
@@ -226,12 +230,12 @@
 
   .tabs {
     gap: 20px;
-  }
+  } */
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .title {
+  /* .title {
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
@@ -242,7 +246,7 @@
 
   .pageFooter {
     margin: 15px 0 15px 0;
-  }
+  } */
 }
 
 /* 1680 px */

@@ -21,13 +21,6 @@ export default function Home() {
   const [filteredItems, setFilteredItems] = useState(items);
 
   useEffect(() => {
-    // shorter (better?)
-    // setFilteredItems(
-    //   items.filter(({title}) =>
-    //     title.toLowerCase().includes(searchInput.toLowerCase())
-    //   )
-    // );
-
     const input = searchInput.toLowerCase();
 
     const newFilteredItems = items.filter((item) => {
