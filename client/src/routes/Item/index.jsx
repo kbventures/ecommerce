@@ -6,11 +6,11 @@ import Container from "../../components/Container";
 import Header from "../../components/Header";
 import TotalPrice from "../../components/TotalPrice";
 import ProductInfo from "./Productinfo";
-import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import { useItems } from "../../contexts/ItemsContext";
 import { useBasket } from "../../contexts/BasketContext";
 
-const { container, productImg, productImgSection } = styles;
+const { products, upperContainer, container, productImg, productImgSection } =
+  styles;
 
 function Item() {
   const { items } = useItems();
@@ -25,38 +25,32 @@ function Item() {
     setBasket(basket);
   };
 
-  console.log(basket);
-
   return (
     <Container white>
       <Header icon="heart" iconColor="black" link="/home" />
-      <div className={container}>
-        <section className={productImgSection}>
-          <img
-            className={productImg}
-            src={singleProduct.src}
-            alt={singleProduct.title}
-          />
-        </section>
 
-        <section>
-          <ProductInfo singleProduct={singleProduct} />
+      <div className={upperContainer}>
+        <div className={container}>
+          <section className={productImgSection}>
+            <img
+              className={productImg}
+              src={singleProduct.src}
+              alt={singleProduct.title}
+            />
+          </section>
 
-          <TotalPrice amount={singleProduct.price} />
-
-          <button type="button" className={styles.button}>
-            Full Description <ArrowIcon />
-          </button>
-        </section>
-        <Link to="/basket">
-          <Button onClick={updateBasket} inverted>
-            Add to basket
-          </Button>
-        </Link>
-        {/* <button onClick={updateBasket} type="button">
-          Update Basket
-        </button> */}
+          <section className={products}>
+            <ProductInfo singleProduct={singleProduct} />
+            <TotalPrice amount={singleProduct.price} />
+          </section>
+        </div>
       </div>
+
+      <Link to="/basket">
+        <Button onClick={updateBasket} inverted>
+          Add to basket
+        </Button>
+      </Link>
     </Container>
   );
 }
