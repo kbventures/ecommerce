@@ -8,6 +8,12 @@ import productsRoutes from "./routes/productsRoutes";
 import cors from "cors"
 const logger = require("morgan");
 
+import Stripe from 'stripe'
+
+const stripe = new Stripe(process.env.STRIPE_SECRET!, {
+  apiVersion: '2022-08-01',
+});
+
 const app: Application = express();
 
 connectDB();
@@ -150,12 +156,46 @@ to test locally
 */
 
 // products route
-app.use("/products", productsRoutes)
+// app.use("/products", productsRoutes)
 
 app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
   res.status(200).send(items)
 });
 
 app.use("/users", userRoutes);
+
+
+app.get('/products', async (req: Request, res: Response) => {
+  const products = await stripe.products.list();
+  const prices = await stripe.prices.list();
+
+  res.send(products)
+
+})
+
+
+app.post('/create-checkout-session', async (req: Request, res: Response) => {
+  const session = await stripe.checkout.sessions.create({
+    line_items: [
+      {
+        price: 'price_1LaFBeFFr9RnerScS9WcFfb4',
+        quantity: 1,
+      },
+      {
+        price: 'price_1LaFXpFFr9RnerScL4YHgX7f',
+        quantity: 1,
+      }
+    ],
+    mode: 'payment',
+    success_url: 'http://localhost:8080/success',
+    cancel_url: 'http://localhost:8080/cancel',
+  });
+
+  console.log(session.url)
+
+
+  res.redirect(303, session.url!);
+
+})
 
 export default app;
