@@ -43,7 +43,15 @@ export default function Basket() {
           <TotalPrice amount={amount} />
         </div>
         <div className={styles.checkout}>
-          <Button inverted>Checkout</Button>
+          <form
+            action="http://localhost:4001/create-checkout-session"
+            method="POST"
+          >
+            <button type="submit">Haha</button>
+            <Button inverted type="submit">
+              Checkout
+            </Button>
+          </form>
         </div>
       </main>
     </Container>

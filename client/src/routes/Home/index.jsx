@@ -20,6 +20,8 @@ export default function Home() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredItems, setFilteredItems] = useState(items);
 
+  console.log(items);
+
   useEffect(() => {
     const input = searchInput.toLowerCase();
 
@@ -64,7 +66,7 @@ export default function Home() {
               <li className={styles.listItem}>Phones</li>
               <li className={styles.listItem}>Drones</li>
             </ul>
-            <Slider cards={filteredItems} />
+            <Slider cards={items} />
           </div>
         </main>
         <footer className={styles.pageFooter}>
