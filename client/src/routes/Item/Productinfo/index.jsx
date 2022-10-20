@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Productinfo.module.css";
-import ColorChoices from "../ColorChoices";
+// import ColorChoices from "../ColorChoices";
 
 export default function ProductInfo({ singleProduct }) {
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>{singleProduct.title}</h3>
-      <p className={styles.colorChoice}>Colors</p>
+      {/* <p className={styles.colorChoice}>Colors</p> */}
       <form action="">
-        <ColorChoices colors={singleProduct.colors} />
+        {/* <ColorChoices colors={singleProduct.colors} /> */}
       </form>
 
       <div>
