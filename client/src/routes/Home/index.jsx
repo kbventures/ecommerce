@@ -20,14 +20,12 @@ export default function Home() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredItems, setFilteredItems] = useState(items);
 
-  console.log(items);
-
   useEffect(() => {
     const input = searchInput.toLowerCase();
 
     const newFilteredItems = items.filter((item) => {
-      const title = item.title.toLowerCase();
-      return title.includes(input);
+      const name = item.name.toLowerCase();
+      return name.includes(input);
     });
 
     setFilteredItems(newFilteredItems);
@@ -66,7 +64,7 @@ export default function Home() {
               <li className={styles.listItem}>Phones</li>
               <li className={styles.listItem}>Drones</li>
             </ul>
-            <Slider cards={items} />
+            <Slider cards={filteredItems} />
           </div>
         </main>
         <footer className={styles.pageFooter}>

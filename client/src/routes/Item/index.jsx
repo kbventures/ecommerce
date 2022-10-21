@@ -25,8 +25,6 @@ function Item() {
     setBasket(basket);
   };
 
-  console.log(basket);
-
   return (
     <Container white>
       <Header icon="heart" iconColor="black" link="/home" />
@@ -34,15 +32,15 @@ function Item() {
         <section className={productImgSection}>
           <img
             className={productImg}
-            src={singleProduct.src}
-            alt={singleProduct.title}
+            src={singleProduct.images[0]}
+            alt={singleProduct.name}
           />
         </section>
 
         <section>
           <ProductInfo singleProduct={singleProduct} />
 
-          <TotalPrice amount={singleProduct.price} />
+          <TotalPrice amount={singleProduct.default_price.unit_amount / 100} />
 
           <button type="button" className={styles.button}>
             Full Description <ArrowIcon />

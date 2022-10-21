@@ -23,7 +23,7 @@ export function ItemsProvider({ children }) {
     const fetchItems = async () => {
       const response = await fetch(`http://localhost:4001/products`);
       const json = await response.json();
-      setItems(json.data);
+      setItems(json);
     };
     fetchItems();
   }, []);

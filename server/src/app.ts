@@ -7,6 +7,7 @@ import { router as userRoutes } from "./routes/user.routes";
 import productsRoutes from "./routes/productsRoutes";
 import cors from "cors"
 const logger = require("morgan");
+import productInterface from "./models/Product"
 
 import Stripe from 'stripe'
 
@@ -166,10 +167,11 @@ app.use("/users", userRoutes);
 
 
 app.get('/products', async (req: Request, res: Response) => {
-  const products = await stripe.products.list();
-  const prices = await stripe.prices.list();
+  const products =  await stripe.products.list({
+    expand: ['data.default_price'],
+  });
 
-  res.send(products)
+  res.send(products.data)
 
 })
 
@@ -192,7 +194,6 @@ app.post('/create-checkout-session', async (req: Request, res: Response) => {
   });
 
   console.log(session.url)
-
 
   res.redirect(303, session.url!);
 
