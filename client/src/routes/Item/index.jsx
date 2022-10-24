@@ -6,11 +6,11 @@ import Container from "../../components/Container";
 import Header from "../../components/Header";
 import TotalPrice from "../../components/TotalPrice";
 import ProductInfo from "./Productinfo";
-import ArrowIcon from "../../../public/assets/arrow-icon.svg";
 import { useItems } from "../../contexts/ItemsContext";
 import { useBasket } from "../../contexts/BasketContext";
 
-const { container, productImg, productImgSection } = styles;
+const { products, upperContainer, container, productImg, productImgSection } =
+  styles;
 
 function Item() {
   const { items } = useItems();
@@ -28,6 +28,7 @@ function Item() {
   return (
     <Container white>
       <Header icon="heart" iconColor="black" link="/home" />
+
       <div className={container}>
         <section className={productImgSection}>
           <img
@@ -54,7 +55,14 @@ function Item() {
         {/* <button onClick={updateBasket} type="button">
           Update Basket
         </button> */}
+
       </div>
+
+      <Link to="/basket">
+        <Button onClick={updateBasket} inverted>
+          Add to basket
+        </Button>
+      </Link>
     </Container>
   );
 }

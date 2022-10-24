@@ -3,14 +3,14 @@
 }
 .title{
    margin-bottom: 1rem;
-   font-size: 23px;
+   font-size: var(--h1mobile);
 }
 
 .colorChoice{
    font-size: 12px;
 }
 .title, .colorChoice{
-   font-weight: 600;
+   font-weight: var(--font-weight-semibold);
 }
 .colorChoice{
    margin-bottom: 0.5rem;
@@ -18,7 +18,7 @@
 
 .list{
     display: flex; 
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     justify-content: center;
     justify-content: space-around;
     margin: 0.75rem 0;
@@ -34,18 +34,18 @@
     border: 0.5px solid black; 
     padding: 0.15rem 0.5rem;
     border-radius: 5px;
-    font-size: var(--12px);
+    font-size: var(--h4mobile);
     width: 200px; 
  }
 
  .desc{
-   font-weight: 600;
-   font-size: 16px;
+   font-weight: var(--font-weight-semibold);
+   font-size: var(--h4mobile);
    margin: 0.5rem 0;
  }
 
  .longDesc{
-   font-size: 13px;
+   font-size: var(--h5mobile);
    margin: 1rem 0;
    color: grey; 
  }
@@ -54,7 +54,7 @@
  /* 360px */
 @media only screen and (min-width: 22.5rem) {
 
-   .title{
+   /* .title{
       font-size: 25px;
    }
    
@@ -82,12 +82,12 @@
     .longDesc{
       font-size: 14px;
       margin-bottom: 1rem;
-    }
+    } */
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-   .title{
+   /* .title{
       font-size: 26px;
       margin-bottom: 1.5rem;
    }
@@ -112,12 +112,12 @@
     .longDesc{
       font-size: 15px;
       margin: 2rem 0;
-    }
+    } */
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-   .title{
+   /* .title{
       font-size: 27px;
    }
    
@@ -135,12 +135,12 @@
    
     .longDesc{
       font-size: 16px;
-    }
+    } */
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-   .title{
+   /* .title{
       font-size: 28px;
       margin-bottom: 2rem;
    }
@@ -159,12 +159,12 @@
    
     .longDesc{
       font-size: 17px;
-    }
+    } */
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-   .title{
+   /* .title{
       font-size: 36px;
       margin-bottom: 3rem;
    }
@@ -190,14 +190,14 @@
     .longDesc{
       font-size: 18px;
       margin: 3rem 0; 
-    }
+    } */
 
 
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-   .title{
+   /* .title{
       font-size: 44px;
    }
    
@@ -215,12 +215,12 @@
    
     .longDesc{
       font-size: 19px;
-    }
+    } */
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-   .title{
+   /* .title{
       font-size: 46px;
    }
    
@@ -238,7 +238,7 @@
    
     .longDesc{
       font-size: 20px;
-    }
+    } */
 }
 
 
