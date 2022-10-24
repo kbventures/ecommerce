@@ -172,31 +172,23 @@ app.get('/products', async (req: Request, res: Response) => {
   });
 
   res.send(products.data)
-
 })
 
 
 app.post('/create-checkout-session', async (req: Request, res: Response) => {
+  const products:any = req.body.map((e:any)=>{
+    return {price: e.default_price.id, quantity: 1};
+  })
+
   const session = await stripe.checkout.sessions.create({
-    line_items: [
-      {
-        price: 'price_1LaFBeFFr9RnerScS9WcFfb4',
-        quantity: 1,
-      },
-      {
-        price: 'price_1LaFXpFFr9RnerScL4YHgX7f',
-        quantity: 1,
-      }
-    ],
+    line_items: products,
     mode: 'payment',
-    success_url: 'http://localhost:8080/success',
-    cancel_url: 'http://localhost:8080/cancel',
+    success_url: 'https://e-renaissance.herokuapp.com/home',
+    cancel_url: 'https://e-renaissance.herokuapp.com/',
   });
 
-  console.log(session.url)
-
-  res.redirect(303, session.url!);
-
+  res.json(session.url!);
 })
 
 export default app;
+
