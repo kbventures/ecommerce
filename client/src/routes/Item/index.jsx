@@ -9,8 +9,7 @@ import ProductInfo from "./Productinfo";
 import { useItems } from "../../contexts/ItemsContext";
 import { useBasket } from "../../contexts/BasketContext";
 
-const { products, upperContainer, container, productImg, productImgSection } =
-  styles;
+const { container, productImg, productImgSection } = styles;
 
 function Item() {
   const { items } = useItems();
@@ -42,22 +41,8 @@ function Item() {
           <ProductInfo singleProduct={singleProduct} />
 
           <TotalPrice amount={singleProduct.default_price.unit_amount / 100} />
-
-          <button type="button" className={styles.button}>
-            Full Description <ArrowIcon />
-          </button>
         </section>
-        <Link to="/basket">
-          <Button onClick={updateBasket} inverted>
-            Add to basket
-          </Button>
-        </Link>
-        {/* <button onClick={updateBasket} type="button">
-          Update Basket
-        </button> */}
-
       </div>
-
       <Link to="/basket">
         <Button onClick={updateBasket} inverted>
           Add to basket
@@ -68,3 +53,4 @@ function Item() {
 }
 
 export default Item;
+
