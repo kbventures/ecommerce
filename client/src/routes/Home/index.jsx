@@ -13,7 +13,6 @@ import SearchIcon from "../../../public/assets/search.svg";
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
 import { useItems } from "../../contexts/ItemsContext";
-// import { useBasket } from "../../contexts/BasketContext";
 
 export default function Home() {
   const { items } = useItems();

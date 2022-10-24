@@ -10,28 +10,27 @@ import Header from "../../components/Header";
 
 import { useBasket } from "../../contexts/BasketContext";
 
-const cards = [
-  {
-    title: "Super Long Watch Name",
-    price: 359,
-    quantity: 1,
-    src: "assets/apple-watch-red.png",
-    link: "/home",
-  },
-  {
-    title: "SAMSUNG Galaxy Watch",
-    price: 159,
-    quantity: 1,
-    src: "assets/samsung-galaxy-watch.png",
-    link: "/home",
-  },
-];
+async function handleSubmit(e, basket) {
+  e.preventDefault();
+  const url = await fetch(
+    "https://kdaa-ecommerce-back-end.herokuapp.com/create-checkout-session",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(basket),
+    }
+  ).then((i) => i.json());
+  window.location.href = url;
+}
 
-const amount = cards.reduce((acc, curr) => acc + curr.price, 0);
-
+// What is best practice? Send basket array as is to back end or only send id to back end
+// Ask question to senior dev later...
 export default function Basket() {
   const { basket, setBasket } = useBasket();
-  console.log(basket);
+  const amount = basket.reduce(
+    (acc, curr) => acc + curr.default_price.unit_amount / 100,
+    0
+  );
   return (
     <Container white>
       <Header title="Basket" icon="delete" link="/home" />
@@ -43,11 +42,7 @@ export default function Basket() {
           <TotalPrice amount={amount} />
         </div>
         <div className={styles.checkout}>
-          <form
-            action="http://localhost:4001/create-checkout-session"
-            method="POST"
-          >
-            <button type="submit">Haha</button>
+          <form onSubmit={(e) => handleSubmit(e, basket)}>
             <Button inverted type="submit">
               Checkout
             </Button>
