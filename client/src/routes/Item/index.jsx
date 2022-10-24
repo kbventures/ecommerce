@@ -29,21 +29,33 @@ function Item() {
     <Container white>
       <Header icon="heart" iconColor="black" link="/home" />
 
-      <div className={upperContainer}>
-        <div className={container}>
-          <section className={productImgSection}>
-            <img
-              className={productImg}
-              src={singleProduct.src}
-              alt={singleProduct.title}
-            />
-          </section>
+      <div className={container}>
+        <section className={productImgSection}>
+          <img
+            className={productImg}
+            src={singleProduct.images[0]}
+            alt={singleProduct.name}
+          />
+        </section>
 
-          <section className={products}>
-            <ProductInfo singleProduct={singleProduct} />
-            <TotalPrice amount={singleProduct.price} />
-          </section>
-        </div>
+        <section>
+          <ProductInfo singleProduct={singleProduct} />
+
+          <TotalPrice amount={singleProduct.default_price.unit_amount / 100} />
+
+          <button type="button" className={styles.button}>
+            Full Description <ArrowIcon />
+          </button>
+        </section>
+        <Link to="/basket">
+          <Button onClick={updateBasket} inverted>
+            Add to basket
+          </Button>
+        </Link>
+        {/* <button onClick={updateBasket} type="button">
+          Update Basket
+        </button> */}
+
       </div>
 
       <Link to="/basket">

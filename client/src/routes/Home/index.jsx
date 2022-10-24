@@ -13,7 +13,6 @@ import SearchIcon from "../../../public/assets/search.svg";
 import Slider from "../../components/Slider";
 import Container from "../../components/Container";
 import { useItems } from "../../contexts/ItemsContext";
-// import { useBasket } from "../../contexts/BasketContext";
 
 export default function Home() {
   const { items } = useItems();
@@ -24,8 +23,8 @@ export default function Home() {
     const input = searchInput.toLowerCase();
 
     const newFilteredItems = items.filter((item) => {
-      const title = item.title.toLowerCase();
-      return title.includes(input);
+      const name = item.name.toLowerCase();
+      return name.includes(input);
     });
 
     setFilteredItems(newFilteredItems);

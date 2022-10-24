@@ -7,13 +7,13 @@ import Product from "../Product";
 export default function ProductsList({ cards }) {
   return (
     <div className={styles.wrapper}>
-      {cards.map(({ title, price, quantity, src }, i) => (
+      {cards.map(({ name, default_price, quantity, images }, i) => (
         <Product
           key={i}
-          title={title}
-          price={price}
+          name={name}
+          default_price={default_price}
           quantity={quantity}
-          src={src}
+          images={images}
         />
       ))}
     </div>
@@ -23,10 +23,12 @@ export default function ProductsList({ cards }) {
 ProductsList.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
       quantity: PropTypes.number,
-      price: PropTypes.number.isRequired,
-      src: PropTypes.string.isRequired,
+      default_price: PropTypes.shape({
+        unit_amount: PropTypes.number.isRequired,
+      }),
+      images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     })
   ).isRequired,
 };

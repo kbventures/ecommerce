@@ -33,7 +33,7 @@ export default function Slider({ cards }) {
       modules={[Autoplay]}
       className={styles.swiper}
       slideClass={styles.swiperSlide}
-      loop={cards.length !== 1}
+      loop={cards.length !== 2}
       autoplay={{
         delay: 1,
         disableOnInteraction: false,
@@ -41,14 +41,14 @@ export default function Slider({ cards }) {
       }}
       speed={4000}
     >
-      {cards.map(({ title, desc, price, src, id }) => (
+      {cards.map(({ name, description, default_price, images, id }) => (
         <SwiperSlide key={id} className={styles.swiperSlide}>
           <SliderCard
-            desc={desc}
-            price={price}
-            src={src}
+            description={description}
+            default_price={default_price}
+            images={images}
             id={id}
-            title={title}
+            name={name}
           />
         </SwiperSlide>
       ))}
@@ -59,10 +59,12 @@ export default function Slider({ cards }) {
 Slider.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      desc: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      src: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      default_price: PropTypes.shape({
+        unit_amount: PropTypes.number.isRequired,
+      }),
+      images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     })
   ).isRequired,
 };
