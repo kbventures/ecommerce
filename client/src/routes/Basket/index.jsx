@@ -33,7 +33,7 @@ export default function Basket() {
   );
   return (
     <Container white>
-      <Header title="Basket" icon="delete" link="/home" />
+      <Header title="Basket" icon="delete" />
 
       <main>
         <Notification title="Delivery for FREE until the end of the month" />

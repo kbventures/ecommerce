@@ -12,7 +12,7 @@ const { totalPriceWrapper } = styles;
 export default function Checkout() {
   return (
     <Container backgroundColor="rgb(245, 245, 248)">
-      <Header title="Checkout" link="" />
+      <Header title="Checkout" />
       <ShippingInfo
         name="Rosina Doe"
         address="43 Oxford Road M13 4GR Manchester, UK"

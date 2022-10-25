@@ -26,7 +26,7 @@ function Item() {
 
   return (
     <Container white>
-      <Header icon="heart" iconColor="black" link="/home" />
+      <Header icon="heart" iconColor="black" />
 
       <div className={container}>
         <section className={productImgSection}>
@@ -53,4 +53,3 @@ function Item() {
 }
 
 export default Item;
-
