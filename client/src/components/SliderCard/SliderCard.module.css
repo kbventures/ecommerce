@@ -20,8 +20,7 @@
 .sliderCardImg {
   position: relative;
   top: -10px;
-  width: 40%;
-  min-height: 68px;
+  width: 30%;
   border-radius: 50%;
 }
 

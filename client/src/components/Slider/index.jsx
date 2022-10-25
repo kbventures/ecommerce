@@ -33,7 +33,7 @@ export default function Slider({ cards }) {
       modules={[Autoplay]}
       className={styles.swiper}
       slideClass={styles.swiperSlide}
-      loop={cards.length !== 2}
+      loop={cards.length >= 4}
       autoplay={{
         delay: 1,
         disableOnInteraction: false,

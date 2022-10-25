@@ -73,9 +73,14 @@
   font-size: var(--h6mobile);
   line-height: var(--lh-condensed-ultra);
   color: #9a9a9d;
-  padding: 10px 0;
   text-align: center;
   cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.listItem:hover {
+  color: var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
 }
 
 .listItemActive {
@@ -83,6 +88,15 @@
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
 }
+
+.tabButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 10px 0;
+}
+
 .pageFooter {
   margin: 5px 0 5px 0;
 }
