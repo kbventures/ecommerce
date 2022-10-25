@@ -21,7 +21,7 @@ const {
 export default function Profile() {
   return (
     <Container white>
-      <Header link="/home" title="Profile" />
+      <Header title="Profile" />
       <div className={fixedWidth}>
         <section className={profileContainer}>
           <img

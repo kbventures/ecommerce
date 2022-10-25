@@ -11,7 +11,7 @@ const { logoPosition, container, title, imgWrapper, img, link } = styles;
 function Splash() {
   return (
     <Container>
-      <Header title="" link="/home" />
+      <Header title="" />
       <div className={container}>
         <h1 className={title}>Find You Gadget</h1>
         {/* <div className={imgWrapper}>
