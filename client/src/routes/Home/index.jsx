@@ -16,19 +16,22 @@ import { useItems } from "../../contexts/ItemsContext";
 
 export default function Home() {
   const { items } = useItems();
+  const [category, setCategory] = useState("");
   const [searchInput, setSearchInput] = useState("");
-  const [filteredItems, setFilteredItems] = useState(items);
+  const [filteredItems, setFilteredItems] = useState(
+    items.filter((item) => item.metadata.category === category)
+  );
 
   useEffect(() => {
     const input = searchInput.toLowerCase();
 
     const newFilteredItems = items.filter((item) => {
       const name = item.name.toLowerCase();
-      return name.includes(input);
+      return name.includes(input) && item.metadata.category.includes(category);
     });
 
     setFilteredItems(newFilteredItems);
-  }, [searchInput, items]);
+  }, [searchInput, items, category]);
 
   return (
     <Container white>
@@ -58,10 +61,49 @@ export default function Home() {
           <h2 className={styles.title}>Order online collect in store</h2>
           <div className={styles.sliderWrapper}>
             <ul className={styles.tabs}>
-              <li className={styles.listItemActive}>Wearable</li>
-              <li className={styles.listItem}>Laptops</li>
-              <li className={styles.listItem}>Phones</li>
-              <li className={styles.listItem}>Drones</li>
+              <li
+                className={
+                  category === "" ? styles.listItemActive : styles.listItem
+                }
+              >
+                <button
+                  className={styles.tabButton}
+                  type="button"
+                  onClick={() => setCategory("")}
+                >
+                  Everything
+                </button>
+              </li>
+              <li
+                className={
+                  category === "wearable"
+                    ? styles.listItemActive
+                    : styles.listItem
+                }
+              >
+                <button
+                  className={styles.tabButton}
+                  type="button"
+                  onClick={() => setCategory("wearable")}
+                >
+                  Wearable
+                </button>
+              </li>
+              <li
+                className={
+                  category === "jewelery"
+                    ? styles.listItemActive
+                    : styles.listItem
+                }
+              >
+                <button
+                  className={styles.tabButton}
+                  type="button"
+                  onClick={() => setCategory("jewelery")}
+                >
+                  Jewelery
+                </button>
+              </li>
             </ul>
             <Slider cards={filteredItems} />
           </div>
