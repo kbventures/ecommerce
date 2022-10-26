@@ -21,7 +21,9 @@ export default function Home() {
   const [filteredItems, setFilteredItems] = useState(
     items.filter((item) => item.metadata.category === category)
   );
-
+  const categoriesList = [
+    ...new Set(items.map(({ metadata }) => metadata.category)),
+  ];
   useEffect(() => {
     const input = searchInput.toLowerCase();
 
@@ -74,36 +76,24 @@ export default function Home() {
                   Everything
                 </button>
               </li>
-              <li
-                className={
-                  category === "wearable"
-                    ? styles.listItemActive
-                    : styles.listItem
-                }
-              >
-                <button
-                  className={styles.tabButton}
-                  type="button"
-                  onClick={() => setCategory("wearable")}
+              {categoriesList.map((categoryName, i) => (
+                <li
+                  key={i}
+                  className={
+                    category === categoryName
+                      ? styles.listItemActive
+                      : styles.listItem
+                  }
                 >
-                  Wearable
-                </button>
-              </li>
-              <li
-                className={
-                  category === "jewelery"
-                    ? styles.listItemActive
-                    : styles.listItem
-                }
-              >
-                <button
-                  className={styles.tabButton}
-                  type="button"
-                  onClick={() => setCategory("jewelery")}
-                >
-                  Jewelery
-                </button>
-              </li>
+                  <button
+                    className={styles.tabButton}
+                    type="button"
+                    onClick={() => setCategory(categoryName)}
+                  >
+                    {categoryName[0].toUpperCase() + categoryName.slice(1)}
+                  </button>
+                </li>
+              ))}
             </ul>
             <Slider cards={filteredItems} />
           </div>
