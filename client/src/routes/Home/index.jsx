@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./home.module.css";
 
+import Logo from "./Logo";
 import HomeIcon from "../../../public/assets/home.svg";
 import HeartIcon from "../../../public/assets/heart.svg";
 import ProfileIcon from "../../../public/assets/profile.svg";
@@ -60,6 +61,7 @@ export default function Home() {
           </nav>
         </header>
         <main className={styles.pageMain}>
+          <Logo />
           <h2 className={styles.title}>Order online collect in store</h2>
           <div className={styles.sliderWrapper}>
             <ul className={styles.tabs}>

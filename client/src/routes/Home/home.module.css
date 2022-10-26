@@ -3,6 +3,7 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
 .header {
   padding: 25px 0 10px 0;
 }
@@ -52,11 +53,12 @@
 
 .title {
   font-family: Raleway, sans-serif;
-  font-weight: var(--font-weight-bold);
+  /* font-weight: var(--font-weight-bold); */
   font-size: var(--h1mobile);
   line-height: var(--lh-condensed-ultra);
   color: #000000;
   text-align: center;
+  margin: 25px 0; 
 }
 
 .tabs {
