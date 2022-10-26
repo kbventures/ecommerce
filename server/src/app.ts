@@ -4,7 +4,7 @@ dotenv.config()
 import connectDB from "./config/db"
 import express, { Application, Request, Response, NextFunction } from "express";
 import { router as userRoutes } from "./routes/user.routes";
-import productsRoutes from "./routes/productsRoutes";
+// import productsRoutes from "./routes/productsRoutes";
 import cors from "cors"
 const logger = require("morgan");
 import productInterface from "./models/Product"
@@ -166,7 +166,7 @@ app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
 app.use("/users", userRoutes);
 
 
-app.get('/products', async (req: Request, res: Response) => {
+app.get('/products', async (req: Request, res: Response,next: NextFunction) => {
   const products =  await stripe.products.list({
     expand: ['data.default_price'],active: true,
   });
@@ -175,7 +175,7 @@ app.get('/products', async (req: Request, res: Response) => {
 })
 
 
-app.post('/create-checkout-session', async (req: Request, res: Response) => {
+app.post('/create-checkout-session', async (req: Request, res: Response,next: NextFunction) => {
   const products:any = req.body.map((e:any)=>{
     return {price: e.default_price.id, quantity: 1};
   })
