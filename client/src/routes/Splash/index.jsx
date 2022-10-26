@@ -6,17 +6,14 @@ import Container from "../../components/Container";
 import Logo from "../../components/Logo";
 import Header from "../../components/Header";
 
-const { logoPosition, container, title, imgWrapper, img, link } = styles;
+const { logoPosition, container, title, link } = styles;
 
 function Splash() {
   return (
     <Container>
       <Header title="" />
       <div className={container}>
-        <h1 className={title}>Find You Gadget</h1>
-        {/* <div className={imgWrapper}>
-          <img src="./assets/logo.svg" alt="guy in vr" className={img} />
-        </div> */}
+        <h1 className={title}>Find Your Gadget</h1>
         <div className={logoPosition}>
           <Logo />
         </div>
