@@ -168,7 +168,7 @@ app.use("/users", userRoutes);
 
 app.get('/products', async (req: Request, res: Response) => {
   const products =  await stripe.products.list({
-    expand: ['data.default_price'],
+    expand: ['data.default_price'],active: true,
   });
 
   res.send(products.data)
