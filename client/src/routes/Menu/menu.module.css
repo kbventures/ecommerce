@@ -8,7 +8,6 @@
 
 .img {
   width: 75px;
-
 }
 
 .companyName{
@@ -167,6 +166,7 @@ a:active {
   top: -10px;
   right: 20px;
   transform: scale(0.7);
+  
 }
 
 /* 360px */
@@ -246,6 +246,10 @@ a:active {
   .navigation {
     margin-left: 35px;
   }
+  .companyWrapper{
+    bottom:10%;  
+  }
+
 }
 
 /* 600px */
@@ -255,7 +259,7 @@ a:active {
   }
 
   .companyWrapper{
-    bottom:7%;
+    bottom:10%;
   }
 
   .imgWrapper{
@@ -271,17 +275,24 @@ a:active {
     width: 200px;
   }
 
+  .imgWrapper {
+    top:25%;  
+  }
+
+  .companyWrapper{
+    bottom:20%;  
+  }
 
 
-  .menuLargeImage img {
+  /* .menuLargeImage img {
     height: 600px;
     width: 280px;
-  }
+  } */
 
-  .menuLargeImage .rectangle74image {
+  /* .menuLargeImage .rectangle74image {
     height: 600px;
     width: 310px;
-  }
+  } */
 
   .menuLargeImage {
     right: -55px;
@@ -294,8 +305,8 @@ a:active {
 
   .semiCircle {
     top: -10px;
-    right: 100px;
-    transform: scale(2);
+    right: 600px;
+    transform: scale(1.5);
   }
 
   .emptySmallEllipse {
@@ -304,22 +315,24 @@ a:active {
   }
 
   .fullSmallEllipse {
-    bottom: 70px;
+    bottom:50px;
     left: -10px;
-    transform: scale(1.5);
+    transform: scale(0.75);
   }
 
-  .navigationLogout {
+  /* .navigationLogout {
     padding-top: 100px;
-  }
+  } */
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
 
   .img {
-    width:350px;
+    width:275px;
   }
+
+  /* 
 
   .companyWrapper{
     bottom:9%;
@@ -348,7 +361,9 @@ a:active {
   }
   .navigation {
     margin-left: 100px;
-  }
+  } */
+
+
 }
 
 /* 1280px */
@@ -356,6 +371,10 @@ a:active {
 
   .menuLargeImage {
     right: -75px;
+  }
+
+  .imgWrapper {
+    top:32%;  
   }
 }
 
