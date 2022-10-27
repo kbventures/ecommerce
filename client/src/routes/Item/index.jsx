@@ -20,8 +20,8 @@ function Item() {
   if (!singleProduct) return null;
 
   const updateBasket = () => {
-    basket.push(singleProduct);
-    setBasket(basket);
+    const newBasket = [...basket, singleProduct];
+    setBasket(newBasket);
   };
 
   return (
