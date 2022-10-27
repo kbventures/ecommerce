@@ -13,8 +13,7 @@ import NoItem from "../../../public/assets/sally-4.png";
 import { useFavorite } from "../../contexts/FavoritesContext";
 
 export default function Favorites() {
-  // eslint-disable-next-line no-unused-vars
-  const { favorite, setFavorite } = useFavorite();
+  const { favorite } = useFavorite();
 
   if (favorite.length === 0)
     return (
