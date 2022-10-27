@@ -29,41 +29,37 @@
 /* 480px */
 @media only screen and (min-width: 30rem) {
     .img {
-        height: 350px;
+        height: 325px;
     }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
     .img {
-        height: 400px;
+        height: 350px;
     }
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-    .img {
-        height: 450px;
-    }
+  
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .img {
-        height: 500px;
-    }
+
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
     .img {
-        height: 550px;
+        height: 350px;
     }
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
     .img {
-        height: 600px;
+        height: 400px;
     }
 }
