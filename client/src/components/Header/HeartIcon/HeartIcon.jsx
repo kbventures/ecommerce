@@ -14,14 +14,11 @@ export default function Heart({ heartColor }) {
 
   const updateFavorite = () => {
     if (!favorite.find((item) => item.id === id)) {
-      favorite.push(singleProduct);
-      setFavorite(favorite);
+      const newFavorite = [...favorite, singleProduct];
+      setFavorite(newFavorite);
     } else {
-      favorite.splice(
-        favorite.findIndex((item) => item.id === id),
-        1
-      );
-      setFavorite(favorite);
+      const previousFavorite = favorite.filter((item) => item.id !== id);
+      setFavorite(previousFavorite);
     }
   };
 
