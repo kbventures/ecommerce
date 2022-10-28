@@ -13,7 +13,7 @@ import NoItem from "../../../public/assets/sally-4.png";
 import { useFavorite } from "../../contexts/FavoritesContext";
 
 export default function Favorites() {
-  const { favorite } = useFavorite();
+  const { favorite, setFavorite } = useFavorite();
 
   if (favorite.length === 0)
     return (
@@ -33,11 +33,11 @@ export default function Favorites() {
 
   return (
     <Container white>
-      <Header title="Favorites" icon="delete" />
+      <Header title="Favorites" />
       <Notification title="Take 10% Off Your First Order" />
 
       <main>
-        <ProductsList cards={favorite} />
+        <ProductsList context={favorite} updateContext={setFavorite} />
       </main>
     </Container>
   );

@@ -3,8 +3,8 @@
   background: white;
   border-radius: 8px;
   display: flex;
-  gap: 10px;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: flex-start;
   min-height: 100px;
   padding: 10px;
 }
@@ -56,6 +56,12 @@
   background: #7dccec;
   color: white;
   cursor: pointer;
+}
+
+.deleteButton {
+  composes: counterButton;
+  margin-left: 2px; 
+  background-color: red;
 }
 
 .counterNumber {

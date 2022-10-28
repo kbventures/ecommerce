@@ -2,7 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Product.module.css";
 
-export default function Product({ name, default_price, quantity, images }) {
+export default function Product({
+  name,
+  default_price,
+  quantity,
+  images,
+  handleDelete,
+}) {
   return (
     <div className={styles.mainWrapper}>
       <img src={images[0]} className={styles.img} alt={name} />
@@ -10,7 +16,6 @@ export default function Product({ name, default_price, quantity, images }) {
       <div className={styles.informationWrapper}>
         <h3 className={styles.title}>{name}</h3>
         <span className={styles.price}>${default_price.unit_amount / 100}</span>
-
         <div className={styles.quantityWrapper}>
           <span>Quantity</span>
           <div className={styles.quantityItems}>
@@ -21,6 +26,13 @@ export default function Product({ name, default_price, quantity, images }) {
             <button type="button" className={styles.counterButton}>
               +
             </button>
+            <button
+              onClick={() => handleDelete(name)}
+              type="button"
+              className={styles.deleteButton}
+            >
+              x
+            </button>
           </div>
         </div>
       </div>
@@ -30,8 +42,14 @@ export default function Product({ name, default_price, quantity, images }) {
 
 Product.propTypes = {
   name: PropTypes.string.isRequired,
+  quantity: PropTypes.number,
   default_price: PropTypes.shape({
     unit_amount: PropTypes.number.isRequired,
   }).isRequired,
   images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  handleDelete: PropTypes.func.isRequired,
+};
+
+Product.defaultProps = {
+  quantity: 1,
 };

@@ -33,11 +33,11 @@ export default function Basket() {
   );
   return (
     <Container white>
-      <Header title="Basket" icon="delete" />
+      <Header title="Basket" />
 
       <main>
         <Notification title="Delivery for FREE until the end of the month" />
-        <ProductsList cards={basket} />
+        <ProductsList context={basket} updateContext={setBasket} />
         <div className={styles.totalPriceWrapper}>
           <TotalPrice amount={amount} />
         </div>
