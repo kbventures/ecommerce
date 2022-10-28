@@ -141,3 +141,10 @@ body {
   line-height: 1.25;
   font-family: "Roboto Slab", serif;
 }
+
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

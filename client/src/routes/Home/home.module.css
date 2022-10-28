@@ -1,3 +1,5 @@
+
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
 }
 
 .header {
-  padding: 25px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 .navHeader {
   display: flex;
@@ -22,7 +24,7 @@
   padding: 0 10px;
   gap: 10px;
   border-radius: 30px;
-  height: 40px;
+  height: 35px;
   background-color: transparent;
   border: 2px solid #c9c9c9;
   font-family: Raleway, sans-serif;
@@ -41,7 +43,7 @@
   font-weight: var(--font-weight-semibold);
   outline: none;
   border: none;
-  max-width: 160px;
+  max-width: 120px;
 }
 
 .pageMain {
@@ -58,7 +60,7 @@
   line-height: var(--lh-condensed-ultra);
   color: #000000;
   text-align: center;
-  margin: 25px 0; 
+  margin: 10px 0; 
 }
 
 .tabs {
@@ -67,7 +69,7 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .listItem {
@@ -182,6 +184,11 @@
 
     margin-bottom: 35px;
   } */
+
+  .tabs {
+    gap: 15px;
+    margin-bottom: 70px;
+  }
 }
 
 /* 480px */
@@ -189,6 +196,10 @@
   .tabs {
     margin-bottom: 100px;
   }
+
+
+
+
   /* .title {
     font-size: 3rem;
     line-height: 3rem;
