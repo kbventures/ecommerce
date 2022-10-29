@@ -41,7 +41,7 @@ export default function Home() {
       <div className={styles.wrapper}>
         <header className={styles.header}>
           <nav className={styles.navHeader}>
-            <Link to="/menu">
+            <Link className={styles.menuIcon} to="/menu">
               <MenuIcon />
             </Link>
             <div className={styles.search}>
@@ -64,6 +64,7 @@ export default function Home() {
           <Logo />
           <h2 className={styles.title}>Order online collect in store</h2>
           <div className={styles.sliderWrapper}>
+            {/* TABS */}
             <ul className={styles.tabs}>
               <li
                 className={
