@@ -54,9 +54,9 @@ function Menu() {
                     <span className={navigationSpan}>Profile</span>
                   </li>
                 </Link>
-                <Link className={navigationA} to="/orders">
+                <Link className={navigationA} to="/home">
                   <li className={navigationBuyIcon}>
-                    <span className={navigationSpan}>Orders</span>
+                    <span className={navigationSpan}>Home</span>
                   </li>
                 </Link>
                 <Link className={navigationA} to="/favorite">
@@ -81,7 +81,9 @@ function Menu() {
                   src={rectangle74}
                   alt="Decorative"
                 />
+
                 <img src={rectangle73} alt="Decorative" />
+
                 <EmptySmallEllipseSvg className={emptySmallEllipsePosition} />
               </section>
             </section>

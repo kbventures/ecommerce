@@ -129,101 +129,15 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  /* .title {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.25rem;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-
-  .listItem {
-    font-family: Raleway, sans-serif;
-    font-size: var(--13px);
-    line-height: var(--20px);
-    color: #9a9a9d;
-    padding: 10px 0;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .listItemActive {
-    composes: listItem;
-    color: var(--primary-color);
-    border-bottom: 5px solid var(--primary-color);
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-  }
-
-  .sliderCardsList {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 30px;
-    margin: 0 0 5px 0;
-    flex: 1 0 auto;
-  }
-
-  .nextSlideButton {
-    font-size: 1rem;
-    line-height: 1rem;
-
-    margin-bottom: 35px;
-  } */
-
   .tabs {
     gap: 15px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  .tabs {
-    margin-bottom: 100px;
-  }
 
-
-
-
-  /* .title {
-    font-size: 3rem;
-    line-height: 3rem;
-
-    margin-bottom: 1.5rem;
-  }
-
-  .tabs {
-    margin-bottom: 2rem;
-  }
-
-  .listItem {
-    font-size: var(--16px);
-    line-height: var(--20px);
-  }
-
-  .nextSlideButton {
-    font-size: 1.1rem;
-  }
-
-  .navList {
-    margin-bottom: 20px;
-  } */
 }
 
 /* 600px */
@@ -232,49 +146,15 @@
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  /* .title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-  .footerNavItem {
-    transform: scale(1.5);
-  }
-  .navList {
-    margin-top: 20px;
-  } */
+ 
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  /* .title {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .listItem {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  .tabs {
-    gap: 20px;
-  } */
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  /* .title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-
-  .footerNavItem {
-    transform: scale(1.5);
-  }
-
-  .pageFooter {
-    margin: 15px 0 15px 0;
-  } */
 }
 
 /* 1680 px */
