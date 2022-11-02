@@ -5,19 +5,59 @@
 .formInputContainer {
     display: flex;
     flex-direction: column;
-    font-size: var(--10px);
+    font-size: var(--h6mobile);
     color: #868686;
-    margin-bottom: 15px;
+    margin: var(--spacer-4) 0 0 0;
+    gap: var(--spacer-1);
 }
-
 
 .label {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: var(--spacer-2);
 }
 
 input {
     border: none;
     border-bottom: 1px solid #C9C9C9;
+    height: 30px;
+    padding: 0 var(--spacer-3);
 }
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+    .labelSvg {
+        transform: scale(1);
+    }
+
+    .formInputContainer {
+        margin: var(--spacer-6) 0 0 0;
+    }
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+    .formInputContainer {
+        margin: var(--spacer-7) 0 0 0;
+    }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+    input {
+        height: 40px;
+    }
+    
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {}

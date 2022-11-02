@@ -1,15 +1,16 @@
 .container {
     background-color: var(--primary-color);
     font-family: "Raleway", sans-serif;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .top {
     align-items: center;
     display: flex;
     height: 140px;
-    padding: 0 25px;
     position: relative;
+    width: 100vw;
 }
 
 .EmptySmallEllipsePositionOne {
@@ -27,12 +28,12 @@
 }
 
 .transparentSvg {
-    background: linear-gradient(rgba(0,0,0,0), rgba(89,86,233,.8), rgba(89,86,233,1));
+    background: linear-gradient(rgba(0,0,0,0), rgba(89,86,233,.6), rgba(89,86,233,1));
     /* 89,86,233 */
     position: absolute;
-    top: 5px;
+    top: -3px;
     right: 23px;
-    height: 31px;
+    height: 38px;
     width: 93px;
 }
 
@@ -45,85 +46,171 @@
 
 .header {
     color: white;
-    font-size: var(--36px);
-    font-weight: 600;
+    font-size: var(--h00mobile);
+    font-weight: var(--font-weight-extrabold);
+    width: 100%;
+    padding: 0 var(--spacer-4);
+    position: relative;
+    line-height: var(--lh-condensed);
+    z-index: 1;
 }
 
 .overlay {
     background-color: #ffffff;
-    padding: 0 25px;
+    border-radius:  var(--border-radius-3)  var(--border-radius-3) 0 0 ;
     height: calc(100vh - 140px);
-    border-radius: 15px 15px 0 0 ;
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.overlayContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--spacer-6);
+    height: calc(100vh - 200px);
+    justify-content: center;
 }
 
 .loginHeader {
-    font-size: var(--13px);
-    font-weight: 600;
-    padding: 20px 0;
+    font-size: var(--h4mobile);
+    font-weight: var(--font-weight-bold);
 }
 
 .passcodeLink {
     color: var(--primary-color);
     display: inline-block;
-    font-size: var(--10px);
-    font-weight: 600;
-    margin: 15px 0;
+    font-size: var(--h5mobile);
+    font-weight: var(--font-weight-bold);
+    margin:  var(--spacer-3) 0;
     text-decoration: none;
 }
 
 .createAccountLink {
     color: var(--primary-color);
     display: block;
-    font-size: var(--12px);
-    font-weight: 600;
+    font-size: var(--h5mobile);
+    font-weight: var(--font-weight-bold);
     text-align: center;
     text-decoration: none;
-}
-
-@media only screen and (min-width: 46em) {
-    .top {
-        padding: 15px 53px;
-    }
-
-    .overlay {
-        padding: 15px 53px;
-    }
-}
-
-@media only screen and (min-width: 80em) {
-    .top {
-        padding: 0 73px;
-    }
-
-    .overlay {
-        padding: 0 73px;
-    }
-}
-
-@media only screen and (min-width: 112em) {
-    .top {
-        padding: 0 104px;
-    }
-
-    .overlay {
-        padding: 0 104px;
-    }
 }
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {}
 
 /* 480px */
-@media only screen and (min-width: 30rem) {}
+@media only screen and (min-width: 30rem) {
+    .overlayContainer {
+        padding: 0  var(--spacer-8) ;
+    }
+
+    .passcodeLink {
+        margin:  var(--spacer-5) 0;
+    }
+}
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+    .top {
+        height: 200px;
+    }
+
+    .header {
+        padding: var(--spacer-8);
+    }
+
+    .overlay {
+        height: calc(100vh - 200px);
+    }
+
+    .overlayContainer {
+        padding: 0 var(--spacer-9) ;
+        height: calc(100vh - 280px);
+        max-width: 576px;
+        margin: 0 auto;
+    }
+
+    .EmptySmallEllipsePositionOne {
+        top: -5px;
+        left: 21px;
+        transform: scale(4.7);
+    }
+
+    .EmptySmallEllipsePositionTwo {
+        top: 171px;
+        right: 157px;
+        transform: scale(2.5);
+        z-index: 0;
+    }
+
+    .transparentSvg {
+        background: linear-gradient(rgba(0,0,0,0), rgba(89,86,233,.4), rgba(89,86,233,1));
+        /* 89,86,233 */
+        top: -19px;
+        right: 3px;
+        height: 131px;
+        width: 254px;
+    }
+
+    .SolidPinkEllipsePosition{
+        bottom: 133px;
+        right: 56px;
+        transform: scale(1.7);
+    }
+}
 
 /* 736px */
-@media only screen and (min-width: 46em) {}
+@media only screen and (min-width: 46em) {
+    .top {
+        height: 230px;
+    }
+
+    .overlay {
+        height: calc(100vh - 230px);
+    }
+
+    .header {
+        padding: var(--spacer-10) ;
+    }
+
+    .overlayContainer {
+        padding: 0 var(--spacer-10);
+        height: calc(100vh - 310px);
+    }
+
+    .EmptySmallEllipsePositionOne {
+        top: -5px;
+        left: 21px;
+        transform: scale(4.7);
+    }
+
+    .EmptySmallEllipsePositionTwo {
+        top: 230px;
+        right: 271px;
+        transform: scale(4.5);
+        z-index: 0;
+    }
+
+    .transparentSvg {
+        background: linear-gradient(rgba(0,0,0,0), rgba(89,86,233,.4), rgba(89,86,233,1));
+        /* 89,86,233 */
+        top: 7px;
+        right: 9px;
+        height: 141px;
+        width: 264px;
+    }
+
+    .SolidPinkEllipsePosition{
+        bottom: 164px;
+        right: 77px;
+        transform: scale(2.1);
+    }
+}
 
 /* 980px */
-@media only screen and (min-width: 61.25rem) {}
+@media only screen and (min-width: 61.25rem) {
+}
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {}
