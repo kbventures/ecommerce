@@ -16,6 +16,7 @@ const {
   SolidPinkEllipsePosition,
   header,
   overlay,
+  overlayContainer,
   loginHeader,
   passcodeLink,
   createAccountLink,
@@ -38,19 +39,21 @@ export default function Login() {
       </section>
 
       <section className={overlay}>
-        <h3 className={loginHeader}>Login</h3>
+        <div className={overlayContainer}>
+          <h3 className={loginHeader}>Login</h3>
 
-        <LoginForm />
+          <LoginForm />
 
-        <a href="/home" className={passcodeLink}>
-          Forgot passcode?
-        </a>
+          <a href="/home" className={passcodeLink}>
+            Forgot passcode?
+          </a>
 
-        <Button inverted>Login</Button>
+          <Button inverted>Login</Button>
 
-        <a href="/home" className={createAccountLink}>
-          Create account
-        </a>
+          <a href="/home" className={createAccountLink}>
+            Create account
+          </a>
+        </div>
       </section>
     </div>
   );
