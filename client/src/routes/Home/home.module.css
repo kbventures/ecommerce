@@ -1,4 +1,6 @@
-
+.menuIcon{
+  z-index: 10;
+}
 
 .wrapper {
   display: flex;
@@ -69,7 +71,6 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .listItem {
@@ -98,7 +99,7 @@
   border: none;
   cursor: pointer;
   color: inherit;
-  padding: 10px 0;
+  padding: 3px 0;
 }
 
 .pageFooter {
