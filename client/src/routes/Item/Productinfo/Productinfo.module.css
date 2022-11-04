@@ -54,35 +54,13 @@
  /* 360px */
 @media only screen and (min-width: 22.5rem) {
 
-   /* .title{
-      font-size: 25px;
-   }
-   
-   .colorChoice{
-      font-size: 16px;
-      margin-bottom: 1rem;
-   }
-
-   
-   .list{
-       margin: 1.5rem 0;
-   }
-   
-   
-    .label{
-    font-size: 13px;
-    }
-   
     .desc{
-      font-weight: 600;
-      font-size: 18px;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
     }
    
     .longDesc{
-      font-size: 14px;
-      margin-bottom: 1rem;
-    } */
+      margin-bottom: 1.5rem;
+    }
 }
 
 /* 480px */

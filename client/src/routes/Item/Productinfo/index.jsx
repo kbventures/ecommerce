@@ -6,13 +6,11 @@ import styles from "./Productinfo.module.css";
 export default function ProductInfo({ singleProduct }) {
   return (
     <div className={styles.container}>
-
       <h3 className={styles.title}>{singleProduct.name}</h3>
-      <p className={styles.colorChoice}>Colors</p>
+      {/* <p className={styles.colorChoice}>Colors</p> */}
       {/* <form action="">
         <ColorChoices colors={singleProduct.colors} />
       </form> */}
-
 
       <div>
         <h4 className={styles.desc}>{singleProduct.description}</h4>
