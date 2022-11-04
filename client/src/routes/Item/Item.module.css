@@ -24,7 +24,7 @@
   width: 120px;
   border-radius:25%;
   margin-top: -40px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -40,6 +40,7 @@
 @media only screen and (min-width: 22.5rem) {
   .productImg {
     width: 150px;
+    margin-bottom: 2rem;
   }
 
 
@@ -49,19 +50,17 @@
 @media only screen and (min-width: 30rem) {
   .productImg {
     width: 200px;
-    margin-top: 0px;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
 
-  .button{
-    font-size: 14px;
-  }
+
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
   .productImg {
     width: 240px;
+    margin-bottom: 5rem;
   }
 
 }
@@ -69,25 +68,25 @@
 /* 736px */
 @media only screen and (min-width: 46em) {
   .productImg {
-    width: 260px;
+    margin-bottom: 8rem;
   }
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
   .productImg {
-    width: 300px;
+    width: 260px;
   }
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-  .productImg {
-    width: 340px;
-  }
+
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-
+  .productImg {
+    width: 280px;
+  }
 }
