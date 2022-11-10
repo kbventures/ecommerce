@@ -54,9 +54,7 @@
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-    .container img {
-        width: 500px;
-    }
+   
 }
 
 /* 1280px */
