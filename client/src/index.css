@@ -148,3 +148,68 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+    
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+  :root{
+  --h00mobile: 3rem;
+  --h0mobile: 2.5rem;
+  --h1mobile: 2rem;
+  --h2mobile: 1.5rem;
+  --h3mobile: 1.25rem;
+  --h4mobile: 1rem;
+  --h5mobile: 0.88rem;
+  --h6mobile: 0.75rem;
+  }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+  :root{
+    --h00mobile: 3.25rem;
+    --h0mobile: 2.75rem;
+    --h1mobile: 2.25rem;
+    --h2mobile: 1.75rem;
+    --h3mobile: 1.5rem;
+    --h4mobile: 1.25rem;
+    --h5mobile: 1rem;
+    --h6mobile: 0.85rem;
+    }
+
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+  :root{
+    --h00mobile: 3.5rem;
+    --h0mobile: 3rem;
+    --h1mobile: 2.5rem;
+    --h2mobile: 2rem;
+    --h3mobile: 1.75rem;
+    --h4mobile: 1.5rem;
+    --h5mobile: 1.25rem;
+    --h6mobile: 1rem;
+    }
+
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+
+}
+
