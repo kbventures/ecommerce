@@ -190,16 +190,6 @@ body {
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  :root{
-    --h00mobile: 3.5rem;
-    --h0mobile: 3rem;
-    --h1mobile: 2.5rem;
-    --h2mobile: 2rem;
-    --h3mobile: 1.75rem;
-    --h4mobile: 1.5rem;
-    --h5mobile: 1.25rem;
-    --h6mobile: 1rem;
-    }
 
 }
 
