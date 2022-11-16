@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ItemsProvider } from "./contexts/ItemsContext";
 import { UserProvider } from "./contexts/UserContext";
 import { BasketProvider } from "./contexts/BasketContext";
+import { FavoriteProvider } from "./contexts/FavoritesContext";
 
 // Client Routes
 import Splash from "./routes/Splash";
@@ -21,7 +22,6 @@ import Favorites from "./routes/Favorites";
 import "./index.css";
 import "./mediaquery.css";
 import "./reset.css";
-import { FavoriteProvider } from "./contexts/FavoritesContext";
 
 ReactDOM.render(
   <UserProvider>
