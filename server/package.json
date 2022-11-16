@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "E-Renaissance Back End",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js, Express.js Mongoose, MongoDB Backend",
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
@@ -10,8 +10,8 @@
     "test": "jest --coverage",
     "build": "tsc"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ken Beaudin, Dmitry Kulakov, Abdul Shabbir & Enrick Anderson Ong",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,20 +19,19 @@
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.6.5",
-    "morgan": "^1.10.0",
     "stripe": "^10.14.0",
     "tls": "^0.0.1",
-    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
-        "typescript": "^4.8.4",
+    "morgan": "^1.10.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/node": "^18.7.5",
     "@types/jest": "^29.0.3",
     "@types/supertest": "^2.0.12",
     "jest": "^29.0.3",
-    "nodemon": "^2.0.20",
     "supertest": "^6.2.4",
     "ts-jest": "^29.0.1"
   }
