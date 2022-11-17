@@ -20,7 +20,6 @@ import Favorites from "./routes/Favorites";
 
 // Global style sheet
 import "./index.css";
-import "./mediaquery.css";
 import "./reset.css";
 
 ReactDOM.render(
