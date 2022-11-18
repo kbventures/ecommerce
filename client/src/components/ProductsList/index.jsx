@@ -4,12 +4,6 @@ import styles from "./ProductsList.module.css";
 
 import Product from "../Product";
 
-// const { items } = useItems();
-// const { favorite, setFavorite } = useFavorite();
-// const singleProduct = items.find((item) => item.id === id);
-
-// <ProductsList function={setFavorites}
-
 export default function ProductsList({ context, updateContext }) {
   const handleDelete = (name) => {
     const newContext = context.filter((item) => item.name !== name);

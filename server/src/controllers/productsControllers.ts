@@ -2,8 +2,6 @@ import { Request, Response } from 'express';
 import asyncHandler from 'express-async-handler';
 import Product from '../models/Product';
 
-// refer to example: https://github.com/kbventures/hotel-booking/blob/main/backend/controllers/roomController.ts
-
 // @Desc Create new product
 // @Route /products
 // @Method POST
