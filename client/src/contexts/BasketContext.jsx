@@ -7,7 +7,6 @@ export function useBasket() {
   return useContext(BasketContext);
 }
 
-// [{quantity: 2, id: 1}, {..}, {..}]
 export function BasketProvider({ children }) {
   const [basket, setBasket] = useState([]);
 

@@ -6,7 +6,6 @@ import styles from "./slider.module.css";
 import SliderCard from "../SliderCard";
 
 const breakpoints = {
-  // when window width is >= 320px
   320: {
     slidesPerView: 1,
     spaceBetween: 10,

@@ -56,88 +56,25 @@
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-  /* .sliderCardTitle {
-    font-size: 1.35rem;
-    line-height: 1.3rem;
-  }
 
-  .sliderCardDesc {
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-
-  .sliderCardPrice {
-    font-size: 1.1rem;
-  } */
 }
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-  /* .sliderCardTitle {
-    font-size: 1.35rem;
-    line-height: 1.3rem;
-  }
 
-  .sliderCardDesc {
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-
-  .sliderCardPrice {
-    font-size: 1.1rem;
-  } */
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-  /* .sliderCardTitle {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-  }
 
-  .sliderCardDesc {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-  }
-
-  .sliderCardPrice {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-  } */
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-  /* .sliderCardTitle {
-    font-size: 1.7rem;
-    line-height: 1.7rem;
-  }
 
-  .sliderCardDesc {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-  }
-
-  .sliderCardPrice {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-  } */
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-  /* .sliderCardTitle {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-  }
 
-  .sliderCardDesc {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  .sliderCardPrice {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  } */
 }

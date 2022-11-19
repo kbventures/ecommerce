@@ -23,8 +23,6 @@ async function handleSubmit(e, basket) {
   window.location.href = url;
 }
 
-// What is best practice? Send basket array as is to back end or only send id to back end
-// Ask question to senior dev later...
 export default function Basket() {
   const { basket, setBasket } = useBasket();
   const amount = basket.reduce(

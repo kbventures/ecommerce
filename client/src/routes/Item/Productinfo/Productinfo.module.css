@@ -1,6 +1,4 @@
-.container{
-   /* Empty for now */
-}
+
 .title{
    margin-bottom: 1rem;
    font-size: var(--h1mobile);
@@ -65,158 +63,32 @@
 
 /* 480px */
 @media only screen and (min-width: 30rem) {
-   /* .title{
-      font-size: 26px;
-      margin-bottom: 1.5rem;
-   }
-   
-   .colorChoice{
-      font-size: 17px;
-   }   
 
-   .list{
-      margin: 2rem 0; 
-   }
-   
-    .label{
-    font-size: 14px;
-    }
-   
-    .desc{
-      font-size: 19px;
-      margin: 1.5rem 0; 
-    }
-   
-    .longDesc{
-      font-size: 15px;
-      margin: 2rem 0;
-    } */
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5rem) {
-   /* .title{
-      font-size: 27px;
-   }
-   
-   .colorChoice{
-      font-size: 18px;
-   }   
-   
-    .label{
-    font-size: 15px;
-    }
-   
-    .desc{
-      font-size: 20px;
-    }
-   
-    .longDesc{
-      font-size: 16px;
-    } */
+
 }
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-   /* .title{
-      font-size: 28px;
-      margin-bottom: 2rem;
-   }
-   
-   .colorChoice{
-      font-size: 19px;
-   }   
-   
-    .label{
-    font-size: 16px;
-    }
-   
-    .desc{
-      font-size: 21px;
-    }
-   
-    .longDesc{
-      font-size: 17px;
-    } */
+
 }
 
 /* 980px */
 @media only screen and (min-width: 61.25rem) {
-   /* .title{
-      font-size: 36px;
-      margin-bottom: 3rem;
-   }
-   
-   .colorChoice{
-      font-size: 24px;
-      margin-bottom: 2.5rem;
-   }   
-
-   .list{
-      margin: 3rem 0; 
-   }
-   
-    .label{
-    font-size: 19px;
-    }
-   
-    .desc{
-      font-size: 22px;
-      margin: 2.5rem 0;
-    }
-   
-    .longDesc{
-      font-size: 18px;
-      margin: 3rem 0; 
-    } */
-
 
 }
 
 /* 1280px */
 @media only screen and (min-width: 80rem) {
-   /* .title{
-      font-size: 44px;
-   }
-   
-   .colorChoice{
-      font-size: 25px;
-   }   
-   
-    .label{
-    font-size: 20px;
-    }
-   
-    .desc{
-      font-size: 23px;
-    }
-   
-    .longDesc{
-      font-size: 19px;
-    } */
+
 }
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-   /* .title{
-      font-size: 46px;
-   }
-   
-   .colorChoice{
-      font-size: 26px;
-   }   
-   
-    .label{
-    font-size: 21px;
-    }
-   
-    .desc{
-      font-size: 24px;
-    }
-   
-    .longDesc{
-      font-size: 20px;
-    } */
+
 }
 
 
