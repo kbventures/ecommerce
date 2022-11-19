@@ -1,7 +1,161 @@
-# E-commerce Site
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-This is a sample e-commerce store with all of the main functionlities of an E-commerce site. You can browse through items, add items to a basket and even checkout items using Stripe.
+<a name="readme-top"></a>
+
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
 <br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">e-Renaissance</h3>
+
+  <p align="center">
+    The only one electronic store that you need!
+    <br />
+    <a href="https://github.com/kbventures/ecommerce/wiki"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://e-renaissance.herokuapp.com/">View Demo</a>
+    ·
+    <a href="https://github.com/kbventures/ecommerce/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/kbventures/ecommerce/issues/new">Request Feature</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+![e-Renaissance Screen Shot](images/example.png)
+
+You're looking for electronics? We have a wide variety of electronics for all your needs. From computers, to cameras, to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
+
+We are a leading online electronics store that is committed to providing the best customer service. We offer a wide range of products including mobile phones, laptops, televisions and much more. We have a team of experts who will guide you through the process of making your purchase and offer you advice on how to take care of your new device.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+- ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+- ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/cssModules-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an example of how you setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Node.js: [Download](https://nodejs.org/en/)
+- Git: [Download](https://git-scm.com/)
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/kbventures/ecommerce.git
+   ```
+2. Go to cloned folder
+   ```sh
+   cd ecommerce
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Go to client folder
+   ```sh
+   cd client
+   ```
+5. Start server on localhost
+   ```sh
+   npm run dev
+   ```
+6. Go to http://localhost:8080/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+  - [ ] Chinese
+  - [ ] Spanish
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Contributing
 
 ## How Do I Contribute Using Git?
 
@@ -80,9 +234,7 @@ This is a sample e-commerce store with all of the main functionlities of an E-co
 
 Also, don't forget the most important rule of rebasing:
 
-> _NEVER REBASE ON A REMOTE BRANCH_
-
-<br />
+> _NEVER REBASE ON A REMOTE BRANCH_ > <br />
 
 ## How Do I Write Good Commit Message?
 
@@ -115,3 +267,27 @@ In each commit message:
 7. Use the body to explain what changes you have made and why you made them.
 8. Do not assume the reviewer understands what the original problem was, ensure you add it.
 9. Do not think your code is self-explanatory
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Dmitry Kulakov - [@atomeistee](https://twitter.com/atomeistee) - atomeistee@gmail.com
+
+Enrick Andersen Ong - [@rickansen](https://twitter.com/rickansen)
+
+Ken Beaudin - [@kb9700](https://twitter.com/kb9700)
+
+Abdhul Shabbir - [@abdulshabbirdev](https://twitter.com/abdulshabbirdev)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
