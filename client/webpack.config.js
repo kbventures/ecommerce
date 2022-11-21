@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   mode: "development",
@@ -27,7 +26,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-react", "@babel/preset-env"],
+            presets: ["@babel/preset-react"],
             plugins: ["@babel/plugin-transform-runtime"],
           },
         },
@@ -73,7 +72,6 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: "public/assets", to: "assets" }],
     }),
-    new Dotenv(),
   ],
   devtool: "source-map",
 };
