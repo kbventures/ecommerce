@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce",
+  "name": "e-renaissance-front-end",
   "version": "1.0.0",
-  "description": "Team Project",
+  "description": "React, Front End",
   "main": "index.js",
   "engines": {
     "node": "14.16.0",
@@ -17,8 +17,8 @@
     "url": "git+https://github.com/kbventures/ecommerce.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ken Beaudin Dmitry Kulakov, Abdul Shabbir & Enrick Anderson Ong",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kbventures/ecommerce/issues"
   },
