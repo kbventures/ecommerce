@@ -141,11 +141,11 @@ app.use("/users", userRoutes);
 
 
 app.get('/products', async (req: Request, res: Response,next: NextFunction) => {
-//   const products =  await stripe.products.list({
-//     expand: ['data.default_price'],active: true,
-//   });
+  const products =  await stripe.products.list({
+    expand: ['data.default_price'],active: true,
+  });
 
-  res.send("test")
+  res.send(products)
 })
 
 app.post('/create-checkout-session', async (req: Request, res: Response,next: NextFunction) => {
