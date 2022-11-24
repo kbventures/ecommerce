@@ -24,15 +24,15 @@ app.use(logger("dev"));
 //   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
 // }))
 
-const corsOption = {
-   "origin": "*",
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-  "preflightContinue": true,
-  "optionsSuccessStatus": 200
+// const corsOption = {
+//    "origin": "*",
+//   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   "preflightContinue": true,
+//   "optionsSuccessStatus": 200
 
-};
-app.use(cors(corsOption));
-
+// };
+// app.use(cors(corsOption));
+app.use(cors({origin: "*", allowedHeaders: ['Content-Type']}))
 
 
 //if you want in every domain then
