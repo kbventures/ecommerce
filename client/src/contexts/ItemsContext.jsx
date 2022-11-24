@@ -20,9 +20,7 @@ export function ItemsProvider({ children }) {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        `/products`,
-        { method: "GET" }
-      );
+        `/products`);
       console.log(response)
       const json = await response.json();
       console.log(json)
