@@ -20,19 +20,9 @@ connectDB();
 //Logging
 app.use(logger("dev"));
 
-const allowedOrigins = ['https://e-renaissance.herokuapp.com'];
-const method = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'];
-const headers = ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'];
-
-const options: cors.CorsOptions = {
-  origin: allowedOrigins,
-  methods: method,
-  allowedHeaders: headers,
-  credentials: true
-};
-
-
-app.use(cors(options));
+app.use(cors({
+  origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
+}))
 
 app.use(express.json()) // lets us parse the request body coming from the client
 
@@ -136,7 +126,6 @@ app.use("/users", userRoutes);
 
 
 app.get('/products', async (req: Request, res: Response,next: NextFunction) => {
-  res.set('Access-Control-Allow-Origin', 'https://e-renaissance.herokuapp.com/');
   const products =  await stripe.products.list({
     expand: ['data.default_price'],active: true,
   });
