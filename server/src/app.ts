@@ -20,9 +20,18 @@ connectDB();
 //Logging
 app.use(logger("dev"));
 
-app.use(cors({
-  origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
-}))
+// app.use(cors({
+//   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
+// }))
+
+const corsOption = {
+    origin: ['https://e-renaissance.herokuapp.com/'],
+};
+app.use(cors(corsOption));
+
+//if you want in every domain then
+// app.use(cors())
+
 
 app.use(express.json()) // lets us parse the request body coming from the client
 
