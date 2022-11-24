@@ -25,9 +25,15 @@ app.use(logger("dev"));
 // }))
 
 const corsOption = {
-    origin: 'https://e-renaissance.herokuapp.com/'
+   "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": true,
+  "optionsSuccessStatus": 200
+
 };
 app.use(cors(corsOption));
+
+
 
 //if you want in every domain then
 // app.use(cors())
