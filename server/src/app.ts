@@ -20,7 +20,7 @@ connectDB();
 //Logging
 app.use(logger("dev"));
 
-const allowedOrigins = ['https://e-renaissance.herokuapp.com/'];
+const allowedOrigins = ['https://e-renaissance.herokuapp.com'];
 
 const options: cors.CorsOptions = {
   origin: allowedOrigins
