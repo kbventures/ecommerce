@@ -18,7 +18,7 @@ function Item() {
   const { id } = useParams();
   const singleProduct = items.find((item) => item.id === id);
 
-  if (!singleProduct) return NotFound;
+  if (!singleProduct) return <NotFound />;
 
   const updateBasket = () => {
     const newBasket = [...basket, singleProduct];
