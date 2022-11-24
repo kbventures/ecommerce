@@ -23,7 +23,9 @@ export function ItemsProvider({ children }) {
         `/products`,
         { method: "GET" }
       );
+      console.log(response)
       const json = await response.json();
+      console.log(json)
       setItems(json);
     };
     fetchItems();
