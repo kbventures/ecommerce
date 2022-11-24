@@ -21,10 +21,16 @@ connectDB();
 app.use(logger("dev"));
 
 const allowedOrigins = ['https://e-renaissance.herokuapp.com'];
+const method = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'];
+const headers = ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'];
 
 const options: cors.CorsOptions = {
-  origin: allowedOrigins
+  origin: allowedOrigins,
+  methods: method,
+  allowedHeaders: headers,
+  credentials: true
 };
+
 
 app.use(cors(options));
 
