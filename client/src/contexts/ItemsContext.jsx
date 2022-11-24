@@ -17,33 +17,33 @@ export function useItems() {
 export function ItemsProvider({ children }) {
   const [items, setItems] = useState([]);
 
-//   useEffect(() => {
-//     const fetchItems = async () => {
-//       const response = await fetch(
-//         `https://kdaa-ecommerce-back-end.herokuapp.com/products`
-//       );
-//       const json = await response.json();
-//       setItems(json);
-//     };
-//     fetchItems();
-//   }, []);
-  
-    useEffect(() => {
+  useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        `https://kdaa-ecommerce-back-end.herokuapp.com/products`,{
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },}
+        `https://kdaa-ecommerce-back-end.herokuapp.com/products`
       );
       const json = await response.json();
       setItems(json);
     };
     fetchItems();
   }, []);
+  
+//     useEffect(() => {
+//     const fetchItems = async () => {
+//       const response = await fetch(
+//         `https://kdaa-ecommerce-back-end.herokuapp.com/products`,{
+//     method: 'GET', // *GET, POST, PUT, DELETE, etc.
+//     mode: 'cors', // no-cors, *cors, same-origin
+//     headers: {
+//       'Content-Type': 'application/json'
+//       // 'Content-Type': 'application/x-www-form-urlencoded',
+//     },}
+//       );
+//       const json = await response.json();
+//       setItems(json);
+//     };
+//     fetchItems();
+//   }, []);
   
   
 
