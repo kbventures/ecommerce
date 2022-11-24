@@ -32,7 +32,14 @@ app.use(logger("dev"));
 
 // };
 // app.use(cors(corsOption));
-app.use(cors({origin: "*", allowedHeaders: ['Content-Type']}))
+// app.use(cors({origin: "*", allowedHeaders: ['Content-Type']}))
+app.use(cors({
+    'allowedHeaders': ['Content-Type'], // headers that React is sending to the API
+    'exposedHeaders': ['Content-Type'], // headers that you are sending back to React
+    'origin': '*',
+    'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    'preflightContinue': false
+}));
 
 
 //if you want in every domain then
