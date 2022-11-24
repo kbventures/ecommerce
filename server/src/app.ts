@@ -136,6 +136,7 @@ app.use("/users", userRoutes);
 
 
 app.get('/products', async (req: Request, res: Response,next: NextFunction) => {
+  res.set('Access-Control-Allow-Origin', 'https://e-renaissance.herokuapp.com/');
   const products =  await stripe.products.list({
     expand: ['data.default_price'],active: true,
   });
