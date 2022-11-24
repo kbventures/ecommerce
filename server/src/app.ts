@@ -26,6 +26,8 @@ app.use(logger("dev"));
 
 const corsOption = {
     origin: ['https://e-renaissance.herokuapp.com/'],
+    methods:[GET, POST, DELETE, PUT],
+    allowedHeaders: ['Content-Type', 'Authorization']
 };
 app.use(cors(corsOption));
 
