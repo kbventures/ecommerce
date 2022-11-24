@@ -12,7 +12,7 @@
     "start": "npx cross-env NODE_ENV=production && node index.js",
     "dev": "webpack serve"
   },
-  "proxy": "https://kdaa-ecommerce-back-end.herokuapp.com/products",
+  "proxy": "https://kdaa-ecommerce-back-end.herokuapp.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kbventures/ecommerce.git"
