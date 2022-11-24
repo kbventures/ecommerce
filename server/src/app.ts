@@ -20,31 +20,13 @@ connectDB();
 //Logging
 app.use(logger("dev"));
 
-// app.use(cors({
-//   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
-// }))
+const allowedOrigins = ['https://e-renaissance.herokuapp.com/'];
 
-// const corsOption = {
-//    "origin": "*",
-//   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-//   "preflightContinue": true,
-//   "optionsSuccessStatus": 200
+const options: cors.CorsOptions = {
+  origin: allowedOrigins
+};
 
-// };
-// app.use(cors(corsOption));
-// app.use(cors({origin: "*", allowedHeaders: ['Content-Type']}))
-app.use(cors({
-    'allowedHeaders': ['Content-Type'], // headers that React is sending to the API
-    'exposedHeaders': ['Content-Type'], // headers that you are sending back to React
-    'origin': '*',
-    'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    'preflightContinue': false
-}));
-
-
-//if you want in every domain then
-// app.use(cors())
-
+app.use(cors(options));
 
 app.use(express.json()) // lets us parse the request body coming from the client
 
