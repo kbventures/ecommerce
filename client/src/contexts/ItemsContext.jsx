@@ -32,7 +32,7 @@ export function ItemsProvider({ children }) {
     const fetchItems = async () => {
       const response = await fetch(
         `https://kdaa-ecommerce-back-end.herokuapp.com/products`,{
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     headers: {
       'Content-Type': 'application/json'
