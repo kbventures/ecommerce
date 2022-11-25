@@ -20,9 +20,7 @@
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.6.5",
     "stripe": "^10.14.0",
-    "tls": "^0.0.1"
-  },
-  "devDependencies": {
+    "tls": "^0.0.1",
     "morgan": "^1.10.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
@@ -35,6 +33,8 @@
     "nodemon": "^2.0.20",
     "supertest": "^6.2.4",
     "ts-jest": "^29.0.1"
+  },
+  "devDependencies": {
   }
 }
 
