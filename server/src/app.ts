@@ -130,7 +130,7 @@ app.get('/products', async (req: Request, res: Response,next: NextFunction) => {
     expand: ['data.default_price'],active: true,
   });
 
-  res.send(products.data)
+  res.send(products.data[0])
 })
 
 app.post('/create-checkout-session', async (req: Request, res: Response,next: NextFunction) => {
