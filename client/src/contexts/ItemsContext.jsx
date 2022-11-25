@@ -20,10 +20,9 @@ export function ItemsProvider({ children }) {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        `https://kdaa-ecommerce-back-end.herokuapp.com",/products`);
-      console.log(response)
+        `https://kdaa-ecommerce-back-end.herokuapp.com/products`
+      );
       const json = await response.json();
-      console.log(json)
       setItems(json);
     };
     fetchItems();
