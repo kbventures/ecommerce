@@ -24,9 +24,6 @@ app.use(cors({
   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
 }))
 
-// app.use(cors({
-//   origin: "*" // TODO: change this later once we have a front end in production. * will listen for any client request.
-// }))
 
 app.use(express.json()) // lets us parse the request body coming from the client
 
