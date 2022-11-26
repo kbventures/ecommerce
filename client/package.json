@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack",
     "start": "npx cross-env NODE_ENV=production && node index.js",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "concurrently": "concurrently --names \"client,server\" \"npm run dev\" \"npm run --prefix ../server dev\""
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
+    "concurrently": "^7.6.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "enzyme": "^3.11.0",

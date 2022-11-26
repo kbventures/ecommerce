@@ -1,11 +1,10 @@
-
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">e-Renaissance</h3>
@@ -25,7 +24,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<details open="true">
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -38,7 +37,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#gettingstarted">Getting started</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -51,8 +50,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-![e-Renaissance Screen Shot](images/example.png)
 
 You're looking for electronics? We have a wide variety of electronics for all your needs. From computers, to cameras, to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
 
@@ -78,8 +75,8 @@ We are a leading online electronics store that is committed to providing the bes
 
 ## Getting Started
 
-This is an example of how you setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is an example of how you setting up our project locally.
+To get a local copy up and runn follow these simple example steps.
 
 ### Prerequisites
 
@@ -96,19 +93,25 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    cd ecommerce
    ```
-3. Install NPM packages
+3. Install NPM packages in client and server folder
    ```sh
+   cd client
+   npm install
+   cd ../server
    npm install
    ```
-4. Go to client folder
+
+### Running
+
+1. Go to client folder
    ```sh
    cd client
    ```
-5. Start server on localhost
+2. Start concurrently server and client on localhost
    ```sh
-   npm run dev
+   npm run concurrently
    ```
-6. Go to http://localhost:8080/
+3. Go to http://localhost:8080/ if you wanna see client, or http://localhost:4001/ for server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
