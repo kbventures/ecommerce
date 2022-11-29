@@ -17,6 +17,7 @@ import Checkout from "./routes/Checkout";
 import Payment from "./routes/Payment";
 import Profile from "./routes/Profile";
 import Favorites from "./routes/Favorites";
+import NotFound from "./routes/NotFound";
 
 // Global style sheet
 import "./index.css";
@@ -39,6 +40,7 @@ ReactDOM.render(
               <Route path="/payment" element={<Payment />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/favorite" element={<Favorites />} />
+              <Route path="/*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
         </FavoriteProvider>

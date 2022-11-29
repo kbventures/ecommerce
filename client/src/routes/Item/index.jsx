@@ -6,6 +6,7 @@ import Container from "../../components/Container";
 import Header from "../../components/Header";
 import TotalPrice from "../../components/TotalPrice";
 import ProductInfo from "./Productinfo";
+import NotFound from "../NotFound";
 import { useItems } from "../../contexts/ItemsContext";
 import { useBasket } from "../../contexts/BasketContext";
 
@@ -17,7 +18,7 @@ function Item() {
   const { id } = useParams();
   const singleProduct = items.find((item) => item.id === id);
 
-  if (!singleProduct) return null;
+  if (!singleProduct) return <NotFound />;
 
   const updateBasket = () => {
     const newBasket = [...basket, singleProduct];
