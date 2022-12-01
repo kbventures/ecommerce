@@ -2,7 +2,8 @@ import dotenv from "dotenv"
 dotenv.config()
 import connectDB from "./config/db"
 import express, { Application, Request, Response, NextFunction } from "express";
-import { router as userRoutes } from "./routes/user.routes";
+// import { router as userRoutes } from "./routes/user";
+const userRoutes = require("./routes/user");
 import cors from "cors"
 const logger = require("morgan");
 import productInterface from "./models/Product"
@@ -31,98 +32,6 @@ app.get("/", (req, res) => {
   return res.status(200).send("hello from server")
 })
 
-const items = [
-  {
-    id: "1",
-    inventory: 100,
-    title: "Super Long Watch Name",
-    desc: "Series 6. Red",
-    longDesc:
-      "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
-    fullDesc: "",
-    colors: [
-      ["Sky Blue", "#80BDE3"],
-      ["Rose Gold", "#B76E79"],
-      ["green", "#9FE2BF"],
-    ],
-    price: 359,
-    src: "../assets/apple-watch-red.png",
-    promo: "",
-  },
-  {
-    id: "2",
-    inventory: 100,
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    longDesc:
-      "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
-    fullDesc: "",
-    colors: [
-      ["Sky Blue", "#80BDE3"],
-      ["Rose Gold", "#B76E79"],
-      ["green", "#9FE2BF"],
-    ],
-    price: 159,
-    src: "../assets/samsung-galaxy-watch.png",
-    promo: "",
-  },
-  {
-    id: "3",
-    inventory: 100,
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    longDesc:
-      "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
-    fullDesc: "",
-    colors: [
-      ["Sky Blue", "#80BDE3"],
-      ["Rose Gold", "#B76E79"],
-      ["green", "#9FE2BF"],
-    ],
-    price: 159,
-    src: "../assets/samsung-galaxy-watch.png",
-    promo: "",
-  },
-  {
-    id: "4",
-    inventory: 100,
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    longDesc:
-      "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
-    fullDesc: "",
-    colors: [
-      ["Sky Blue", "#80BDE3"],
-      ["Rose Gold", "#B76E79"],
-      ["green", "#9FE2BF"],
-    ],
-    price: 159,
-    src: "../assets/samsung-galaxy-watch.png",
-    promo: "",
-  },
-  {
-    id: "5",
-    inventory: 100,
-    title: "SAMSUNG Galaxy Watch",
-    desc: "Active. Green",
-    longDesc:
-      "Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, 4.99/month after free trial.",
-    fullDesc: "",
-    colors: [
-      ["Sky Blue", "#80BDE3"],
-      ["Rose Gold", "#B76E79"],
-      ["green", "#9FE2BF"],
-    ],
-    price: 159,
-    src: "../assets/samsung-galaxy-watch.png",
-    promo: "",
-  },
-];
-
-app.use("/items", (req: Request, res: Response, next: NextFunction): void => {
-  res.status(200).send(items)
-});
-
 app.use("/users", userRoutes);
 
 
@@ -148,6 +57,11 @@ app.post('/create-checkout-session', async (req: Request, res: Response,next: Ne
 
   res.json(session.url!);
 })
+
+
+
+// MMP
+app.use('/user',userRoutes)
 
 export default app;
 
