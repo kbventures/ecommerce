@@ -1,15 +1,14 @@
 import dotenv from 'dotenv';
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import Stripe from 'stripe';
+import logger from 'morgan';
 import connectDB from './config/db';
 import { router as userRoutes } from './routes/user.routes';
-import productInterface from './models/Product';
 
 dotenv.config();
-const logger = require('morgan');
 
-const stripe = new Stripe(process.env.STRIPE_SECRET!, {
+const stripe = new Stripe(process.env.STRIPE_SECRET || '', {
   apiVersion: '2022-08-01',
 });
 
@@ -118,29 +117,35 @@ const items = [
   },
 ];
 
-app.use('/items', (req: Request, res: Response, next: NextFunction): void => {
+app.use('/items', (req: Request, res: Response): void => {
   res.status(200).send(items);
 });
 
 app.use('/users', userRoutes);
 
-app.get(
-  '/products',
-  async (req: Request, res: Response, next: NextFunction) => {
-    const products = await stripe.products.list({
-      expand: ['data.default_price'],
-      active: true,
-    });
+app.get('/products', async (req: Request, res: Response) => {
+  const products = await stripe.products.list({
+    expand: ['data.default_price'],
+    active: true,
+  });
 
-    res.send(products.data);
-  }
-);
+  res.send(products.data);
+});
+interface LineItem {
+  amount?: number;
+  price?: string;
+  quantity?: number;
+  default_price?: {
+    id: string;
+  };
+}
 
 app.post(
   '/create-checkout-session',
-  async (req: Request, res: Response, next: NextFunction) => {
-    const products: any = req.body.map((e: any) => ({
-      price: e.default_price.id,
+  async (req: Request<any, any, LineItem[], any>, res: Response) => {
+    console.log(req.body);
+    const products = req.body.map((e) => ({
+      price: e.default_price?.id,
       quantity: 1,
     }));
 
@@ -151,7 +156,7 @@ app.post(
       cancel_url: 'https://e-renaissance.herokuapp.com/',
     });
 
-    res.json(session.url!);
+    res.json(session.url);
   }
 );
 
