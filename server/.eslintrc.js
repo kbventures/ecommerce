@@ -1,13 +1,3 @@
-// {
-//     "extends": [ "wesbos/typescript" ],
-//     "ignorePatterns": ["build/**/*","coverage/**/*"],
-//     "parserOptions": {
-//       "project": "./tsconfig.json",
-//       "tsconfigRootDir": "./",
-//       "sourceType": "module"
-//     }
-//   }
-
 module.exports = {
   extends: ["wesbos/typescript"],
   ignorePatterns: [
@@ -23,20 +13,3 @@ module.exports = {
   },
 };
 
-// "exclude": ["./coverage", "./build","jest.config.js" ],
-
-//   {
-//     "extends": [ "wesbos/typescript" ],
-//     "ignorePatterns": ["__tests__/**/*.test.ts","build/**/*","coverage/**/*", "jest.config.js"]
-//   }
-
-// {
-//   "root": true,
-//   "ignorePatterns": ["projects/**/*"],
-//   "overrides": [
-//     {
-//       "files": ["*.ts"],
-//       "parserOptions": {
-//         "project": ["<YourProjectName>/tsconfig.json"],
-//         "createDefaultProgram": true
-//       },
