@@ -1,14 +1,16 @@
-import User, {IUser} from "../models/userModel";
-import jwt from "jsonwebtoken";
-import {ObjectId} from "mongoose"
+import jwt from 'jsonwebtoken';
+import { ObjectId } from 'mongoose';
 import { Request, Response } from 'express';
+import User, { IUser } from '../models/userModel';
 
-const createToken = (_id: ObjectId) => {
-  return jwt.sign({ _id }, process.env.SECRET!, { expiresIn: "1d" });
-};
+const createToken = (_id: ObjectId) =>
+  jwt.sign({ _id }, process.env.SECRET || '', { expiresIn: '1d' });
 
 // login user
-export const loginUser = async (req: Request<{}, {}, IUser>, res: Response) => {
+export const loginUser = async (
+  req: Request<unknown, unknown, IUser>,
+  res: Response
+) => {
   const { email, password } = req.body;
 
   try {
@@ -25,8 +27,11 @@ export const loginUser = async (req: Request<{}, {}, IUser>, res: Response) => {
   }
 };
 
-//signup user
-export const signupUser = async (req: Request<{}, {},IUser>, res:Response) => {
+// signup user
+export const signupUser = async (
+  req: Request<unknown, unknown, IUser>,
+  res: Response
+) => {
   const { email, password } = req.body;
 
   try {
@@ -37,9 +42,8 @@ export const signupUser = async (req: Request<{}, {},IUser>, res:Response) => {
 
     res.status(200).json({ email, token });
   } catch (error) {
-    if(error instanceof Error){
+    if (error instanceof Error) {
       res.status(400).json({ error: error.message });
     }
   }
 };
-

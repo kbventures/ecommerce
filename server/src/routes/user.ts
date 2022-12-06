@@ -1,20 +1,15 @@
-
-import express, { Application, Request, Response, NextFunction } from "express";
+import express from 'express';
 
 // controller functions
 // const { signupUser, loginUser } = require("../controllers/userController");
-import { signupUser, loginUser } from "../controllers/userController" 
+import { signupUser, loginUser } from '../controllers/userController';
 
-const router = express.Router();
+export const router = express.Router();
 
 // //login route
- router.post("/login", loginUser);
+router.post('/login', loginUser);
 
 // //signup route
-router.post("/signup", signupUser);
+router.post('/signup', signupUser);
 
-
-router.get("/", (req, res) => {
-  return res.status(200).send("hello from server")
-})
-module.exports = router;
+router.get('/', (req, res) => res.status(200).send('hello from server'));
