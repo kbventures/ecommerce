@@ -1,0 +1,66 @@
+.container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.img {
+    height: 200px;
+}
+
+.companyName{
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--h1mobile);
+    font-style: italic;
+    font-weight: var(--font-weight-extrabold);
+    color: var(--white);
+    text-shadow: 1px 1px 5px black; 
+
+}
+
+/* 360px */
+@media only screen and (min-width: 22.5rem) {
+
+ 
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+    
+    
+    .container{
+        display: flex;
+    }
+    
+
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+    .img {
+        height: 240px;
+    }
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+
+}

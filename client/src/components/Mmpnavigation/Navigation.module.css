@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  color:black;
+}
+
+@media only screen and (min-width: 46em) {
+  .container {
+    padding: 0 53px;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .container {
+    padding: 0 73px;
+  }
+}
+
+@media only screen and (min-width: 112em) {
+  .container {
+    padding: 0 104px;
+  }
+}
