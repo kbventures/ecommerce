@@ -8,8 +8,8 @@ export default function Navigation() {
     <ul className={styles.container}>
       <Hamburger />
       <Link to="/">eRenaissance</Link>
-      <Link to="/profile" />
-      <Link to="/basket" />
+      <Link to="/profile">Profile Icon</Link>
+      <Link to="/basket">Basket Icon</Link>
     </ul>
   );
 }
