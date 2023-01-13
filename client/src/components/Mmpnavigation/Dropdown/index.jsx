@@ -33,10 +33,9 @@ export default function Dropdown({ trigger, menu }) {
 
 Dropdown.propTypes = {
   trigger: PropTypes.node.isRequired,
-  menu: PropTypes.arrayOf(
-    PropTypes.shape({
-      menuItem: PropTypes.element.isRequired,
-      index: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  menu: PropTypes.arrayOf(PropTypes.node.isRequired).isRequired,
 };
+// [1,2,3]
+// [{menuItem: element, inde: string}]
+// <></>
+// <Button></Button>
