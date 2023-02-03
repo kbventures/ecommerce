@@ -21,7 +21,7 @@ app.use(logger('dev'));
 
 app.use(
   cors({
-    origin: 'https://erenaissance-frontend.vercel.app/', // TODO: change this later once we have a front end in production. will listen for any client request.
+    origin: 'https://erenaissance-frontend.vercel.app', // TODO: change this later once we have a front end in production. will listen for any client request.
   })
 );
 
