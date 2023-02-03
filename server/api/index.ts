@@ -60,8 +60,8 @@ app.post(
     const session = await stripe.checkout.sessions.create({
       line_items: products,
       mode: 'payment',
-      success_url: 'https://e-renaissance.herokuapp.com/home',
-      cancel_url: 'https://e-renaissance.herokuapp.com/',
+      success_url: 'https://erenaissance-frontend.vercel.app/home',
+      cancel_url: 'https://erenaissance-frontend.vercel.app/',
     });
 
     res.json(session.url);
