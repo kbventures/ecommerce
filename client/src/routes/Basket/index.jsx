@@ -13,7 +13,7 @@ import { useBasket } from "../../contexts/BasketContext";
 async function handleSubmit(e, basket) {
   e.preventDefault();
   const url = await fetch(
-    "https://kdaa-ecommerce-back-end.herokuapp.com/create-checkout-session",
+    "https://erenaissance-backend.vercel.app/api/create-checkout-session",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
