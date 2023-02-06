@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo">
+    <img src="images/e-renaissance-logo.png" alt="Logo">
   </a>
 
   <h3 align="center">e-Renaissance</h3>
