@@ -40,8 +40,8 @@
         <li><a href="#gettingstarted">Getting started</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">What I have learned</a></li>
-    <li><a href="#roadmap">What issues have I faced and how I resolved them</a></li>
+    <li><a href="#what">What I have learned</a></li>
+    <li><a href="#what">What issues have I faced and how I resolved them</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -138,6 +138,7 @@ While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of Reac
 
 When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
 
+<!-- ROADMAP -->
 
 ## Roadmap
 
