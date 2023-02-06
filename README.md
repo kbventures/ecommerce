@@ -68,6 +68,9 @@ We are a leading online electronics store that is committed to providing the bes
 - ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/cssModules-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 - ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+- ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+- ![](https://img.shields.io/badge/Vercel-430098?style=for-the-badge&logo=Vercel&logoColor=white)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
