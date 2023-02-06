@@ -120,6 +120,22 @@ To get a local copy up and runn follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# What I have learned
+
+[Tell more about what you have learned while building this project]
+
+**Example:**
+
+While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of React and Redux. I learned what is the difference between React Context API and Redux, and what works best for my current application. I have used Reat hooks like useEffect, useState. It was my first project using TypeScript and I have learned a lot about TypeScript type definitions and fundamentals.
+
+# What issues have I faced and how I resolved them
+
+[Tell what was hard in the process of building the project. Tell about where have you feel stuck and how did you overcome this.]
+
+**Example:**
+
+When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
+
 <!-- ROADMAP -->
 
 ## Roadmap
