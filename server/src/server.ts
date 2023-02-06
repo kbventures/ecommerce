@@ -1,4 +1,4 @@
-import app from '../api/index';
+import app from './app';
 
 const PORT: number | string | undefined = process.env.PORT || 4001;
 
