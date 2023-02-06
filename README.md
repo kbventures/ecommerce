@@ -40,7 +40,7 @@
         <li><a href="#gettingstarted">Getting started</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#What I have learned">What I have learned</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -140,8 +140,8 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 
 <!-- ROADMAP -->
 
-<!-- ## Roadmap
- -->
+## Roadmap
+
 - [x] Add Changelog
 - [x] Add back to top links
 - [ ] Add Additional Templates w/ Examples
