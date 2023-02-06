@@ -40,8 +40,8 @@
         <li><a href="#gettingstarted">Getting started</a></li>
       </ul>
     </li>
-    <li><a href="#what">What I have learned</a></li>
-    <li><a href="#what">What issues have I faced and how I resolved them</a></li>
+    <li><a href="#what-i-have-learned">What I have learned</a></li>
+    <li><a href="#what-issues-have-i-faced-and-how-i-resolved-them">What issues have I faced and how I resolved them</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
