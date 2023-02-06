@@ -41,6 +41,8 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -120,7 +122,7 @@ To get a local copy up and runn follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# What I have learned
+## What I have learned
 
 [Tell more about what you have learned while building this project]
 
@@ -128,7 +130,7 @@ To get a local copy up and runn follow these simple example steps.
 
 While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of React and Redux. I learned what is the difference between React Context API and Redux, and what works best for my current application. I have used Reat hooks like useEffect, useState. It was my first project using TypeScript and I have learned a lot about TypeScript type definitions and fundamentals.
 
-# What issues have I faced and how I resolved them
+## What issues have I faced and how I resolved them
 
 [Tell what was hard in the process of building the project. Tell about where have you feel stuck and how did you overcome this.]
 
@@ -138,8 +140,8 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 
 <!-- ROADMAP -->
 
-## Roadmap
-
+<!-- ## Roadmap
+ -->
 - [x] Add Changelog
 - [x] Add back to top links
 - [ ] Add Additional Templates w/ Examples
