@@ -15,7 +15,7 @@
     <a href="https://github.com/kbventures/ecommerce/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://e-renaissance.herokuapp.com/">View Demo</a>
+    <a href="https://vercel.com/kbventures/erenaissance-frontend" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/kbventures/ecommerce/issues">Report Bug</a>
     ·
@@ -89,6 +89,9 @@ To get a local copy up and runn follow these simple example steps.
 
 - Node.js: [Download](https://nodejs.org/en/)
 - Git: [Download](https://git-scm.com/)
+- Stripe Account, Secret & Publishable key
+- Cloudinary Account Secret Key & Product Images
+- MongoDB Account & Secret Key
 
 ### Installation
 
@@ -107,16 +110,81 @@ To get a local copy up and runn follow these simple example steps.
    cd ../server
    npm install
    ```
+4. Change client URL
+   ```sh
+   cd client/src/contexts
+   Itemscontext.jsx
+   
+     useEffect(() => {
+    const fetchItems = async () => {
+      const response = await fetch(`http://localhost:4001/api/products`);
+      const json = await response.json();
+      setItems(json);
+    };
+    fetchItems();
+    
+    cd ..
+    cd routes/Basket
+    index.jsx
+    
+    async function handleSubmit(e, basket) {
+    e.preventDefault();
+    const url = await fetch("http://localhost:4001/api/create-checkout-session", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(basket),
+    }).then((i) => i.json());
+    window.location.href = url;
+    }
+    ```
+    
+5. Change Server URLS
+   ```sh
+   cd server/src
+   app.ts
+   
+   app.post(
+   '/api/create-checkout-session',
+   async (req: Request<any, any, LineItem[], any>, res: Response) => {
+    console.log(req.body);
+    const products = req.body.map((e) => ({
+      price: e.default_price?.id,
+      quantity: 1,
+    }));
+
+    const session = await stripe.checkout.sessions.create({
+      line_items: products,
+      mode: 'payment',
+      success_url: 'http://localhost:8080/home',
+      cancel_url: 'http://localhost:8080/',
+    });
+
+    res.json(session.url);
+   }
+   );
+   
+   ```
+
+6. Add .env file
+   ```sh
+   MONGO_URI=YOUR_SECRET_KEY
+   STRIPE_SECRET=YOUR_SECRET_KEY
+   PUBLISHABLE_KEY=YOUR_SECRET_KEY
+   SECRET=YOUR_SECRET_KEY
+   ```
 
 ### Running
 
-1. Go to client folder
+1. Start Client
    ```sh
    cd client
+   npm run dev
    ```
-2. Start concurrently server and client on localhost
+2. Start Server
    ```sh
-   npm run concurrently
+   cd ..
+   cd server
+   npm run dev
    ```
 3. Go to http://localhost:8080/ if you wanna see client, or http://localhost:4001/ for server
 
