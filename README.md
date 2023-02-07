@@ -196,7 +196,7 @@ To get a local copy up and runn follow these simple example steps.
 
 **Example:**
 
-While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of React and Redux. I learned what is the difference between React Context API and Redux, and what works best for my current application. I have used Reat hooks like useEffect, useState. It was my first project using TypeScript and I have learned a lot about TypeScript type definitions and fundamentals.
+As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, mono repos, automated testing, Typescript, documentation, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
 
 ## What issues have I faced and how I resolved them
 
