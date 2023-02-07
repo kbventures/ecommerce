@@ -337,11 +337,21 @@ In each commit message:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FILE STRUCTURE -->
+
+## File Structure
+
+We are grouping by feature as listed in React docs. See [Grouping by features or routes] (https://eslint.org/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LINTING -->
 
 ## Linting
 
 We are using [ESLint] (https://eslint.org/) with [Airbnb rules] (https://www.npmjs.com/package/eslint-config-airbnb), alongside [Prettier] (https://prettier.io/) to format code and follow modern standarts when writhing Javascript In addition, we can minimize runtime errors.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
