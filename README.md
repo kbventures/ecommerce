@@ -6,6 +6,18 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/e-renaissance-logo.png" alt="Logo">
   </a>
+  
+  <div align="center">
+<a href="https://github.com/kbventures/ecommerce/network/members">
+  <img height="28px" src="https://img.shields.io/github/forks/kbventures/ecommerce?color=6ca4cc" alt="Forks"/>
+</a>
+<a href="https://github.com/kbventures/ecommerce/contributors">
+  <img height="28px" src="https://img.shields.io/github/contributors/kbventures/ecommerce?color=88bc10&logo=github&logoColor=white" alt="Contributors"/>
+</a>
+<a href="https://github.com/kbventures/ecommerce/issues">
+  <img height="28px" src="https://img.shields.io/github/issues/kbventures/ecommerce" alt="Issues"/>
+</a>
+</div>
 
   <h3 align="center">e-Renaissance</h3>
 
