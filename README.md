@@ -229,13 +229,14 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 
 - [x] MVP
 - [] MMP
-  - [ ] New Figma Design
-  - [ ] Improve Accesibility, Performance & SEO Metrics
+  - [ ] Implement new Figma design
+  - [ ] Improve accesibility, performance & SEO metrics
   - [ ] Automated testing
   - [ ] Move front end to typescript
   - [ ] Client sign up
   - [ ] Client Login & Logout(Authentication)
   - [ ] Client dashboard features
+  - [ ] Back services to support authentication and client routes
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
