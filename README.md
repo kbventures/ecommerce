@@ -110,9 +110,9 @@ To get a local copy up and runn follow these simple example steps.
 
 - Node.js: [Download](https://nodejs.org/en/)
 - Git: [Download](https://git-scm.com/)
-- Stripe Account, Secret & Publishable key
-- Cloudinary Account Secret Key & Product Images
-- MongoDB Account & Secret Key
+- [Stripe](https://www.stripe.com): Account, Secret & Publishable key
+- [Cloudinary](https://www.cloudinary.com): Account Secret Key & Product Images
+- [MongoDB Atlas](https://www.mongodb.com/atlas/database): MongoDB Account & Secret Key
 
 ### Installation
 
