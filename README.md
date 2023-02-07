@@ -190,7 +190,7 @@ To get a local copy up and runn follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## What I have learned
+## What we have learned
 
 As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
 
