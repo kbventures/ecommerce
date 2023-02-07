@@ -110,6 +110,21 @@ To get a local copy up and runn follow these simple example steps.
    cd ../server
    npm install
    ```
+4. Change client URL
+   ```sh
+   cd client/src/contexts
+   context.jsx
+   
+     useEffect(() => {
+    const fetchItems = async () => {
+      const response = await fetch(`http://localhost:4001/api/products`);
+      const json = await response.json();
+      setItems(json);
+    };
+    fetchItems();
+  }, [])
+  ```
+5. Change Server URL
 
 ### Running
 
