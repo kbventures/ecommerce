@@ -140,6 +140,28 @@ To get a local copy up and runn follow these simple example steps.
     
 5. Change Server URLS
    ```sh
+   cd server/src
+   app.ts
+   
+   app.post(
+   '/api/create-checkout-session',
+   async (req: Request<any, any, LineItem[], any>, res: Response) => {
+    console.log(req.body);
+    const products = req.body.map((e) => ({
+      price: e.default_price?.id,
+      quantity: 1,
+    }));
+
+    const session = await stripe.checkout.sessions.create({
+      line_items: products,
+      mode: 'payment',
+      success_url: 'http://localhost:8080/home',
+      cancel_url: 'http://localhost:8080/',
+    });
+
+    res.json(session.url);
+   }
+   );
    
    ```
 
