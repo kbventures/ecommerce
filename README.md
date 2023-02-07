@@ -113,7 +113,7 @@ To get a local copy up and runn follow these simple example steps.
 4. Change client URL
    ```sh
    cd client/src/contexts
-   context.jsx
+   Itemscontext.jsx
    
      useEffect(() => {
     const fetchItems = async () => {
@@ -122,8 +122,20 @@ To get a local copy up and runn follow these simple example steps.
       setItems(json);
     };
     fetchItems();
-  ```
-5. Change Server URL
+    ```
+    
+5. Change Server URLS
+   ```sh
+   
+   ```
+
+6. Add .env file
+   ```sh
+   MONGO_URI=
+   STRIPE_SECRET=
+   PUBLISHABLE_KEY=
+   SECRET=
+   ```
 
 ### Running
 
