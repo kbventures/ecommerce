@@ -122,7 +122,6 @@ To get a local copy up and runn follow these simple example steps.
       setItems(json);
     };
     fetchItems();
-  }, [])
   ```
 5. Change Server URL
 
