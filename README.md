@@ -89,6 +89,9 @@ To get a local copy up and runn follow these simple example steps.
 
 - Node.js: [Download](https://nodejs.org/en/)
 - Git: [Download](https://git-scm.com/)
+- Stripe Account, Secret & Publishable key
+- Cloudinary Account Secret Key & Product Images
+- MongoDB Account & Secret Key
 
 ### Installation
 
