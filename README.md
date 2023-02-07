@@ -97,6 +97,7 @@ We are a leading online electronics store that is committed to providing the bes
 
 The MVP was heavily inspired this [Figma](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design.  Our [MMP](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design is inpsired by Amazon/BestBuy single page design. 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
