@@ -122,6 +122,20 @@ To get a local copy up and runn follow these simple example steps.
       setItems(json);
     };
     fetchItems();
+    
+    cd ..
+    cd routes/Basket
+    index.jsx
+    
+    async function handleSubmit(e, basket) {
+    e.preventDefault();
+    const url = await fetch("http://localhost:4001/api/create-checkout-session", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(basket),
+    }).then((i) => i.json());
+    window.location.href = url;
+    }
     ```
     
 5. Change Server URLS
@@ -131,21 +145,24 @@ To get a local copy up and runn follow these simple example steps.
 
 6. Add .env file
    ```sh
-   MONGO_URI=
-   STRIPE_SECRET=
-   PUBLISHABLE_KEY=
-   SECRET=
+   MONGO_URI=YOUR_SECRET_KEY
+   STRIPE_SECRET=YOUR_SECRET_KEY
+   PUBLISHABLE_KEY=YOUR_SECRET_KEY
+   SECRET=YOUR_SECRET_KEY
    ```
 
 ### Running
 
-1. Go to client folder
+1. Start Client
    ```sh
    cd client
+   npm run dev
    ```
-2. Start concurrently server and client on localhost
+2. Start Server
    ```sh
-   npm run concurrently
+   cd ..
+   cd server
+   npm run dev
    ```
 3. Go to http://localhost:8080/ if you wanna see client, or http://localhost:4001/ for server
 
