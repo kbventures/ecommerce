@@ -27,11 +27,11 @@ app.use(
 
 app.use(express.json()); // lets us parse the request body coming from the client
 
-app.get('/', (req, res) => res.status(200).send('hello from server'));
+app.get('/api', (req, res) => res.status(200).send('hello from server'));
 
-app.use('/users', userRoutes);
+app.use('/api/users', userRoutes);
 
-app.get('/products', async (req: Request, res: Response) => {
+app.get('/api/products', async (req: Request, res: Response) => {
   const products = await stripe.products.list({
     expand: ['data.default_price'],
     active: true,
@@ -49,7 +49,7 @@ interface LineItem {
 }
 
 app.post(
-  '/create-checkout-session',
+  '/api/create-checkout-session',
   async (req: Request<any, any, LineItem[], any>, res: Response) => {
     console.log(req.body);
     const products = req.body.map((e) => ({
@@ -60,8 +60,8 @@ app.post(
     const session = await stripe.checkout.sessions.create({
       line_items: products,
       mode: 'payment',
-      success_url: 'https://e-renaissance.herokuapp.com/home',
-      cancel_url: 'https://e-renaissance.herokuapp.com/',
+      success_url: 'https://erenaissance-frontend.vercel.app/home',
+      cancel_url: 'https://erenaissance-frontend.vercel.app/',
     });
 
     res.json(session.url);
@@ -69,6 +69,6 @@ app.post(
 );
 
 // MMP
-app.use('/user', userRoutes);
+app.use('/api/user', userRoutes);
 
 export default app;
