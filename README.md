@@ -210,13 +210,15 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+- [x] MVP
+- [] MMP
+  - [ ] New Figma Design
+  - [ ] Improve Accesibility, Performance & SEO Metrics
+  - [ ] Automated testing
+  - [ ] Move front end to typescript
+  - [ ] Client sign up
+  - [ ] Client Login & Logout(Authentication)
+  - [ ] Client dashboard features
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
