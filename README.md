@@ -341,7 +341,7 @@ In each commit message:
 
 ## File Structure
 
-We are grouping by feature as listed in React docs. See [Grouping by features or routes] (https://eslint.org/)
+We are grouping by feature as listed in React docs. See [Grouping by features or routes](https://reactjs.org/docs/faq-structure.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -351,7 +351,6 @@ We are grouping by feature as listed in React docs. See [Grouping by features or
 
 We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs.com/package/eslint-config-airbnb), alongside [Prettier](https://prettier.io/) to format code and follow modern standarts when writhing Javascript In addition, we can minimize runtime errors.
 
-[Download](https://nodejs.org/en/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
