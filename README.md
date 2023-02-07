@@ -192,7 +192,7 @@ To get a local copy up and runn follow these simple example steps.
 
 ## What we have learned
 
-As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
+As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
 
 ## What issues have I faced and how I resolved them
 
@@ -336,6 +336,12 @@ In each commit message:
 9. Do not think your code is self-explanatory
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LINTING -->
+
+## Linting
+
+We are using [ESLint] (https://eslint.org/) with [Airbnb rules] (https://www.npmjs.com/package/eslint-config-airbnb), alongside [Prettier] (https://prettier.io/) to format code and follow modern standarts when writhing Javascript In addition, we can minimize runtime errors.
 
 <!-- LICENSE -->
 
