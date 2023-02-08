@@ -107,8 +107,8 @@ The MVP was heavily inspired by this [Figma](https://www.figma.com/file/RucpiUDc
 
 ## Getting Started
 
-This is an example of how you setting up our project locally.
-To get a local copy up and runn follow these simple example steps.
+This is an example of how you go about setting up our project locally.
+To get a local copy up and run follow these simple example steps.
 
 ### Prerequisites
 
