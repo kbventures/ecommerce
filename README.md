@@ -409,7 +409,7 @@ We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/kbventures/ecommerce/blob/main/LICENSE.txt) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
