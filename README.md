@@ -218,24 +218,25 @@ To get a local copy up and run follow these simple example steps.
 
 ## Run Unit Tests
 
-   `sh
+   ```sh
    cd server
    npm run test
-   `
+   ```
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- Production build -->
 
 ## Production build
-  `sh
+  ```sh
   cd server
   npm run build
-  `
-  `sh
+  ```
+  ```sh
   cd client
   npm run build
-  `
+  ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LEARNED -->
