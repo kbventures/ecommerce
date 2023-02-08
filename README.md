@@ -197,7 +197,6 @@ To get a local copy up and runn follow these simple example steps.
    PUBLISHABLE_KEY=YOUR_SECRET_KEY
    SECRET=YOUR_SECRET_KEY
    ```
-
 ### Running
 
 1. Start Client
@@ -219,15 +218,25 @@ To get a local copy up and runn follow these simple example steps.
 
 ## Run Unit Tests
 
+   `sh
+   cd server
+   npm run test
+   `
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- Production build -->
 
 ## Production build
-
+  `sh
+  cd server
+  npm run build
+  `
+  `sh
+  cd client
+  npm run build
+  `
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LEARNED -->
 
