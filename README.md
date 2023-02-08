@@ -190,7 +190,7 @@ To get a local copy up and run follow these simple example steps.
    
    ```
 
-6. Add .env file
+6. Add .env file inside server directory
    ```sh
    MONGO_URI=YOUR_SECRET_KEY
    STRIPE_SECRET=YOUR_SECRET_KEY
