@@ -31,7 +31,7 @@
     <a href="https://github.com/kbventures/ecommerce/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://vercel.com/kbventures/erenaissance-frontend" target="_blank">View Demo</a>
+    <a href="https://erenaissance-frontend.vercel.app/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/kbventures/ecommerce/issues">Report Bug</a>
     ·
