@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://erenaissance-frontend.vercel.app/">
     <img src="images/e-renaissance-logo.png" alt="Logo">
   </a>
   
@@ -26,12 +26,12 @@
   <h3 align="center">e-Renaissance</h3>
 
   <p align="center">
-    The only one electronic store that you need!
+    Your one and only electronics store!
     <br />
     <a href="https://github.com/kbventures/ecommerce/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://erenaissance-frontend.vercel.app/" target="_blank">View Demo</a>
+    <a href="https://erenaissance-frontend.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/kbventures/ecommerce/issues">Report Bug</a>
     ·
@@ -70,9 +70,11 @@
 
 ## About The Project
 
-You're looking for electronics? We have a wide variety of electronics for all your needs. From computers, to cameras, to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
+**Site is live, but payments and shipping are not active yet!**
 
-We are a leading online electronics store that is committed to providing the best customer service. We offer a wide range of products including mobile phones, laptops, televisions and much more. We have a team of experts who will guide you through the process of making your purchase and offer you advice on how to take care of your new device.
+You're looking for electronics? We have a wide variety of electronics for all your needs. From computers to cameras to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
+
+We are a leading online electronics store that is committed to providing the best customer service. We offer a wide range of products including mobile phones, laptops, televisions and much more. Our team of experts will guide you through the process of making your purchase and offer you advice on how to take care of your new device.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +122,7 @@ To get a local copy up and run follow these simple example steps.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo into the desired folder
    ```sh
    git clone https://github.com/kbventures/ecommerce.git
    ```
@@ -128,14 +130,14 @@ To get a local copy up and run follow these simple example steps.
    ```sh
    cd ecommerce
    ```
-3. Install NPM packages in client and server folder
+3. Install NPM packages into both client and server folders
    ```sh
    cd client
    npm install
    cd ../server
    npm install
    ```
-4. Change client URL
+4. Change client URL to your localhost or your provider
    ```sh
    cd client/src/contexts
    Itemscontext.jsx
@@ -243,15 +245,9 @@ To get a local copy up and run follow these simple example steps.
 
 ## What we have learned
 
-As a team we learned to work continuously and asynchronouslyl on designing, developing, testing, deploying a full stack application with third party intergration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CDIC, development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, CSS design systems, communication,  Design, Figma, managing a project(Github project) etc.
+As a team we learned to work continuously and asynchronously on designing, developing, testing, and deploying a full stack application with Stripe third party integration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CI/CD, using Vercel's development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, GitHub Primer's CSS design systems, communication, UX/UI design, Figma, and managing a project(Github project).
 
 ## What issues have I faced and how I resolved them
-
-[Tell what was hard in the process of building the project. Tell about where have you feel stuck and how did you overcome this.]
-
-**Example:**
-
-When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
 
 <!-- ROADMAP -->
 
@@ -260,15 +256,15 @@ When I tried to connect to the third-party API, I was not sure how to use fetch 
 - [x] MVP
 - [] MMP
   - [ ] Implement new Figma design
-  - [ ] Improve accesibility, performance & SEO metrics
+  - [ ] Improve accessibility, performance & SEO metrics
   - [ ] Automated testing
-  - [ ] Move front end to typescript
+  - [ ] Move front end to Typescript
   - [ ] Client sign up
-  - [ ] Client Login & Logout(Authentication)
+  - [ ] Client login, logout & authentication
   - [ ] Client dashboard features
   - [ ] Back services to support authentication and client routes
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/kbventures/ecommerce/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -296,7 +292,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
    git checkout -b <your feature branch name>
    ```
 
-4. Make as many changes as you need in your feature branch. You can use the following commands per commit message.
+4. Make as many changes as you need in your feature branch. You can use the following commands per commit message - or add the individual files instead of using the **.**
 
    ```shell
    git add .
@@ -304,19 +300,19 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
    git commit -m <your commit message>
    ```
 
-5. Once your feature is ready and you're ready to merge into the main branch first make sure to push your local branch changes to GitHub's computers.
+5. Once your feature is ready and you're ready to merge into the main branch first make sure to push your local branch changes to GitHub.
 
    ```shell
    git push --set-upstream origin <your feature branch name>
    ```
 
-6. Go to https://github.com/kbventures/ecommerce/branches and you should see your newly pushed feature branch. Find and click the button "New pull request" to request for your changes to be "pulled" into the main branch.
+6. Go to https://github.com/kbventures/ecommerce/branches and you should see your newly pushed feature branch. Find and click the button, "New pull request", to request that your changes be "pulled" into the main branch.
 
 7. When you click the button, complete the form required for each pull request and click "Create pull request".
 
-8. In the top-right corner click "Reviewers" and add one person on the team as a reviewer for the pull request.
+8. In the top right corner, click "Reviewers" and add one person on the team as the Reviewer for the pull request.
 
-9. Once the Reviewer has looked at your pull request and verified everything is OK, they will merge your pull request into the main branch.
+9. Once the Reviewer has looked at your pull request and verified that everything is OK, they will merge your pull request into the main branch.
 
 <br/>
 
@@ -401,7 +397,7 @@ We are grouping by feature as listed in React docs. See [Grouping by features or
 
 ## Linting
 
-We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs.com/package/eslint-config-airbnb), alongside [Prettier](https://prettier.io/) to format code and follow modern standarts when writhing Javascript In addition, we can minimize runtime errors.
+We are using [ESLint](https://eslint.org/) with [Airbnb rules](https://www.npmjs.com/package/eslint-config-airbnb), alongside [Prettier](https://prettier.io/) to format code and follow modern standards when writing Javascript. In addition, we can minimize runtime errors.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -424,5 +420,7 @@ Enrick Andersen Ong - [@rickansen](https://twitter.com/rickansen)
 Ken Beaudin - [@kb9700](https://twitter.com/kb9700)
 
 Abdhul Shabbir - [@abdulshabbirdev](https://twitter.com/abdulshabbirdev)
+
+Jennie Allen - [@jenanemone](https://twitter.com/jenanemone)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
