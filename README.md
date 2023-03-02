@@ -1,9 +1,5 @@
 <a name="readme-top"></a>
 
-<a href="https://erenaissance-frontend.vercel.app/">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=erenaissance-frontend" />
-</a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -21,6 +17,11 @@
 <a href="https://github.com/kbventures/ecommerce/issues">
   <img height="28px" src="https://img.shields.io/github/issues/kbventures/ecommerce" alt="Issues"/>
 </a>
+  <a  href="https://erenaissance-frontend.vercel.app/">
+    <img height="28px" src="https://therealsujitk-vercel-badge.vercel.app/?app=erenaissance-frontend" />
+  </a>
+</div>
+<div align="center">
 </div>
 
   <h3 align="center">e-Renaissance</h3>
@@ -94,14 +95,13 @@ We are a leading online electronics store that is committed to providing the bes
 - ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DESIGN -->
 
 ## Design
 
-The MVP was heavily inspired by this [Figma](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design.  Our [MMP](https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1) design is inpsired by Amazon/BestBuy single page design. 
+The MVP was heavily inspired by this [Figma](<https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1>) design. Our [MMP](<https://www.figma.com/file/RucpiUDcNaza94UjkbuP77/Ecommerce-App-UI-Kit-(Community)?node-id=0%3A1>) design is inpsired by Amazon/BestBuy single page design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,68 +137,81 @@ To get a local copy up and run follow these simple example steps.
    cd ../server
    npm install
    ```
-4. Change client URL to your localhost or your provider
-   ```sh
-   cd client/src/contexts
-   Itemscontext.jsx
-   
-     useEffect(() => {
+4. Change client fetch URL from https://erenaissance-backend.vercel.app/api/products to your localhost or your provider http://localhost:4001/api/products;
+
+   ```js
+   // client/src/contexts/Itemscontext.jsx
+
+    useEffect(() => {
     const fetchItems = async () => {
-      const response = await fetch(`http://localhost:4001/api/products`);
+      // change fetch to:
+      ////  http://localhost:4001/api/products;
+      const response = await fetch(
+        `https://erenaissance-backend.vercel.app/api/products`
+      )
       const json = await response.json();
       setItems(json);
     };
     fetchItems();
-    
-    cd ..
-    cd routes/Basket
-    index.jsx
-    
+   ```
+
+   ```js
+    // client/src/routes/Basket/index.jsx
+
     async function handleSubmit(e, basket) {
     e.preventDefault();
-    const url = await fetch("http://localhost:4001/api/create-checkout-session", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(basket),
-    }).then((i) => i.json());
+    // change fetch to:
+    // http://localhost:4001/api/create-checkout-session
+    const url = await fetch(
+      "https://erenaissance-backend.vercel.app/api/create-checkout-session",;
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(basket),
+      }
+    ).then((i) => i.json());
     window.location.href = url;
-    }
-    ```
-    
+   }
+   ```
+
 5. Change Server URLS
-   ```sh
-   cd server/src
-   app.ts
-   
-   app.post(
-   '/api/create-checkout-session',
-   async (req: Request<any, any, LineItem[], any>, res: Response) => {
+
+   ```js
+   // server/src/app.ts
+
+
+    app.post(
+    '/api/create-checkout-session',
+    async (req: Request<any, any, LineItem[], any>, res: Response) => {
     console.log(req.body);
     const products = req.body.map((e) => ({
-      price: e.default_price?.id,
-      quantity: 1,
+    price: e.default_price?.id,
+    quantity: 1,
     }));
 
     const session = await stripe.checkout.sessions.create({
       line_items: products,
       mode: 'payment',
-      success_url: 'http://localhost:8080/home',
-      cancel_url: 'http://localhost:8080/',
+      // Change to :
+      // success_url: "http://localhost:8080/home",
+      // cancel_url: "http://localhost:8080/",
+      success_url: 'https://erenaissance-frontend.vercel.app/home',
+      cancel_url: 'https://erenaissance-frontend.vercel.app/',
     });
 
     res.json(session.url);
    }
-   );
-   
    ```
 
 6. Add .env file inside server directory
-   ```sh
-   MONGO_URI=YOUR_SECRET_KEY
-   STRIPE_SECRET=YOUR_SECRET_KEY
-   PUBLISHABLE_KEY=YOUR_SECRET_KEY
-   SECRET=YOUR_SECRET_KEY
-   ```
+
+```js
+MONGO_URI = YOUR_SECRET_KEY;
+STRIPE_SECRET = YOUR_SECRET_KEY;
+PUBLISHABLE_KEY = YOUR_SECRET_KEY;
+SECRET = YOUR_SECRET_KEY;
+```
+
 ### Running
 
 1. Start Client
@@ -212,7 +225,7 @@ To get a local copy up and run follow these simple example steps.
    cd server
    npm run dev
    ```
-3. Go to http://localhost:8080/ if you wanna see client, or http://localhost:4001/ for server
+3. Go to http://localhost:8080/ if you wanna see client, or http://localhost:4001/api for server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,32 +233,34 @@ To get a local copy up and run follow these simple example steps.
 
 ## Run Unit Tests
 
-   ```sh
-   cd server
-   npm run test
-   ```
-   
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+cd server
+npm run test
+```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Production build -->
 
 ## Production build
-  ```sh
-  cd server
-  npm run build
-  ```
-  ```sh
-  cd client
-  npm run build
-  ```
+
+```sh
+cd server
+npm run build
+```
+
+```sh
+cd client
+npm run build
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LEARNED -->
 
 ## What we have learned
 
-As a team we learned to work continuously and asynchronously on designing, developing, testing, and deploying a full stack application with Stripe third party integration.  We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CI/CD, using Vercel's development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, GitHub Primer's CSS design systems, communication, UX/UI design, Figma, and managing a project(Github project).
+As a team we learned to work continuously and asynchronously on designing, developing, testing, and deploying a full stack application with Stripe third party integration. We expanded our knowledge of React, Express.js, MongoDB, Node.js, Webpack, several deployment solutions, CI/CD, using Vercel's development preview branch, mono repos, automated testing, Typescript, documentation, linting, coordinating as a team, code reviews, CSS Modules, GitHub Primer's CSS design systems, communication, UX/UI design, Figma, and managing a project(Github project).
 
 ## What issues have I faced and how I resolved them
 
