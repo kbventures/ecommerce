@@ -5,18 +5,38 @@
   padding: 0 24px;
   color:black;
   background-color: var(--primary-color);
+  position: relative;
+  height: var(--spacer-8)
 }
 
-.companyName{
+.flexCenter{
+  display: flex;
+  gap:8px;
+  align-items: center;
+}
+
+.logo{
   font-family: 'Raleway', sans-serif;
-  font-size: var(--h1mobile);
-  font-style: italic;
+  font-size: var(--h3mobile);
   font-weight: var(--font-weight-extrabold);
   color: var(--white);
-  text-shadow: 2px 2px 10px black; 
-
+  text-decoration: none;
 }
 
+.icon{
+  scale: 0.9
+}
+
+
+.hamburgerbutton{
+  background-color:  var(--primary-color);
+  border: none; 
+  scale:0.9
+}
+
+
+
+/* 736px */
 @media only screen and (min-width: 46em) {
   .container {
     padding: 0 53px;

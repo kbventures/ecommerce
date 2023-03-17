@@ -1,5 +1,6 @@
 import React, { useState, cloneElement } from "react";
 import PropTypes from "prop-types";
+import styles from "./Dropdown.module.css";
 
 export default function Dropdown({ trigger, menu }) {
   const [open, setOpen] = useState(false);
@@ -9,12 +10,12 @@ export default function Dropdown({ trigger, menu }) {
   };
 
   return (
-    <div className="dropdown">
+    <>
       {cloneElement(trigger, {
         onClick: handleOpen,
       })}
       {open ? (
-        <ul className="menu">
+        <ul className={styles.menu}>
           {menu.map((menuItem, index) => (
             <li key={index} className="menu-item">
               {cloneElement(menuItem, {
@@ -27,7 +28,7 @@ export default function Dropdown({ trigger, menu }) {
           ))}
         </ul>
       ) : null}
-    </div>
+    </>
   );
 }
 
