@@ -17,6 +17,10 @@ import Checkout from "./routes/Checkout";
 import Payment from "./routes/Payment";
 import Profile from "./routes/Profile";
 import Favorites from "./routes/Favorites";
+
+// MMP
+import Mmp from "./routes/Mmp";
+
 import NotFound from "./routes/NotFound";
 
 // Global style sheet
@@ -41,6 +45,9 @@ ReactDOM.render(
               <Route path="/profile" element={<Profile />} />
               <Route path="/favorite" element={<Favorites />} />
               <Route path="/*" element={<NotFound />} />
+
+              {/* MMP Minimum Marketable Product */}
+              <Route path="/mmp" element={<Mmp />} />
             </Routes>
           </BrowserRouter>
         </FavoriteProvider>

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  color:black;
+  background-color: var(--primary-color);
+  position: relative;
+  height: var(--spacer-8)
+}
+
+.flexCenter{
+  display: flex;
+  gap:8px;
+  align-items: center;
+}
+
+.logo{
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--h3mobile);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.icon{
+  scale: 0.9
+}
+
+
+.hamburgerbutton{
+  background-color:  var(--primary-color);
+  border: none; 
+  scale:0.9
+}
+
+
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+  .container {
+    padding: 0 53px;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .container {
+    padding: 0 73px;
+  }
+}
+
+@media only screen and (min-width: 112em) {
+  .container {
+    padding: 0 104px;
+  }
+}
