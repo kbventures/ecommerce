@@ -5,7 +5,7 @@ import Mmmproductscards from "../../components/Mmpproductcards";
 export default function Mmp() {
   return (
     <div>
-      <Navigation />;
+      <Navigation />
       <Mmmproductscards />
     </div>
   );
