@@ -17,9 +17,11 @@ import Checkout from "./routes/Checkout";
 import Payment from "./routes/Payment";
 import Profile from "./routes/Profile";
 import Favorites from "./routes/Favorites";
+import MmpNavigation from "./components/Mmpnavigation";
 
 // MMP
 import Mmp from "./routes/Mmp";
+import MmpItem from "./routes/mmpItem";
 
 import NotFound from "./routes/NotFound";
 
@@ -47,7 +49,10 @@ ReactDOM.render(
               <Route path="/*" element={<NotFound />} />
 
               {/* MMP Minimum Marketable Product */}
-              <Route path="/mmp" element={<Mmp />} />
+              <Route path="/mmp" element={<MmpNavigation />}>
+                <Route path="home" element={<Mmp />} />
+                <Route path="items/:id" element={<MmpItem />} />
+              </Route>
             </Routes>
           </BrowserRouter>
         </FavoriteProvider>

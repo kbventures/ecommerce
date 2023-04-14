@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTv,
@@ -33,42 +33,45 @@ export default function Navigation() {
   };
 
   return (
-    <ul className={styles.container}>
-      <div className={styles.flexCenter}>
-        <Dropdown
-          trigger={
-            <button className={styles.hamburgerbutton} type="button">
-              <Hamburger />
-            </button>
-          }
-          menu={[
-            <button type="button" onClick={handleMenuOne}>
-              <FontAwesomeIcon icon={faTv} />
-              Best Seller
-            </button>,
-            <button type="button" onClick={handleMenuTwo}>
-              <FontAwesomeIcon icon={faBolt} />
-              Top Deals
-            </button>,
-            <button type="button" onClick={handleMenuTwo}>
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-              Our Products
-            </button>,
-          ]}
-        />
-        <Link className={styles.logo} to="/">
-          eRenaissance
-        </Link>
-      </div>
-      <div className={styles.flexCenter}>
-        <Link to="/profile">
-          <ProfileIcon className={styles.icon} />
-        </Link>
-        <Link to="/basket">
-          <BuyIcon className={styles.icon} />
-        </Link>
-      </div>
-    </ul>
-    // <Search/>
+    <>
+      <ul className={styles.container}>
+        <div className={styles.flexCenter}>
+          <Dropdown
+            trigger={
+              <button className={styles.hamburgerbutton} type="button">
+                <Hamburger />
+              </button>
+            }
+            menu={[
+              <button type="button" onClick={handleMenuOne}>
+                <FontAwesomeIcon icon={faTv} />
+                Best Seller
+              </button>,
+              <button type="button" onClick={handleMenuTwo}>
+                <FontAwesomeIcon icon={faBolt} />
+                Top Deals
+              </button>,
+              <button type="button" onClick={handleMenuTwo}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                Our Products
+              </button>,
+            ]}
+          />
+          <Link className={styles.logo} to="/">
+            eRenaissance
+          </Link>
+        </div>
+        <div className={styles.flexCenter}>
+          <Link to="/profile">
+            <ProfileIcon className={styles.icon} />
+          </Link>
+          <Link to="/basket">
+            <BuyIcon className={styles.icon} />
+          </Link>
+        </div>
+      </ul>
+      {/* // <Search /> */}
+      <Outlet />
+    </>
   );
 }

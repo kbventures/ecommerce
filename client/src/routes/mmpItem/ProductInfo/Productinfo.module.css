@@ -1,0 +1,96 @@
+
+.title{
+   margin-bottom: 1rem;
+   font-size: var(--h1mobile);
+}
+
+.colorChoice{
+   font-size: 12px;
+}
+.title, .colorChoice{
+   font-weight: var(--font-weight-semibold);
+}
+.colorChoice{
+   margin-bottom: 0.5rem;
+}
+
+.list{
+    display: flex; 
+    font-weight: var(--font-weight-semibold);
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0.75rem 0;
+}
+
+
+
+ .displaynone{
+     display:none;
+ }
+
+ .label{
+    border: 0.5px solid black; 
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
+    font-size: var(--h4mobile);
+    width: 200px; 
+ }
+
+ .desc{
+   font-weight: var(--font-weight-semibold);
+   font-size: var(--h4mobile);
+   margin: 0.5rem 0;
+ }
+
+ .longDesc{
+   font-size: var(--h5mobile);
+   margin: 1rem 0;
+   color: grey; 
+ }
+
+
+ /* 360px */
+@media only screen and (min-width: 22.5rem) {
+
+    .desc{
+      margin: 1.5rem 0;
+    }
+   
+    .longDesc{
+      margin-bottom: 1.5rem;
+    }
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+
+}
+
+
+
+

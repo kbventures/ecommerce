@@ -1,11 +1,9 @@
 import React from "react";
-import Navigation from "../../components/Mmpnavigation";
 import Mmmproductscards from "../../components/Mmpproductcards";
 
 export default function Mmp() {
   return (
     <div>
-      <Navigation />
       <Mmmproductscards />
     </div>
   );
