@@ -1,8 +1,21 @@
 import React from "react";
 import Navigation from "../../components/Mmpnavigation";
+import Mmmproductscards from "../../components/Mmpproductcards";
 
 export default function Mmp() {
-  return <Navigation />;
+  return (
+    <div>
+      <Navigation />
+      <Mmmproductscards />
+    </div>
+  );
+  // Search
+  // Hero Banner
+  // Product Cards Component
+  // Productg CARD Component
+  // Alternate product card
+  // Product menu selection
+  // Footer
 }
 
 /*

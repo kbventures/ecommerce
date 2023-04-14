@@ -1,0 +1,141 @@
+.mainWrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center;
+    padding: 0 24px; */
+    padding: 0 16px 32px 0;
+    justify-content: left;
+  }
+
+  .img{
+    width: 100%; 
+    padding: 0 16px 0 0;
+}
+
+.imgWrapper{
+    width: 100px;
+    flex-shrink: 0
+}
+
+.icon{
+  color: var(--green)
+}
+.title {
+  font-weight: 400;
+  font-size: var(--h3mobile);
+  margin-bottom: var(--spacer-2);
+}
+.starsWrapper{
+  display: flex;
+  gap:5px;
+  margin: 5px 0;
+  color: gainsboro;
+  font-size: var(--h5mobile);
+  z-index: -1;
+  position: relative;
+}
+.starIcon {
+  color: #FFE000;
+  filter: drop-shadow(0px 0px #C28400);
+}
+
+.availableShip,.availableStore{
+  padding-left:4px;
+  font-size: var(--h6mobile);
+}
+
+.price{
+  color: var(--red-sales);
+  /* font-weight: var(--font-weight-bold); */
+  font-weight:var(--font-weight-extrabold);
+  margin:var(--spacer-2) 0;
+
+}
+
+
+.priceNumber{
+  font-weight:var(--font-weight-extrabold)
+}
+
+.starsReview{
+  font-size: var(--h6-mobile);
+  color: var(--black);
+}
+
+.informationWrapper{
+  width: 200px;
+}
+
+
+  
+
+  
+
+  /* 360px */
+@media only screen and (min-width: 22.5rem) {
+    
+}
+
+/* 480px */
+@media only screen and (min-width: 30rem) {
+  .informationWrapper{
+    width: 250px;
+  }
+
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5rem) {
+
+}
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+  .container {
+    padding: 0 53px;
+  }
+    .informationWrapper{
+    width: 200px;
+  }
+  .mainWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   min-height: 400px;
+   gap: 25px;
+  }
+.imgWrapper{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0
+}
+  .img{
+    width: 100%; 
+    height: 100%;
+    padding: 0 16px 0 0;
+}
+
+.title {
+  min-height: 60px;
+}
+}
+
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
+
+}
+
+/* 1280px */
+@media only screen and (min-width: 80rem) {
+  .container {
+    padding: 0 73px;
+  }
+}
+
+/* 1680 px */
+@media only screen and (min-width: 105rem) {
+  .container {
+    padding: 0 104px;
+  }
+}
+  
