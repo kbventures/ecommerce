@@ -114,8 +114,14 @@ To get a local copy up and run follow these simple example steps.
 
 ### Prerequisites
 
-- Node.js: [Download](https://nodejs.org/en/)
+<!-- - Node.js: [Download](https://nodejs.org/en/)
 - Git: [Download](https://git-scm.com/)
+- [Stripe](https://www.stripe.com): Account, Secret & Publishable key
+- [Cloudinary](https://www.cloudinary.com): Account Secret Key & Product Images
+- [MongoDB Atlas](https://www.mongodb.com/atlas/database): MongoDB Account & Secret Key -->
+
+- Node.js
+- Git
 - [Stripe](https://www.stripe.com): Account, Secret & Publishable key
 - [Cloudinary](https://www.cloudinary.com): Account Secret Key & Product Images
 - [MongoDB Atlas](https://www.mongodb.com/atlas/database): MongoDB Account & Secret Key
