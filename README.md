@@ -71,6 +71,8 @@
 
 ## About The Project
 
+MVP for electronic e-commerce store. 
+
 **Site is live, but payments and shipping are not active yet!**
 
 You're looking for electronics? We have a wide variety of electronics for all your needs. From computers to cameras to cell phones, we have you covered. And don't let our low prices fool you – these aren't your average products! Our e-Renaissance certified gadgets offer great quality and won't break the bank.
